@@ -9,6 +9,7 @@ body
     font-size: 0.8rem;
     font-family: Arial, Helvetica, sans-serif;
     color: #6d6a6a;
+    background-color: black;
 }
 
 header
@@ -84,4 +85,36 @@ main
     background: url("../img/SelfPhoto.JPG") no-repeat;
     background-size: contain;
     background-position: center;
+}
+
+.Star
+{
+    position:fixed;
+    background-color: white;
+    box-shadow: 0em 0em 1em 0.15em rgba(224, 224, 0, 1);
+    left: 10vw;
+    top: 58vh;
+    width: 0.1em;
+    height: 0.1em;
+    border-radius: 100%;
+    animation-name: ShowStars;
+    animation-timing-function: steps(3, end);
+    animation-iteration-count: infinite;
+}
+
+.Star-1
+{
+    animation-duration: 1s;
+}
+
+.Star-2
+{
+    animation-duration: 1s;
+    left: 50%;
+}
+
+.Star-3
+{
+    animation-duration: 1s;
+    left: 90%;
 }
