@@ -9,7 +9,6 @@ body
     font-size: 0.8rem;
     font-family: Arial, Helvetica, sans-serif;
     color: #6d6a6a;
-    background-color: black;
 }
 
 header
@@ -24,14 +23,15 @@ header
 h1
 {
     text-transform: capitalize;
-    flex-basis: 60%;
+    flex-basis: 80%;
 }
 
-.Menu
+.Menu, .Intro, .Portfolio, .SkillsPhoto
 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .Menu > li
@@ -49,7 +49,7 @@ h1
 .Tree
 {
     position: relative;
-    height: 70vh;
+    height: 60vh;
 }
 
 .ImgTree
@@ -71,29 +71,25 @@ main
     position: relative;
 }
 
-.SelfPhoto
+@keyframes ShowStars
 {
-    background: url("../img/door.jpg") no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 30%;
-    height: 20vh;
-}
-
-.SelfPhoto:hover
-{
-    background: url("../img/SelfPhoto.JPG") no-repeat;
-    background-size: contain;
-    background-position: center;
+    from
+    {
+        top: 38vh;
+    }
+    to
+    {
+        top: 20vh;
+    }
 }
 
 .Star
 {
-    position:fixed;
+    position: relative;
     background-color: white;
     box-shadow: 0em 0em 1em 0.15em rgba(224, 224, 0, 1);
     left: 10vw;
-    top: 58vh;
+    top: 38vh;
     width: 0.1em;
     height: 0.1em;
     border-radius: 100%;
@@ -118,3 +114,128 @@ main
     animation-duration: 1s;
     left: 90%;
 }
+
+.SelfPhoto
+{
+    background: url("../img/door.jpg") no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 30%;
+    height: 30vh;
+}
+
+.SelfPhoto:hover
+{
+    background: url("../img/SelfPhoto.JPG") no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.Intro
+{
+    margin: 2em 0;
+}
+
+.Introduction
+{
+    flex-basis: 50%;
+    margin-left: 1em;
+    text-align: center;
+}
+
+span
+{
+    display: none;
+}
+
+h2
+{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.More
+{
+    background-color: red;
+    color: white;
+    width: 20%;
+    padding: 0.5em 1em;
+    margin-top: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 1em;
+}
+
+.Portfolio
+{
+    background-color: #6d6a6a;
+    color: white;
+    padding: 2em;
+}
+
+.Portfolio > div
+{
+    width: 10%;
+    height: 20vh;
+    background-color: chocolate;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.Skills
+{
+    margin: 1em;
+}
+
+.Skills > div > img
+{
+    height: 20vh;
+    margin: 1em;
+}
+
+footer
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #6d6a6a;
+    color: white;
+    padding: 2em 1em;
+}
+
+.Social
+{
+    display: flex;
+    flex-flow: column;
+}
+
+.Contact
+{
+    display: flex;
+    flex-flow: column;
+}
+
+.Contact :last-child
+{
+    height: 20vh;
+}
+
+.Social > div
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Social > div > img
+{
+    height: 5vh;
+    margin-left: 1em;
+}
+
