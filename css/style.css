@@ -6,7 +6,7 @@
 
 body
 {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     font-family: Arial, Helvetica, sans-serif;
     color: #6d6a6a;
 }
@@ -49,21 +49,21 @@ h1
 .Tree
 {
     position: relative;
-    height: 60vh;
+    height: 30vh;
 }
 
 .ImgTree
 {
     position: absolute;
     width: 100%;
-    height: 60vh;
+    height: 30vh;
 }
 
 .White
 {
     position: relative;
     width: 100%;
-    height: 20vh;
+    height: 10vh;
 }
 
 main
@@ -75,11 +75,11 @@ main
 {
     from
     {
-        top: 38vh;
+        top: 18vh;
     }
     to
     {
-        top: 20vh;
+        top: 10vh;
     }
 }
 
@@ -121,7 +121,7 @@ main
     background-size: contain;
     background-position: center;
     width: 30%;
-    height: 30vh;
+    height: 10vh;
 }
 
 .SelfPhoto:hover
@@ -179,7 +179,7 @@ h2
 .Portfolio > div
 {
     width: 10%;
-    height: 20vh;
+    height: 15vh;
     background-color: chocolate;
     border: 1px solid black;
     cursor: pointer;
@@ -187,25 +187,22 @@ h2
 
 .Skills
 {
-    margin: 1em;
+    margin: 3em;
 }
 
 .Skills > div > img
 {
-    height: 20vh;
+    height: 5vh;
     margin: 1em;
 }
 
 footer
 {
     display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-flow: column;
     background-color: #6d6a6a;
     color: white;
-    padding: 2em 1em;
+    padding: 2em;
 }
 
 .Social
@@ -220,9 +217,15 @@ footer
     flex-flow: column;
 }
 
+input
+{
+    text-align: center;
+}
+
 .Contact :last-child
 {
-    height: 20vh;
+    height: 8vh;
+    margin-bottom: 2em;
 }
 
 .Social > div
@@ -235,7 +238,10 @@ footer
 
 .Social > div > img
 {
-    height: 5vh;
-    margin-left: 1em;
+    height: 2vh;
 }
 
+a
+{
+    color: white;
+}
