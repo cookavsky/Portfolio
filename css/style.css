@@ -23,7 +23,7 @@ header
 h1
 {
     text-transform: capitalize;
-    flex-basis: 80%;
+    flex-basis: 60%;
 }
 
 .Menu, .Intro, .Portfolio, .SkillsPhoto
@@ -49,14 +49,14 @@ h1
 .Tree
 {
     position: relative;
-    height: 30vh;
+    height: 35vh;
 }
 
 .ImgTree
 {
     position: absolute;
     width: 100%;
-    height: 30vh;
+    height: 35vh;
 }
 
 .White
@@ -75,11 +75,11 @@ main
 {
     from
     {
-        top: 18vh;
+        top: 23vh;
     }
     to
     {
-        top: 10vh;
+        top: 12vh;
     }
 }
 
@@ -120,8 +120,8 @@ main
     background: url("../img/door.jpg") no-repeat;
     background-size: contain;
     background-position: center;
-    width: 30%;
-    height: 10vh;
+    width: 40vw;
+    height: 15vh;
 }
 
 .SelfPhoto:hover
@@ -178,7 +178,7 @@ h2
 
 .Portfolio > div
 {
-    width: 10%;
+    flex-basis: 10%;
     height: 15vh;
     background-color: chocolate;
     border: 1px solid black;
@@ -199,7 +199,8 @@ h2
 footer
 {
     display: flex;
-    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
     background-color: #6d6a6a;
     color: white;
     padding: 2em;
@@ -215,6 +216,7 @@ footer
 {
     display: flex;
     flex-flow: column;
+    width: 60%;
 }
 
 input
@@ -224,8 +226,7 @@ input
 
 .Contact :last-child
 {
-    height: 8vh;
-    margin-bottom: 2em;
+    height: 10vh;
 }
 
 .Social > div
