@@ -73,13 +73,12 @@ main
 
 @keyframes ShowStars
 {
-    from
-    {
-        top: 23vh;
+    from {
+        top: 48vh;
     }
-    to
-    {
-        top: 12vh;
+    to {
+        left: 2vw;
+        top: 30vh;
     }
 }
 
@@ -100,40 +99,58 @@ main
 
 .Star-1
 {
-    animation-duration: 1s;
+    animation-duration: 20s;
+    left: 20%;
 }
 
 .Star-2
 {
-    animation-duration: 1s;
-    left: 50%;
+    animation-duration: 10s;
+    left: 40%;
 }
 
 .Star-3
 {
-    animation-duration: 1s;
+    animation-duration: 5s;
+    left: 60%;
+}
+
+.Star-4
+{
+    animation-duration: 20s;
+    left: 70%;
+}
+
+.Star-5
+{
+    animation-duration: 10s;
+    left: 80%;
+}
+
+.Star-6
+{
+    animation-duration: 5s;
     left: 90%;
-}
-
-.SelfPhoto
-{
-    background: url("../img/door.jpg") no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 40vw;
-    height: 15vh;
-}
-
-.SelfPhoto:hover
-{
-    background: url("../img/SelfPhoto.JPG") no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
 .Intro
 {
     margin: 2em 0;
+    background: url("../img/door.jpg") no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    height: 50vh;
+    position: relative;
+}
+
+.SelfPhoto
+{
+    background: url("../img/SelfPhoto.JPG") no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 40vw;
+    height: 15vh;
 }
 
 .Introduction
@@ -141,6 +158,16 @@ main
     flex-basis: 50%;
     margin-left: 1em;
     text-align: center;
+}
+
+.Back
+{
+    background: none;
+}
+
+.Hide
+{
+    display: none;
 }
 
 span
