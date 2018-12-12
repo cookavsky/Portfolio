@@ -74,11 +74,11 @@ main
 @keyframes ShowStars
 {
     from {
-        top: 48vh;
+        bottom: 0;
     }
     to {
         left: 2vw;
-        top: 30vh;
+        bottom: 10vh;
     }
 }
 
@@ -87,8 +87,8 @@ main
     position: relative;
     background-color: white;
     box-shadow: 0em 0em 1em 0.15em rgba(224, 224, 0, 1);
-    left: 10vw;
-    top: 38vh;
+    left: 0;
+    bottom: 0;
     width: 0.1em;
     height: 0.1em;
     border-radius: 100%;
@@ -215,47 +215,47 @@ h2
     cursor: pointer;
 }
 
-.Portfolio-1
+#Portfolio-1
 {
     background-color: aqua;
 }
 
-.Portfolio-2
+#Portfolio-2
 {
     background-color: blueviolet;
 }
 
-.Portfolio-3
+#Portfolio-3
 {
     background-color: blue;
 }
 
-.Portfolio-4
+#Portfolio-4
 {
     background-color: brown;
 }
 
-.Portfolio-5
+#Portfolio-5
 {
     background-color: chartreuse;
 }
 
-.Portfolio-6
+#Portfolio-6
 {
     background-color: coral;
 }
 
-.Portfolio-7
+#Portfolio-7
 {
     background-color: chocolate;
 }
 
-.Portfolio-8
+#Portfolio-8
 {
     background-color: crimson;
 }
 
-.Portfolio-9
+#Portfolio-9
 {
     background-color: green;
 }
