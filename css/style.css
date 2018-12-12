@@ -196,20 +196,73 @@ h2
     border-radius: 1em;
 }
 
-.Portfolio
+.Gallery
 {
     background-color: #6d6a6a;
     color: white;
     padding: 2em;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
 }
 
-.Portfolio > div
+.Portfolio
 {
     flex-basis: 10%;
-    height: 15vh;
+    height: 50vh;
     background-color: chocolate;
     border: 1px solid black;
     cursor: pointer;
+}
+
+.Portfolio-1
+{
+    background-color: aqua;
+}
+
+.Portfolio-2
+{
+    background-color: blueviolet;
+}
+
+.Portfolio-3
+{
+    background-color: blue;
+}
+
+.Portfolio-4
+{
+    background-color: brown;
+}
+
+.Portfolio-5
+{
+    background-color: chartreuse;
+}
+
+.Portfolio-6
+{
+    background-color: coral;
+}
+
+.Portfolio-7
+{
+    background-color: chocolate;
+}
+
+.Portfolio-8
+{
+    background-color: crimson;
+}
+
+.Portfolio-9
+{
+    background-color: green;
+}
+
+.Size
+{
+    flex-basis: 100%;
 }
 
 .Skills
