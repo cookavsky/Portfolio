@@ -12,12 +12,6 @@
     footer {
         flex-flow: column;
     }
-    .Contact {
-        width: 100%;
-    }
-    .Contact :last-child {
-        margin-bottom: 1em;
-    }
     .Social {
         width: calc(100vw - 4em);
     }
@@ -45,9 +39,6 @@
     }
     footer {
         flex-flow: row;
-    }
-    .Contact {
-        width: 55%;
     }
     .Social > div > img {
         height: 4vh;
@@ -82,9 +73,6 @@
     }
     .Skills > div > img {
         height: 25vh;
-    }
-    .Contact :last-child {
-        height: 30vh;
     }
     .Social > div > img {
         height: 8vh;
@@ -143,9 +131,6 @@
     .Skills > div > img {
         height: 25vh;
     }
-    .Contact :last-child {
-        height: 30vh;
-    }
     .Social > div > img {
         height: 8vh;
         margin-right: 1em;
@@ -195,9 +180,6 @@
     .Skills > div > img {
         height: 25vh;
     }
-    .Contact :last-child {
-        height: 30vh;
-    }
     .Social > div > img {
         height: 8vh;
         margin-right: 1em;
@@ -235,9 +217,6 @@
     .Skills > div > img {
         height: 25vh;
     }
-    .Contact :last-child {
-        height: 30vh;
-    }
     .Social > div > img {
         height: 8vh;
         margin-right: 1em;
@@ -268,9 +247,6 @@
     .SelfPhoto {
         width: 30vw;
         height: 18vh;
-    }
-    .Contact :last-child {
-        height: 15vh;
     }
 }
 
@@ -303,15 +279,9 @@
     .Skills > div > img {
         height: 25vh;
     }
-    .Contact :last-child {
-        height: 30vh;
-    }
     .Social > div > img {
         height: 8vh;
         margin-right: 1em;
-    }
-    input {
-        font-size: 0.75rem;
     }
 }
 
@@ -332,9 +302,6 @@
     }
     .Portfolio > div {
         height: 25vh;
-    }
-    input {
-        font-size: 0.8rem;
     }
 }
 
@@ -361,9 +328,6 @@
     .Social > div > img {
         margin-right: 1em;
     }
-    input {
-        font-size: 1.1rem;
-    }
 }
 
 /* Portrait */
@@ -381,9 +345,6 @@
     }
     .Skills > div > img {
         height: 15vh;
-    }
-    .Contact :last-child {
-        height: 20vh;
     }
     .Social > div > img {
         height: 5vh;
@@ -405,12 +366,6 @@
     }
     .Skills > div > img {
         height: 25vh;
-    }
-    .Contact {
-        width: 50%;
-    }
-    .Contact :last-child {
-        height: 30vh;
     }
     .Social > div > img {
         height: 8vh;
@@ -447,15 +402,9 @@
     .Skills > div > img {
         height: 15vh;
     }
-    .Contact :last-child {
-        height: 20vh;
-    }
     .Social > div > img {
         height: 5vh;
         margin-right: 1em;
-    }
-    input {
-        font-size: 1.2rem;
     }
 }
 
@@ -485,15 +434,6 @@
     }
     .Skills > div > img {
         height: 15vh;
-    }
-    .Contact {
-        width: 50%;
-    }
-    .Contact :last-child {
-        height: 20vh;
-    }
-    input {
-        font-size: 1.3rem;
     }
 }
 
@@ -528,9 +468,6 @@
     .Social > div > img {
         height: 5vh;
         margin-right: 1em;
-    }
-    input {
-        font-size: 1.3rem;
     }
 }
 
@@ -587,9 +524,6 @@
         height: 5vh;
         margin-right: 1em;
     }
-    input {
-        font-size: 0.8rem;
-    }
 }
 
 /* ----------- Nexus 9 ----------- */
@@ -627,9 +561,6 @@
         height: 5vh;
         margin-right: 1em;
     }
-    input {
-        font-size: 1.3rem;
-    }
 }
 
 /* ----------- Kindle Fire HD 8.9" ----------- */
@@ -646,9 +577,6 @@
     .Social > div > img {
         height: 5vh;
         margin-right: 1em;
-    }
-    input {
-        font-size: 1.3rem;
     }
 }
 
@@ -707,14 +635,5 @@
     .Social > div > img {
         height: 8vh;
         margin-right: 1em;
-    }
-    input {
-        font-size: 1.3rem;
-    }
-    .Contact {
-        width: 50%;
-    }
-    .Contact :last-child {
-        height: 30vh;
     }
 }

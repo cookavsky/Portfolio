@@ -163,14 +163,10 @@ main
 .Back
 {
     background: none;
+    cursor: default;
 }
 
 .Hide
-{
-    display: none;
-}
-
-span
 {
     display: none;
 }
@@ -191,7 +187,6 @@ h2
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    text-transform: uppercase;
     cursor: pointer;
     border-radius: 1em;
 }
@@ -286,27 +281,42 @@ footer
     padding: 2em;
 }
 
-.Social
-{
-    display: flex;
-    flex-flow: column;
-}
-
 .Contact
 {
     display: flex;
     flex-flow: column;
-    width: 60%;
+    align-items: center;
 }
 
 input
 {
     text-align: center;
+    margin-bottom: 0.5em;
+    width: 20vw;
 }
 
-.Contact :last-child
+textarea
 {
+    margin-bottom: 0.5em;
+    width: 20vw;
     height: 20vh;
+}
+
+textarea::placeholder
+{
+    text-align: center;
+}
+
+button
+{
+    text-align: center;
+    width: 10vw;
+}
+
+.Social
+{
+    display: flex;
+    flex-flow: column;
 }
 
 .Social > div

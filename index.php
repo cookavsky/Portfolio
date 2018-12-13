@@ -37,7 +37,7 @@
                 <div class="SelfPhoto Hide"></div>
                 <div class="Introduction Hide">
                     <h2>Witam Wszystkich</h2>
-                    <p>Chciałbym wam przedstawić moje portfolio. Znajdują się tutaj wszystkie moje ukończone projekty. Front-endem i Back-endem interesowałem się od bardzo dawna, ale tylko na tym poprzestałem. Zmieniło się to w tym roku, kiedy postanowiłem wybrać nową ścieżkę kariery. Wybrałem Front-end z paru powodów.<span> Lubię się uczyć, a tego zawodu uczyć się trzeba całe życie. Najważniejsza jest twoja wiedza i umiejętności, których możesz się nauczyć samemu, bo źródeł wiedzy jest niezliczona ilość. Najważniejszym powodem okazało się jednak przekonanie, że chce się tego nauczyć, chce w tym pracować i poprawiać swoje umiejętności. Poświęcam temu swój czas, bo chce, a nie muszę.</span></p>
+                    <p>Chciałbym wam przedstawić moje portfolio. Znajdują się tutaj wszystkie moje ukończone projekty. Front-endem i Back-endem interesowałem się od bardzo dawna, ale tylko na tym poprzestałem. Zmieniło się to w tym roku, kiedy postanowiłem wybrać nową ścieżkę kariery. Wybrałem Front-end z paru powodów.<span class="Hide"> Lubię się uczyć, a tego zawodu uczyć się trzeba całe życie. Najważniejsza jest twoja wiedza i umiejętności, których możesz się nauczyć samemu, bo źródeł wiedzy jest niezliczona ilość. Najważniejszym powodem okazało się jednak przekonanie, że chce się tego nauczyć, chce w tym pracować i poprawiać swoje umiejętności. Poświęcam temu swój czas, bo chce, a nie muszę.</span></p>
                     <div class="More">More</div>
                 </div>
             </div>
@@ -64,28 +64,29 @@
         </article>
     </main>
     <footer>
-        <div class="Contact">
-            <input placeholder="Twój email" />
-            <input placeholder="Twoja wiadomość" />
-        </div>
-        <div>
-            <div class="Social">
-                <div>
-                    <img src="img/facebook.png" />
-                    <p><a href="https://www.facebook.com/cookavsky">Marcin Panda Kukawski</a></p>
-                </div>
-                <div>
-                    <img src="img/git.png" />
-                    <p><a href="https://github.com/cookavsky">cookavsky</a></p>
-                </div>
-                <div>
-                    <img src="img/Linkedin.png" />
-                    <p><a href="https://www.linkedin.com/in/cookavsky/">Marcin Kukawski</a></p>
-                </div>
-                <div>
-                    <img src="img/mail.png" />
-                    <p>cookavsky@gmail.com</p>
-                </div>
+        <form class="Contact" action="contactform.php" method="post">
+            <input type="text" name="name" placeholder="Imię i Nazwisko">
+            <input type="text" name="mail" placeholder="Twój e-mail">
+            <input type="text" name="subject" placeholder="Temat">
+            <textarea name="message" placeholder="Wiadomość"></textarea>
+            <button type="submit" name="submit">Send me</button>
+        </form>
+        <div class="Social">
+            <div>
+                <img src="img/facebook.png" />
+                <p><a href="https://www.facebook.com/cookavsky">Marcin Panda Kukawski</a></p>
+            </div>
+            <div>
+                <img src="img/git.png" />
+                <p><a href="https://github.com/cookavsky">cookavsky</a></p>
+            </div>
+            <div>
+                <img src="img/Linkedin.png" />
+                <p><a href="https://www.linkedin.com/in/cookavsky/">Marcin Kukawski</a></p>
+            </div>
+            <div>
+                <img src="img/mail.png" />
+                <p>cookavsky@gmail.com</p>
             </div>
         </div>
     </footer>

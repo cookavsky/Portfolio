@@ -1,14 +1,26 @@
-const button = document.getElementsByClassName('Intro');
+const Door = document.getElementsByClassName('Intro');
+const button = document.querySelector("Span");
+const More = document.getElementsByClassName("More");
 const VisualArt = document.querySelectorAll(".Portfolio");
 
 let OpenDoor = function() {
-    for (let i = 0; i < button.length; i++) {
-        button[i].addEventListener('click', function () {
-            button[i].classList.add("Back");
-            button[i].childNodes[1].classList.remove("Hide")
-            button[i].classList.add("Back");
-            button[i].childNodes[3].classList.remove("Hide")
+    for (let i = 0; i < Door.length; i++) {
+        Door[i].addEventListener('click', function () {
+            Door[i].classList.add("Back");
+            Door[i].childNodes[1].classList.remove("Hide");
+            Door[i].childNodes[3].classList.remove("Hide");
         })
+    for(let y = 0; y < More.length; y++) {
+        More[y].addEventListener("click", function() {
+            if(button.className === "Hide") {
+                button.classList.remove("Hide");
+                More[y].innerHTML = "Hide";
+            } else {
+                button.classList.add("Hide");
+                More[y].innerHTML = "More";
+            }
+        })
+    }
 }};
 
 const SizeArt = function() {
