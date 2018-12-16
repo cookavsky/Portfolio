@@ -212,7 +212,7 @@ h2
 
 #Portfolio-1
 {
-    background-color: aqua;
+    background: url("../img/Fifa.png") no-repeat;
 }
 
 #Portfolio-2
@@ -258,6 +258,7 @@ h2
 .Size
 {
     flex-basis: 100%;
+    background-size: 100% !important;
 }
 
 .Skills
