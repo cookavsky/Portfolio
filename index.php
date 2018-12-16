@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Portfolio - cookavsky</title>
     <meta name="description" content="Portfolio create by Marcin Kukawski">
+	<meta name="keywords" content="cookavsky, Polska Panda">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/@media.css" />
