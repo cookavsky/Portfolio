@@ -205,19 +205,18 @@ h2
 {
     flex-basis: 10%;
     height: 50vh;
-    background-color: chocolate;
     border: 1px solid black;
     cursor: pointer;
 }
 
 #Portfolio-1
 {
-    background: url("../img/Fifa.png") no-repeat;
+    background: url("../img/Fifa.jpg") no-repeat;
 }
 
 #Portfolio-2
 {
-    background-color: blueviolet;
+    background: url("../img/Schools.jpg") no-repeat;
 }
 
 #Portfolio-3
@@ -253,6 +252,11 @@ h2
 #Portfolio-9
 {
     background-color: green;
+}
+
+#Portfolio-10
+{
+    background-color: saddlebrown;
 }
 
 .Size
