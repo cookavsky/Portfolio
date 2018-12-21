@@ -43,25 +43,39 @@
                 </div>
             </div>
         </article>
-        <article class="Gallery">
-            <div id="Portfolio-1" class="Portfolio">
-                <a href="https://fifa.cookavsky.com/" target=_blank>
-                    <div>Live</div>
-                </a>
+        <article>
+            <div class="Gallery">
+                <div id="Portfolio-1" class="Portfolio">
+                    <a href="https://fifa.cookavsky.com/" target=_blank>
+                        <div>Live</div>
+                    </a>
+                </div>
+                <div id="Portfolio-2" class="Portfolio">
+                    <a href="https://schools.cookavsky.com/" target=_blank>
+                        <div>Live</div>
+                    </a>
+                </div>
+                <div id="Portfolio-3" class="Portfolio"></div>
+                <div id="Portfolio-4" class="Portfolio"></div>
+                <div id="Portfolio-5" class="Portfolio"></div>
+                <div id="Portfolio-6" class="Portfolio"></div>
+                <div id="Portfolio-7" class="Portfolio"></div>
+                <div id="Portfolio-8" class="Portfolio"></div>
+                <div id="Portfolio-9" class="Portfolio"></div>
+                <div id="Portfolio-10" class="Portfolio"></div>
             </div>
-            <div id="Portfolio-2" class="Portfolio">
-                <a href="https://schools.cookavsky.com/" target=_blank>
-                    <div>Live</div>
-                </a>
+            <div class="Gallery">
+                <div id="Portfolio-1" class="Portfolio"></div>
+                <div id="Portfolio-2" class="Portfolio"></div>
+                <div id="Portfolio-3" class="Portfolio"></div>
+                <div id="Portfolio-4" class="Portfolio"></div>
+                <div id="Portfolio-5" class="Portfolio"></div>
+                <div id="Portfolio-6" class="Portfolio"></div>
+                <div id="Portfolio-7" class="Portfolio"></div>
+                <div id="Portfolio-8" class="Portfolio"></div>
+                <div id="Portfolio-9" class="Portfolio"></div>
+                <div id="Portfolio-10" class="Portfolio"></div>
             </div>
-            <div id="Portfolio-3" class="Portfolio"></div>
-            <div id="Portfolio-4" class="Portfolio"></div>
-            <div id="Portfolio-5" class="Portfolio"></div>
-            <div id="Portfolio-6" class="Portfolio"></div>
-            <div id="Portfolio-7" class="Portfolio"></div>
-            <div id="Portfolio-8" class="Portfolio"></div>
-            <div id="Portfolio-9" class="Portfolio"></div>
-            <div id="Portfolio-10" class="Portfolio"></div>
         </article>
         <article class="Skills">
             <h2>Technologie</h2>
