@@ -43,38 +43,48 @@
                 </div>
             </div>
         </article>
-        <article>
+        <article class="Art">
+            <div class="Header">
+                <p>Mojego autorstwa</p>
+            </div>
             <div class="Gallery">
-                <div id="Portfolio-1" class="Portfolio">
+                <div id="Portfolio-1" class="PortfolioA">
                     <a href="https://fifa.cookavsky.com/" target=_blank>
                         <div>Live</div>
                     </a>
                 </div>
-                <div id="Portfolio-2" class="Portfolio">
+                <div id="Portfolio-2" class="PortfolioA">
                     <a href="https://schools.cookavsky.com/" target=_blank>
                         <div>Live</div>
                     </a>
                 </div>
-                <div id="Portfolio-3" class="Portfolio"></div>
-                <div id="Portfolio-4" class="Portfolio"></div>
-                <div id="Portfolio-5" class="Portfolio"></div>
-                <div id="Portfolio-6" class="Portfolio"></div>
-                <div id="Portfolio-7" class="Portfolio"></div>
-                <div id="Portfolio-8" class="Portfolio"></div>
-                <div id="Portfolio-9" class="Portfolio"></div>
-                <div id="Portfolio-10" class="Portfolio"></div>
+                <div id="Portfolio-3" class="PortfolioA"></div>
+                <div id="Portfolio-4" class="PortfolioA"></div>
+                <div id="Portfolio-5" class="PortfolioA"></div>
+                <div id="Portfolio-6" class="PortfolioA"></div>
+                <div id="Portfolio-7" class="PortfolioA"></div>
+                <div id="Portfolio-8" class="PortfolioA"></div>
+                <div id="Portfolio-9" class="PortfolioA"></div>
+                <div id="Portfolio-10" class="PortfolioA"></div>
+            </div>
+            <div class="Header">
+                <p>Weekly webdev challenge</p>
             </div>
             <div class="Gallery">
-                <div id="Portfolio-1" class="Portfolio"></div>
-                <div id="Portfolio-2" class="Portfolio"></div>
-                <div id="Portfolio-3" class="Portfolio"></div>
-                <div id="Portfolio-4" class="Portfolio"></div>
-                <div id="Portfolio-5" class="Portfolio"></div>
-                <div id="Portfolio-6" class="Portfolio"></div>
-                <div id="Portfolio-7" class="Portfolio"></div>
-                <div id="Portfolio-8" class="Portfolio"></div>
-                <div id="Portfolio-9" class="Portfolio"></div>
-                <div id="Portfolio-10" class="Portfolio"></div>
+                <div id="Portfolio-11" class="PortfolioB">
+                    <a href="https://weeklyone.cookavsky.com/" target=_blank>
+                        <div>Live</div>
+                    </a>
+                </div>
+                <div id="Portfolio-12" class="PortfolioB"></div>
+                <div id="Portfolio-13" class="PortfolioB"></div>
+                <div id="Portfolio-14" class="PortfolioB"></div>
+                <div id="Portfolio-15" class="PortfolioB"></div>
+                <div id="Portfolio-16" class="PortfolioB"></div>
+                <div id="Portfolio-17" class="PortfolioB"></div>
+                <div id="Portfolio-18" class="PortfolioB"></div>
+                <div id="Portfolio-19" class="PortfolioB"></div>
+                <div id="Portfolio-20" class="PortfolioB"></div>
             </div>
         </article>
         <article class="Skills">
