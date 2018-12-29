@@ -50,12 +50,16 @@
             <div class="Gallery">
                 <div id="Portfolio-1" class="PortfolioA">
                     <a href="https://fifa.cookavsky.com/" target=_blank>
-                        <div>Live</div>
+                        <div class="Live">
+                            <p>Live</p>
+                        </div>
                     </a>
                 </div>
                 <div id="Portfolio-2" class="PortfolioA">
                     <a href="https://schools.cookavsky.com/" target=_blank>
-                        <div>Live</div>
+                        <div class="Live">
+                            <p>Live</p>
+                        </div>
                     </a>
                 </div>
                 <div id="Portfolio-3" class="PortfolioA"></div>
@@ -73,11 +77,25 @@
             <div class="Gallery">
                 <div id="Portfolio-11" class="PortfolioB">
                     <a href="https://weeklyone.cookavsky.com/" target=_blank>
-                        <div>Live</div>
+                        <div class="Live">
+                            <p>Live</p>
+                        </div>
                     </a>
                 </div>
-                <div id="Portfolio-12" class="PortfolioB"></div>
-                <div id="Portfolio-13" class="PortfolioB"></div>
+                <div id="Portfolio-12" class="PortfolioB">
+                    <a href="https://weeklytwo.cookavsky.com/" target=_blank>
+                        <div class="Live">
+                            <p>Live</p>
+                        </div>
+                    </a>
+                </div>
+                <div id="Portfolio-13" class="PortfolioB">
+                    <a href="https://weeklythree.cookavsky.com/" target=_blank>
+                        <div class="Live">
+                            <p>Live</p>
+                        </div>
+                    </a>
+                </div>
                 <div id="Portfolio-14" class="PortfolioB"></div>
                 <div id="Portfolio-15" class="PortfolioB"></div>
                 <div id="Portfolio-16" class="PortfolioB"></div>
@@ -93,6 +111,7 @@
                 <img src="img/html.png" />
                 <img src="img/css.png" />
                 <img src="img/js.png" />
+                <img src="img/php.png" />
             </div>
         </article>
     </main>
