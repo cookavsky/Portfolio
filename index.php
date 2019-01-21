@@ -96,8 +96,20 @@
                         </div>
                     </a>
                 </div>
-                <div id="Portfolio-14" class="PortfolioB"></div>
-                <div id="Portfolio-15" class="PortfolioB"></div>
+                <div id="Portfolio-14" class="PortfolioB">
+                    <a href="https://weeklyfour.cookavsky.com/" target=_blank>
+                        <div class="Live">
+                            <p>Live</p>
+                        </div>
+                    </a>
+                </div>
+                <div id="Portfolio-15" class="PortfolioB">
+                    <a href="https://weeklyeleven.cookavsky.com/" target=_blank>
+                        <div class="Live">
+                            <p>Live</p>
+                        </div>
+                    </a>
+                </div>
                 <div id="Portfolio-16" class="PortfolioB"></div>
                 <div id="Portfolio-17" class="PortfolioB"></div>
                 <div id="Portfolio-18" class="PortfolioB"></div>
