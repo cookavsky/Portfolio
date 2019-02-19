@@ -11,39 +11,6 @@ body
     height: 100vh;
 }
 
-header
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: white;
-}
-
-.HeadTriangle
-{
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-bottom: 20em solid transparent;
-    border-left: 20em solid black;
-    opacity: 0.7;
-}
-
-.LogoName
-{
-    position: relative;
-}
-
-li
-{
-    list-style-type: none;
-}
-
-nav
-{
-    padding: 2em 5em;
-}
-
 .Home
 {
     background: url("../img/tree.jpg") no-repeat;
@@ -51,4 +18,118 @@ nav
     background-size: cover;
     height: 100vh;
     width: 100vw;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 14em;
+    color: white;
+}
+
+@keyframes Opacity
+{
+    from{
+        margin-top: -10%;
+        margin-left: -10%;
+    }
+    to{
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
+.Logo
+{
+    animation-name: Opacity;
+    animation-duration: 5s;
+}
+
+.HeadTriangle
+{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 14em solid transparent;
+    border-left: 14em solid rgb(0, 0, 0, 0.7);
+}
+
+.Nick
+{
+    position: relative;
+    top: 2.5em;
+    left: 0.5em;
+    display: block;
+    font-size: 2rem;
+    transform: rotate(-45deg);
+}
+
+nav
+{
+    padding: 2em 5em;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+h2
+{
+    cursor: pointer;
+}
+
+.Table
+{
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    width: 30vw;
+}
+
+.halfTable
+{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 5em solid transparent;
+    border-left: calc(6vw - 10px) solid rgb(0, 0, 0, 0.7);
+}
+
+.Text
+{
+    position: relative;
+    font-size: 2rem;
+}
+
+.CardsStart
+{
+    flex-basis: 20%;
+    height: 5em;
+    color: white;
+    background-color: green;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 5em;
+}
+
+.CardsEnd
+{
+    flex-basis: 20%;
+    height: 5em;
+    color: white;
+    background-color: red;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 5em;
+}
+
+.Cards
+{
+    flex-basis: 20%;
+    height: 5em;
+    background-color: white;
+    border: 1px solid black;
 }
