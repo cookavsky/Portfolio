@@ -52,15 +52,15 @@ header
     position: absolute;
     width: 0;
     height: 0;
-    border-bottom: 14em solid transparent;
-    border-left: 14em solid rgb(0, 0, 0, 0.7);
+    border-bottom: 12em solid transparent;
+    border-left: 12em solid rgb(0, 0, 0, 0.7);
 }
 
 .Nick
 {
     position: relative;
-    top: 2.5em;
-    left: 0.5em;
+    top: 2em;
+    left: 0.25em;
     display: block;
     font-size: 2rem;
     transform: rotate(-45deg);
@@ -86,7 +86,7 @@ h2
     display: flex;
     flex-flow: row wrap;
     margin: auto;
-    width: 30vw;
+    width: 25vw;
 }
 
 .halfTable
@@ -94,42 +94,58 @@ h2
     position: absolute;
     width: 0;
     height: 0;
-    border-bottom: 5em solid transparent;
-    border-left: calc(6vw - 10px) solid rgb(0, 0, 0, 0.7);
+    border-bottom: 3em solid transparent;
+    border-left: calc(25vw * 0.2) solid rgb(0, 0, 0, 0.7);
 }
 
 .Text
 {
     position: relative;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .CardsStart
 {
     flex-basis: 20%;
-    height: 5em;
+    height: 3em;
     color: white;
     background-color: green;
     border: 1px solid black;
     text-align: center;
-    line-height: 5em;
+    line-height: 3em;
 }
 
 .CardsEnd
 {
     flex-basis: 20%;
-    height: 5em;
+    height: 3em;
     color: white;
     background-color: red;
     border: 1px solid black;
     text-align: center;
-    line-height: 5em;
+    line-height: 3em;
 }
 
 .Cards
 {
+    cursor: pointer;
     flex-basis: 20%;
-    height: 5em;
+    height: 3em;
     background-color: white;
     border: 1px solid black;
+}
+
+.one
+{
+    background-color: green;
+}
+
+.two
+{
+    background-color: blue;
+}
+
+.three
+{
+    background-color: red;
 }
