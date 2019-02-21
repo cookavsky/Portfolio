@@ -106,6 +106,7 @@ h2
 
 .CardsStart
 {
+    cursor: pointer;
     flex-basis: 20%;
     height: 3em;
     color: white;
@@ -117,6 +118,7 @@ h2
 
 .CardsEnd
 {
+    cursor: pointer;
     flex-basis: 20%;
     height: 3em;
     color: white;
@@ -135,17 +137,22 @@ h2
     border: 1px solid black;
 }
 
-.one
+.green
 {
     background-color: green;
 }
 
-.two
+.blue
 {
     background-color: blue;
 }
 
-.three
+.red
 {
     background-color: red;
+}
+
+.grey
+{
+    background-color: rgb(201, 194, 194);
 }
