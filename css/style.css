@@ -8,7 +8,7 @@
 body
 {
     font-size: 1rem;
-    height: 100vh;
+    color: white;
 }
 
 .Home
@@ -17,7 +17,6 @@ body
     background-position: center;
     background-size: cover;
     height: 100vh;
-    width: 100vw;
 }
 
 header
@@ -26,7 +25,6 @@ header
     flex-direction: row;
     justify-content: space-between;
     height: 14em;
-    color: white;
 }
 
 @keyframes Opacity
@@ -81,12 +79,38 @@ h2
     cursor: pointer;
 }
 
+.Content
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
 .Table
 {
     display: flex;
     flex-flow: row wrap;
-    margin: auto;
+    width: calc(25vw + 39px);
+    border: 20px solid rgb(0, 0, 0, 0.7);
+    border-radius: 2em;
+    margin-right: 2em;
+}
+
+.Play
+{
+    display: flex;
+    height: 18em;
     width: 25vw;
+    background-color: rgb(0, 0, 0, 0.7);
+    border: 20px solid transparent;
+    border-radius: 2em;
+}
+
+.TextPlay
+{
+    cursor: pointer;
+    margin: auto;
+    font-size: 2rem;
 }
 
 .halfTable
@@ -109,9 +133,8 @@ h2
     cursor: pointer;
     flex-basis: 20%;
     height: 3em;
-    color: white;
     background-color: green;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0, 0.7);
     text-align: center;
     line-height: 3em;
 }
@@ -121,9 +144,8 @@ h2
     cursor: pointer;
     flex-basis: 20%;
     height: 3em;
-    color: white;
     background-color: red;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0, 0.7);
     text-align: center;
     line-height: 3em;
 }
@@ -134,7 +156,7 @@ h2
     flex-basis: 20%;
     height: 3em;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0, 0.7);
 }
 
 .green
@@ -155,4 +177,60 @@ h2
 .grey
 {
     background-color: rgb(201, 194, 194);
+}
+
+.Cards1
+{
+    opacity: 0;
+    animation: FromUptoBottom 1s 1s forwards;
+    background-color: green;
+}
+
+.Cards2
+{
+    opacity: 0;
+    animation: FromUptoBottom 1s 2s forwards;
+    background-color: blue;
+}
+
+.Cards3
+{
+    opacity: 0;
+    animation: FromUptoBottom 1s 3s forwards;
+    background-color: red;
+}
+
+@keyframes FromUptoBottom
+{
+    from{
+        height: 0;
+        opacity: 0;
+    }
+
+    to{
+        height: -100%;
+        opacity: 1;
+    }
+}
+
+.off
+{
+    display: none;
+}
+
+.Intro
+{
+    width: 25vw;
+    margin-left: 2em;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: justify;
+}
+
+.Home2
+{
+    background: url("../img/mountains.svg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 }
