@@ -4,14 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*-------------Body----------*/
 body
 {
     font-size: 1rem;
     color: white;
 }
 
-.Home
+.HomeBG
 {
     background: url("../img/tree.jpg") no-repeat;
     background-position: center;
@@ -19,6 +19,14 @@ body
     height: 100vh;
 }
 
+.CVBG
+{
+    background: url("../img/afternoon.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+/*-------------header----------*/
 header
 {
     display: flex;
@@ -27,7 +35,7 @@ header
     height: 14em;
 }
 
-@keyframes Opacity
+@keyframes Move
 {
     from{
         margin-top: -10%;
@@ -41,8 +49,7 @@ header
 
 .Logo
 {
-    animation-name: Opacity;
-    animation-duration: 5s;
+    animation: Move 5s;
 }
 
 .HeadTriangle
@@ -69,21 +76,39 @@ nav
     padding: 2em 5em;
 }
 
+ul
+{
+    display: flex;
+    flex-flow: row;
+}
+
 li
 {
     list-style-type: none;
+    margin: 0 1em;
 }
 
 h2
 {
     cursor: pointer;
 }
-
-.Content
+/*-------------HOME----------*/
+.Home
 {
     display: flex;
     flex-flow: row;
     justify-content: center;
+}
+
+@keyframes SlowOpacityTable
+{
+    from {
+        transform: translateX(-100%) translateY(-10%) rotate(-90deg);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .Table
@@ -94,6 +119,7 @@ h2
     border: 20px solid rgb(0, 0, 0, 0.7);
     border-radius: 2em;
     margin-right: 2em;
+    animation: SlowOpacityTable 4s 0s forwards;
 }
 
 .Play
@@ -218,6 +244,17 @@ h2
     display: none;
 }
 
+@keyframes SlowOpacityIntro
+{
+    from {
+        transform: translateX(100%) rotate(90deg);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .Intro
 {
     width: 25vw;
@@ -225,12 +262,6 @@ h2
     margin-top: auto;
     margin-bottom: auto;
     text-align: justify;
+    animation: SlowOpacityIntro 4s 0s forwards;
 }
-
-.Home2
-{
-    background: url("../img/mountains.svg") no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-}
+/*-------------CV----------*/
