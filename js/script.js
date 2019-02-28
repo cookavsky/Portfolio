@@ -22,11 +22,7 @@ const changePage = function () {
             Body[y].classList.add("CVBG");
         })
     }
-}
-
-
-
-
+};
 /////////////////      GAME HOME       /////////////////////
 
 let Cards = document.querySelectorAll(".Cards");
