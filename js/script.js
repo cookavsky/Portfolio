@@ -1,7 +1,11 @@
 const HomeBtn = document.querySelectorAll("#Home");
 const CVBtn = document.querySelectorAll("#CV");
+const ProjectsBtn = document.querySelectorAll("#Projects");
+const ContactsBtn = document.querySelectorAll("#Contacts");
 const Home = document.querySelectorAll(".Home");
 const CV = document.querySelectorAll(".CV");
+const Projects = document.querySelectorAll(".Projects");
+const Contacts = document.querySelectorAll(".Contacts");
 const Body = document.querySelectorAll("Body");
 const section = document.querySelectorAll("section");
 
@@ -10,17 +14,207 @@ const changePage = function () {
         HomeBtn[i].addEventListener("click", function () {
             Home[i].classList.remove("off");
             CV[i].classList.add("off");
-            Body[i].classList.remove("CVBG");
+            Projects[i].classList.add("off");
+            Contacts[i].classList.add("off");
             Body[i].classList.add("HomeBG");
+            Body[i].classList.remove("CVBG");
+            Body[i].classList.remove("ProjectsBG");
+            Body[i].classList.remove("ContactsBG");
         })
     }
     for(let y = 0; y < CVBtn.length; y++) {
         CVBtn[y].addEventListener("click", function () {
-            CV[y].classList.remove("off");
             Home[y].classList.add("off");
+            CV[y].classList.remove("off");
+            Projects[y].classList.add("off");
+            Contacts[y].classList.add("off");
             Body[y].classList.remove("HomeBG");
             Body[y].classList.add("CVBG");
+            Body[y].classList.remove("ProjectsBG");
+            Body[y].classList.remove("ContactsBG");
         })
+    }
+    for(let z = 0; z < ProjectsBtn.length; z++) {
+        ProjectsBtn[z].addEventListener("click", function () {
+            Home[z].classList.add("off");
+            CV[z].classList.add("off");
+            Projects[z].classList.remove("off");
+            Contacts[z].classList.add("off");
+            Body[z].classList.remove("HomeBG");
+            Body[z].classList.remove("CVBG");
+            Body[z].classList.add("ProjectsBG");
+            Body[z].classList.remove("ContactsBG");
+        })
+    }
+    for(let x = 0; x < ContactsBtn.length; x++) {
+        ContactsBtn[x].addEventListener("click", function () {
+            Home[x].classList.add("off");
+            CV[x].classList.add("off");
+            Projects[x].classList.add("off");
+            Contacts[x].classList.remove("off");
+            Body[x].classList.remove("HomeBG");
+            Body[x].classList.remove("CVBG");
+            Body[x].classList.remove("ProjectsBG");
+            Body[x].classList.add("ContactsBG");
+        })
+    }
+};
+///////////////////       CV            //////////////////
+let CVIntro = document.querySelectorAll(".CVIntro");
+let CVIntroDot = document.querySelectorAll("#CVIntro");
+let CVHome = document.querySelectorAll(".CVHome");
+let CVHomeDot = document.querySelectorAll("#CVHome");
+let CVSchool = document.querySelectorAll(".CVSchool");
+let CVSchoolDot = document.querySelectorAll("#CVSchool");
+let CVWork = document.querySelectorAll(".CVWork");
+let CVWorkDot = document.querySelectorAll("#CVWork");
+let Up = document.querySelectorAll(".Up");
+let Bottom = document.querySelectorAll(".Bottom");
+let CVHomeImg = document.querySelectorAll(".CVHomeImg");
+let CVSchoolImg = document.querySelectorAll(".CVSchoolImg");
+let CVWorkImg = document.querySelectorAll(".CVWorkImg");
+let dotH1 = document.querySelectorAll("#H1");
+let dotH2 = document.querySelectorAll("#H2");
+let dotS1 = document.querySelectorAll("#S1");
+let dotS2 = document.querySelectorAll("#S2");
+let dotW1 = document.querySelectorAll("#W1");
+let dotW2 = document.querySelectorAll("#W2");
+let dotW3 = document.querySelectorAll("#W3");
+const changeDot = function () {
+// Change category CV
+    for (let up = 0; up < Up.length; up++) {
+        Up[up].addEventListener("click", function () {
+            if (CVHomeDot[up].className === "dotActiv") {
+                CVHome[up].classList.add("off");
+                CVHomeDot[up].classList.remove("dotActiv");
+                CVHomeDot[up].classList.add("dot");
+                CVIntro[up].classList.remove("off");
+                CVIntroDot[up].classList.add("dotActiv");
+                CVIntroDot[up].classList.remove("dot");
+            } else if (CVSchoolDot[up].className === "dotActiv") {
+                CVSchool[up].classList.add("off");
+                CVSchoolDot[up].classList.remove("dotActiv");
+                CVSchoolDot[up].classList.add("dot");
+                CVHome[up].classList.remove("off");
+                CVHomeDot[up].classList.add("dotActiv");
+                CVHomeDot[up].classList.remove("dot");
+            } else if (CVWorkDot[up].className === "dotActiv") {
+                CVWork[up].classList.add("off");
+                CVWorkDot[up].classList.remove("dotActiv");
+                CVWorkDot[up].classList.add("dot");
+                CVSchool[up].classList.remove("off");
+                CVSchoolDot[up].classList.add("dotActiv");
+                CVSchoolDot[up].classList.remove("dot");
+            } else {};
+        });
+    }
+    for(let bt = 0; bt < Bottom.length; bt++) {
+        Bottom[bt].addEventListener("click", function() {
+            if (CVIntroDot[bt].className === "dotActiv") {
+                CVIntro[bt].classList.add("off");
+                CVIntroDot[bt].classList.remove("dotActiv");
+                CVIntroDot[bt].classList.add("dot");
+                CVHome[bt].classList.remove("off");
+                CVHomeDot[bt].classList.add("dotActiv");
+                CVHomeDot[bt].classList.remove("dot");
+            } else if (CVHomeDot[bt].className === "dotActiv") {
+                CVHome[bt].classList.add("off");
+                CVHomeDot[bt].classList.remove("dotActiv");
+                CVHomeDot[bt].classList.add("dot");
+                CVSchool[bt].classList.remove("off");
+                CVSchoolDot[bt].classList.add("dotActiv");
+                CVSchoolDot[bt].classList.remove("dot");
+            } else if (CVSchoolDot[bt].className === "dotActiv") {
+                CVSchool[bt].classList.add("off");
+                CVSchoolDot[bt].classList.remove("dotActiv");
+                CVSchoolDot[bt].classList.add("dot");
+                CVWork[bt].classList.remove("off");
+                CVWorkDot[bt].classList.add("dotActiv");
+                CVWorkDot[bt].classList.remove("dot");
+            } else { };
+        });
+    }
+// change photo in CV Home
+    for (let h1 = 0; h1 < dotH1.length; h1++) {
+        dotH1[h1].addEventListener("click", function () {
+            dotH1[h1].classList.remove("MiniDot");
+            dotH1[h1].classList.add("MiniDotActiv");
+            dotH2[h1].classList.add("MiniDot");
+            dotH2[h1].classList.remove("MiniDotActiv");
+            CVHomeImg[h1].classList.remove("CVHomeImg2");
+            CVHomeImg[h1].classList.add("CVHomeImg1");
+        });
+    }
+    for (let h2 = 0; h2 < dotH2.length; h2++) {
+        dotH2[h2].addEventListener("click", function () {
+            dotH1[h2].classList.add("MiniDot");
+            dotH1[h2].classList.remove("MiniDotActiv");
+            dotH2[h2].classList.remove("MiniDot");
+            dotH2[h2].classList.add("MiniDotActiv");
+            CVHomeImg[h2].classList.add("CVHomeImg2");
+            CVHomeImg[h2].classList.remove("CVHomeImg1");
+        });
+    }
+// change photo in CV School
+    for (let s1 = 0; s1 < dotS1.length; s1++) {
+        dotS1[s1].addEventListener("click", function () {
+            dotS1[s1].classList.remove("MiniDot");
+            dotS1[s1].classList.add("MiniDotActiv");
+            dotS2[s1].classList.add("MiniDot");
+            dotS2[s1].classList.remove("MiniDotActiv");
+            CVSchoolImg[s1].classList.remove("CVSchoolImg2");
+            CVSchoolImg[s1].classList.add("CVSchoolImg1");
+        });
+    }
+    for (let s2 = 0; s2 < dotS2.length; s2++) {
+        dotS2[s2].addEventListener("click", function () {
+            dotS1[s2].classList.add("MiniDot");
+            dotS1[s2].classList.remove("MiniDotActiv");
+            dotS2[s2].classList.remove("MiniDot");
+            dotS2[s2].classList.add("MiniDotActiv");
+            CVSchoolImg[s2].classList.add("CVSchoolImg2");
+            CVSchoolImg[s2].classList.remove("CVSchoolImg1");
+        });
+    }
+// change photo in CV Work
+    for (let w1 = 0; w1 < dotW1.length; w1++) {
+        dotW1[w1].addEventListener("click", function () {
+            dotW1[w1].classList.remove("MiniDot");
+            dotW1[w1].classList.add("MiniDotActiv");
+            dotW2[w1].classList.add("MiniDot");
+            dotW2[w1].classList.remove("MiniDotActiv");
+            dotW3[w1].classList.add("MiniDot");
+            dotW3[w1].classList.remove("MiniDotActiv");
+            CVWorkImg[w1].classList.remove("CVWorkImg3");
+            CVWorkImg[w1].classList.remove("CVWorkImg2");
+            CVWorkImg[w1].classList.add("CVWorkImg1");
+        });
+    }
+    for (let w2 = 0; w2 < dotW2.length; w2++) {
+        dotW2[w2].addEventListener("click", function () {
+            dotW2[w2].classList.remove("MiniDot");
+            dotW2[w2].classList.add("MiniDotActiv");
+            dotW1[w2].classList.add("MiniDot");
+            dotW1[w2].classList.remove("MiniDotActiv");
+            dotW3[w2].classList.add("MiniDot");
+            dotW3[w2].classList.remove("MiniDotActiv");
+            CVWorkImg[w2].classList.remove("CVWorkImg1");
+            CVWorkImg[w2].classList.remove("CVWorkImg3");
+            CVWorkImg[w2].classList.add("CVWorkImg2");
+        });
+    }
+    for (let w3 = 0; w3 < dotW3.length; w3++) {
+        dotW3[w3].addEventListener("click", function () {
+            dotW3[w3].classList.remove("MiniDot");
+            dotW3[w3].classList.add("MiniDotActiv");
+            dotW1[w3].classList.add("MiniDot");
+            dotW1[w3].classList.remove("MiniDotActiv");
+            dotW2[w3].classList.add("MiniDot");
+            dotW2[w3].classList.remove("MiniDotActiv");
+            CVWorkImg[w3].classList.remove("CVWorkImg1");
+            CVWorkImg[w3].classList.remove("CVWorkImg2");
+            CVWorkImg[w3].classList.add("CVWorkImg3");
+        });
     }
 };
 /////////////////      GAME HOME       /////////////////////
@@ -314,6 +508,7 @@ const Game = function () {
 
 Game();
 changePage();
+changeDot();
 
                 // Road 1
 // Right -> Bottom -> Right -> Right -> Top -> Right -> Bottom -> Bottom -> Left -> Bottom -> Left -> Bottom -> Left -> Top -> Top -> Left -> Bottom -> Bottom -> Bottom -> Right -> Right -> Right -> Top -> Right -> |END|

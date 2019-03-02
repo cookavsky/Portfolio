@@ -17,6 +17,7 @@ body
     background-position: center;
     background-size: cover;
     height: 100vh;
+    transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
 .CVBG
@@ -25,6 +26,25 @@ body
     background-position: center;
     background-size: cover;
     height: 100vh;
+    transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
+}
+
+.ProjectsBG
+{
+    background: url("../img/mountains.svg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
+}
+
+.ContactsBG
+{
+    background: url("../img/aircraft.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 /*-------------header----------*/
 header
@@ -209,25 +229,25 @@ h2
 .Cards1
 {
     opacity: 0;
-    animation: FromUptoBottom 1s 1s forwards;
+    animation: FromUpToBottom 1s 1s forwards;
     background-color: green;
 }
 
 .Cards2
 {
     opacity: 0;
-    animation: FromUptoBottom 1s 2s forwards;
+    animation: FromUpToBottom 1s 2s forwards;
     background-color: blue;
 }
 
 .Cards3
 {
     opacity: 0;
-    animation: FromUptoBottom 1s 3s forwards;
+    animation: FromUpToBottom 1s 3s forwards;
     background-color: red;
 }
 
-@keyframes FromUptoBottom
+@keyframes FromUpToBottom
 {
     from{
         height: 0;
@@ -238,11 +258,6 @@ h2
         height: -100%;
         opacity: 1;
     }
-}
-
-.off
-{
-    display: none;
 }
 
 @keyframes SlowOpacityIntro
@@ -266,18 +281,30 @@ h2
     animation: SlowOpacityIntro 4s 0s forwards;
 }
 /*-------------CV----------*/
-.CVIntro
+@keyframes Opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.CVIntro, .CVHome, .CVSchool, .CVWork
 {
+    animation: Opacity 2s 0s forwards;
     display: flex;
     flex-direction: row;
     width: 75vw;
+    height: 20em;
     padding: 2em;
     border-radius: 1em;
     background-color: rgb(0, 0, 0, 0.7);
 }
 
-.CVchange
+.CVChange
 {
+    animation: Opacity 2s 0s forwards;
     width: 5vw;
     margin-right: 1em;
 }
@@ -288,6 +315,8 @@ h2
     height: 0;
     width: 0;
     margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
     border-bottom: 15px solid rgb(0, 0, 0, 0.7);
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
@@ -300,7 +329,6 @@ h2
 
 .dot
 {
-    cursor: pointer;
     width: 0;
     height: 0;
     margin: 0.5em auto;
@@ -308,7 +336,7 @@ h2
     border-radius: 100%;
 }
 
-.dotactiv
+.dotActiv
 {
     width: 0;
     height: 0;
@@ -323,6 +351,8 @@ h2
     height: 0;
     width: 0;
     margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
     border-top: 15px solid rgb(0, 0, 0, 0.7);
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
@@ -333,17 +363,89 @@ h2
     border-top-color: black;
 }
 
-.CVimg
+.CVIntroImg
 {
     background: url("../img/2547.JPG") no-repeat;
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     width: 15vw;
 }
 
-.CVtext
+.CVHomeImg1
+{
+    background: url("../img/murowana.jpg") no-repeat;
+}
+
+.CVHomeImg2
+{
+    background: url("../img/prischool.jpg") no-repeat;
+}
+
+.CVSchoolImg1
+{
+    background: url("../img/zsl.jpg") no-repeat;
+}
+
+.CVSchoolImg2
+{
+    background: url("../img/wsl.jpg") no-repeat;
+}
+
+.CVWorkImg1
+{
+    background: url("../img/tele.jpg") no-repeat;
+}
+
+.CVWorkImg2
+{
+    background: url("../img/mag.jpg") no-repeat;
+}
+
+.CVWorkImg3
+{
+    background: url("../img/press.jpg") no-repeat;
+}
+
+.CVHomeImg, .CVSchoolImg, .CVWorkImg
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    width: 15vw;
+}
+
+.MiniDot
+{
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    margin: 0.1em;
+    margin-top: auto;
+    border: 10px solid rgb(0, 0, 0, 0.7);
+    border-radius: 100%;
+}
+
+.MiniDotActiv
+{
+    width: 0;
+    height: 0;
+    margin: 0.1em;
+    margin-top: auto;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 100%;
+}
+
+.CVText
 {
     width: 60vw;
     text-align: justify;
     margin-left: 2em;
+}
+/*-------------Projects----------*/
+
+.off
+{
+    display: none;
 }
