@@ -216,7 +216,76 @@ const changeDot = function () {
             CVWorkImg[w3].classList.add("CVWorkImg3");
         });
     }
+// automatic change
+    setInterval(function () {
+        if (dotH1[0].className !== "MiniDotActiv") {
+            dotH1[0].classList.remove("MiniDot");
+            dotH1[0].classList.add("MiniDotActiv");
+            dotH2[0].classList.add("MiniDot");
+            dotH2[0].classList.remove("MiniDotActiv");
+            CVHomeImg[0].classList.remove("CVHomeImg2");
+            CVHomeImg[0].classList.add("CVHomeImg1");
+        } else if (dotH2[0].className !== "MiniDotActiv") {
+            dotH1[0].classList.add("MiniDot");
+            dotH1[0].classList.remove("MiniDotActiv");
+            dotH2[0].classList.remove("MiniDot");
+            dotH2[0].classList.add("MiniDotActiv");
+            CVHomeImg[0].classList.add("CVHomeImg2");
+            CVHomeImg[0].classList.remove("CVHomeImg1");
+        }
+    }, 5000);
+    setInterval(function () {
+        if (dotS1[0].className !== "MiniDotActiv") {
+            dotS1[0].classList.remove("MiniDot");
+            dotS1[0].classList.add("MiniDotActiv");
+            dotS2[0].classList.add("MiniDot");
+            dotS2[0].classList.remove("MiniDotActiv");
+            CVSchoolImg[0].classList.remove("CVSchoolImg2");
+            CVSchoolImg[0].classList.add("CVSchoolImg1");
+        } else if (dotS2[0].className !== "MiniDotActiv") {
+            dotS1[0].classList.add("MiniDot");
+            dotS1[0].classList.remove("MiniDotActiv");
+            dotS2[0].classList.remove("MiniDot");
+            dotS2[0].classList.add("MiniDotActiv");
+            CVSchoolImg[0].classList.add("CVSchoolImg2");
+            CVSchoolImg[0].classList.remove("CVSchoolImg1");
+        }
+    }, 5000);
+    setInterval(function () {
+        if (dotW3[0].className === "MiniDotActiv") {
+            dotW1[0].classList.remove("MiniDot");
+            dotW1[0].classList.add("MiniDotActiv");
+            dotW2[0].classList.add("MiniDot");
+            dotW2[0].classList.remove("MiniDotActiv");
+            dotW3[0].classList.add("MiniDot");
+            dotW3[0].classList.remove("MiniDotActiv");
+            CVWorkImg[0].classList.remove("CVWorkImg3");
+            CVWorkImg[0].classList.remove("CVWorkImg2");
+            CVWorkImg[0].classList.add("CVWorkImg1");
+        } else if (dotW1[0].className === "MiniDotActiv") {
+            dotW2[0].classList.remove("MiniDot");
+            dotW2[0].classList.add("MiniDotActiv");
+            dotW1[0].classList.add("MiniDot");
+            dotW1[0].classList.remove("MiniDotActiv");
+            dotW3[0].classList.add("MiniDot");
+            dotW3[0].classList.remove("MiniDotActiv");
+            CVWorkImg[0].classList.remove("CVWorkImg1");
+            CVWorkImg[0].classList.remove("CVWorkImg3");
+            CVWorkImg[0].classList.add("CVWorkImg2");
+        } else if (dotW2[0].className === "MiniDotActiv") {
+            dotW3[0].classList.remove("MiniDot");
+            dotW3[0].classList.add("MiniDotActiv");
+            dotW1[0].classList.add("MiniDot");
+            dotW1[0].classList.remove("MiniDotActiv");
+            dotW2[0].classList.add("MiniDot");
+            dotW2[0].classList.remove("MiniDotActiv");
+            CVWorkImg[0].classList.remove("CVWorkImg1");
+            CVWorkImg[0].classList.remove("CVWorkImg2");
+            CVWorkImg[0].classList.add("CVWorkImg3");
+        }
+    }, 5000);
 };
+
 /////////////////      GAME HOME       /////////////////////
 
 let Cards = document.querySelectorAll(".Cards");

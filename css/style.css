@@ -7,6 +7,8 @@
 /*-------------Body----------*/
 body
 {
+    display: flex;
+    flex-direction: column;
     font-size: 1rem;
     color: white;
 }
@@ -52,7 +54,6 @@ header
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 14em;
 }
 
 @keyframes Move
@@ -112,8 +113,14 @@ h2
 {
     cursor: pointer;
 }
+
+main
+{
+    margin: auto;
+}
+
 /*-------------HOME----------*/
-.Home, .CV
+.Home, .CV, .Projects, .Contacts
 {
     display: flex;
     flex-flow: row;
@@ -374,36 +381,43 @@ h2
 .CVHomeImg1
 {
     background: url("../img/murowana.jpg") no-repeat;
+    transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
 .CVHomeImg2
 {
     background: url("../img/prischool.jpg") no-repeat;
+    transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
 .CVSchoolImg1
 {
     background: url("../img/zsl.jpg") no-repeat;
+    transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
 .CVSchoolImg2
 {
     background: url("../img/wsl.jpg") no-repeat;
+    transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
 .CVWorkImg1
 {
     background: url("../img/tele.jpg") no-repeat;
+    transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
 .CVWorkImg2
 {
     background: url("../img/mag.jpg") no-repeat;
+    transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
 .CVWorkImg3
 {
     background: url("../img/press.jpg") no-repeat;
+    transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
 .CVHomeImg, .CVSchoolImg, .CVWorkImg
