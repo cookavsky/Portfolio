@@ -458,6 +458,67 @@ main
     margin-left: 2em;
 }
 /*-------------Projects----------*/
+.Project
+{
+    width: 15vw;
+    height: 24em;
+    border: 2px solid seagreen;
+    border-top-left-radius: 2em;
+    transform: skewY(-5deg);
+}
+
+.Project:hover
+{
+    transform: skewY(-50deg);
+}
+
+#Project1
+{
+    background: url("../img/mag.jpg") no-repeat;
+    background-size: cover;
+}
+
+#Project2
+{
+    background: url("../img/murowana.jpg") no-repeat;
+    background-size: cover;
+}
+
+#Project3
+{
+    background: url("../img/press.jpg") no-repeat;
+    background-size: cover;
+}
+
+#Project4
+{
+    background: url("../img/prischool.jpg") no-repeat;
+    background-size: cover;
+}
+
+#Project5
+{
+    background: url("../img/tele.jpg") no-repeat;
+    background-size: cover;
+}
+
+#Project6
+{
+    background: url("../img/tree.jpg") no-repeat;
+    background-size: cover;
+}
+
+#Project7
+{
+    background: url("../img/wsl.jpg") no-repeat;
+    background-size: cover;
+}
+
+#Project8
+{
+    background: url("../img/zsl.jpg") no-repeat;
+    background-size: cover;
+}
 
 .off
 {
