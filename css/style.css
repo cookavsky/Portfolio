@@ -121,7 +121,7 @@ main
 }
 
 /*-------------HOME----------*/
-.Home, .CV, .Projects, .Contacts
+.Home, .CV, .Projects
 {
     display: flex;
     flex-flow: row;
@@ -298,11 +298,12 @@ main
     }
 }
 
-.CVIntro, .CVHome, .CVSchool, .CVWork
+.CVIntro, .CVHome, .CVSchool, .CVWork, .Contacts
 {
     animation: Opacity 2s 0s forwards;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 75vw;
     height: 20em;
     padding: 2em;
@@ -649,8 +650,6 @@ main
 
 .Spine
 {
-    cursor: default;
-    color: white;
     font-family: cursive;
     margin: 2em auto;
     writing-mode: vertical-rl;
@@ -717,6 +716,22 @@ main
 {
     background: url("../img/Site_Angular.jpg") no-repeat;
     background-size: 150% 150%;
+}
+/*-------------Contacts----------*/
+
+.Mail, .Data
+{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 0 3em;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
 }
 
 .off
