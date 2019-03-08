@@ -58,6 +58,88 @@ const changePage = function () {
             Body[x].classList.add("ContactsBG");
         })
     }
+    for (let b = 0; b < Body.length; b++) {
+        // mousewheel event - ie, safari, opera
+        Body[b].addEventListener('mousewheel', (e) => {
+            if ((event.deltaY > 0 && Body[b].className === "HomeBG") || (event.deltaY < 0 && Body[b].className === "ProjectsBG")) {
+                Home[b].classList.add("off");
+                CV[b].classList.remove("off");
+                Projects[b].classList.add("off");
+                Contacts[b].classList.add("off");
+                Body[b].classList.remove("HomeBG");
+                Body[b].classList.add("CVBG");
+                Body[b].classList.remove("ProjectsBG");
+                Body[b].classList.remove("ContactsBG");
+            } else if ((event.deltaY > 0 && Body[b].className === "CVBG") || (event.deltaY < 0 && Body[b].className === "ContactsBG")) {
+                Home[b].classList.add("off");
+                CV[b].classList.add("off");
+                Projects[b].classList.remove("off");
+                Contacts[b].classList.add("off");
+                Body[b].classList.remove("HomeBG");
+                Body[b].classList.remove("CVBG");
+                Body[b].classList.add("ProjectsBG");
+                Body[b].classList.remove("ContactsBG");
+            } else if (event.deltaY > 0 && Body[b].className === "ProjectsBG") {
+                Home[b].classList.add("off");
+                CV[b].classList.add("off");
+                Projects[b].classList.add("off");
+                Contacts[b].classList.remove("off");
+                Body[b].classList.remove("HomeBG");
+                Body[b].classList.remove("CVBG");
+                Body[b].classList.remove("ProjectsBG");
+                Body[b].classList.add("ContactsBG");
+            } else if (event.deltaY < 0 && Body[b].className === "CVBG") {
+                Home[b].classList.remove("off");
+                CV[b].classList.add("off");
+                Projects[b].classList.add("off");
+                Contacts[b].classList.add("off");
+                Body[b].classList.add("HomeBG");
+                Body[b].classList.remove("CVBG");
+                Body[b].classList.remove("ProjectsBG");
+                Body[b].classList.remove("ContactsBG");
+            }
+        })
+        // mousewheel event - firefox
+        Body[b].addEventListener('DOMMouseScroll', (e) => {
+            if ((event.deltaY > 0 && Body[b].className === "HomeBG") || (event.deltaY < 0 && Body[b].className === "ProjectsBG")) {
+                Home[b].classList.add("off");
+                CV[b].classList.remove("off");
+                Projects[b].classList.add("off");
+                Contacts[b].classList.add("off");
+                Body[b].classList.remove("HomeBG");
+                Body[b].classList.add("CVBG");
+                Body[b].classList.remove("ProjectsBG");
+                Body[b].classList.remove("ContactsBG");
+            } else if ((event.deltaY > 0 && Body[b].className === "CVBG") || (event.deltaY < 0 && Body[b].className === "ContactsBG")) {
+                Home[b].classList.add("off");
+                CV[b].classList.add("off");
+                Projects[b].classList.remove("off");
+                Contacts[b].classList.add("off");
+                Body[b].classList.remove("HomeBG");
+                Body[b].classList.remove("CVBG");
+                Body[b].classList.add("ProjectsBG");
+                Body[b].classList.remove("ContactsBG");
+            } else if (event.deltaY > 0 && Body[b].className === "ProjectsBG") {
+                Home[b].classList.add("off");
+                CV[b].classList.add("off");
+                Projects[b].classList.add("off");
+                Contacts[b].classList.remove("off");
+                Body[b].classList.remove("HomeBG");
+                Body[b].classList.remove("CVBG");
+                Body[b].classList.remove("ProjectsBG");
+                Body[b].classList.add("ContactsBG");
+            } else if (event.deltaY < 0 && Body[b].className === "CVBG") {
+                Home[b].classList.remove("off");
+                CV[b].classList.add("off");
+                Projects[b].classList.add("off");
+                Contacts[b].classList.add("off");
+                Body[b].classList.add("HomeBG");
+                Body[b].classList.remove("CVBG");
+                Body[b].classList.remove("ProjectsBG");
+                Body[b].classList.remove("ContactsBG");
+            }
+        })
+    }
 };
 ///////////////////       CV            //////////////////
 let CVIntro = document.querySelectorAll(".CVIntro");

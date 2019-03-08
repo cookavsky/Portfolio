@@ -204,32 +204,33 @@
             </div>
         </article>
         <article class="Contacts off">
-            <form class="Mail">
-                <input class="Name">
-                <input class="Subject">
-                <textarea class="Message"></textarea>
-                <button class="Send">
-                    <h3>Send</h3>
+            <form class="Mail"  action="message.php" method="post">
+                <input class="form Name"  type='text' name='name' placeholder="Your name">
+                <input class="form Email"  type='text' name='email'  placeholder="Your email">
+                <input class="form Subject" type="text" name='subject' placeholder="Your subject">
+                <textarea class="form Message"  name="message" placeholder="Type your message ..."></textarea>
+                <button class="Send" type="submit" name="submit" value="Send email">
+                    <h2>Send</h2>
                 </button>
             </form>
             <div class="Data">
                 <div class="Facebook">
-                    <img>
                     <a href="https://www.facebook.com/cookavsky" target="_blank">
-                        <h2>Marcin Panda Kukawski</h2>
+                        <img src="img/facebook.png">
                     </a>
+                    <h3>Marcin Panda Kukawski</h3>
                 </div>
                 <div class="Github">
-                    <img>
                     <a href="https://github.com/cookavsky" target="_blank">
-                        <h2>cookavsky</h2>
+                        <img src="img/github.png">
                     </a>
+                    <h3>cookavsky</h3>
                 </div>
                 <div class="Linkedin">
-                    <img>
                     <a href="https://www.linkedin.com/in/cookavsky" target="_blank">
-                        <h2>Marcin Kukawski</h2>
+                        <img src="img/linkedin.png">
                     </a>
+                    <h3>Marcin Kukawski</h3>
                 </div>
             </div>
         </article>

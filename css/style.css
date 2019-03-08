@@ -174,7 +174,7 @@ main
     width: 0;
     height: 0;
     border-bottom: 3em solid transparent;
-    border-left: calc(25vw * 0.2) solid rgb(0, 0, 0, 0.7);
+    border-left: calc(25vw * 0.2 - 10px) solid rgb(0, 0, 0, 0.7);
 }
 
 .Text
@@ -725,13 +725,77 @@ main
     flex-direction: column;
     align-self: center;
     margin: 0 3em;
+    padding: 2em;
+    border-radius: 2em;
     background-color: rgb(0, 0, 0, 0.2);
+}
+
+.form
+{
+    width: 20em;
+    padding-left: 1em;
+    margin: .25em 0;
+    color: white;
+    border-radius: 1em;
+    border: none;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.form:focus
+{
+    outline: none;
+}
+
+.Name, .Email, .Subject
+{
+    height: 3em;
+}
+
+.Message
+{
+    height: 6em;
+}
+
+.Send
+{
+    width: 40%;
+    color: white;
+    border-radius: 2em;
+    border: none;
+    background-color: rgb(9, 128, 15);
+}
+
+.Send:active
+{
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.Facebook, .Github, .Linkedin
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em 0;
+}
+
+img
+{
+    height: 3em;
+    width: 3em;
 }
 
 a
 {
+    height: 3em;
+    width: 3em;
     color: white;
     text-decoration: none;
+}
+
+h3
+{
+    margin-left: 2em;
+    cursor: default;
 }
 
 .off
