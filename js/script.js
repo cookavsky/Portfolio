@@ -9,9 +9,9 @@ const Contacts = document.querySelectorAll(".Contacts");
 const Body = document.querySelectorAll("Body");
 const section = document.querySelectorAll("section");
 
-const changePage = function () {
+const changePage = () => {
     for(let i = 0; i < HomeBtn.length; i++) {
-        HomeBtn[i].addEventListener("click", function () {
+        HomeBtn[i].addEventListener("click", () => {
             Home[i].classList.remove("off");
             CV[i].classList.add("off");
             Projects[i].classList.add("off");
@@ -23,7 +23,7 @@ const changePage = function () {
         })
     }
     for(let y = 0; y < CVBtn.length; y++) {
-        CVBtn[y].addEventListener("click", function () {
+        CVBtn[y].addEventListener("click", () => {
             Home[y].classList.add("off");
             CV[y].classList.remove("off");
             Projects[y].classList.add("off");
@@ -35,7 +35,7 @@ const changePage = function () {
         })
     }
     for(let z = 0; z < ProjectsBtn.length; z++) {
-        ProjectsBtn[z].addEventListener("click", function () {
+        ProjectsBtn[z].addEventListener("click", () => {
             Home[z].classList.add("off");
             CV[z].classList.add("off");
             Projects[z].classList.remove("off");
@@ -47,7 +47,7 @@ const changePage = function () {
         })
     }
     for(let x = 0; x < ContactsBtn.length; x++) {
-        ContactsBtn[x].addEventListener("click", function () {
+        ContactsBtn[x].addEventListener("click", () => {
             Home[x].classList.add("off");
             CV[x].classList.add("off");
             Projects[x].classList.add("off");
@@ -142,30 +142,30 @@ const changePage = function () {
     }
 };
 ///////////////////       CV            //////////////////
-let CVIntro = document.querySelectorAll(".CVIntro");
-let CVIntroDot = document.querySelectorAll("#CVIntro");
-let CVHome = document.querySelectorAll(".CVHome");
-let CVHomeDot = document.querySelectorAll("#CVHome");
-let CVSchool = document.querySelectorAll(".CVSchool");
-let CVSchoolDot = document.querySelectorAll("#CVSchool");
-let CVWork = document.querySelectorAll(".CVWork");
-let CVWorkDot = document.querySelectorAll("#CVWork");
-let Up = document.querySelectorAll(".Up");
-let Bottom = document.querySelectorAll(".Bottom");
-let CVHomeImg = document.querySelectorAll(".CVHomeImg");
-let CVSchoolImg = document.querySelectorAll(".CVSchoolImg");
-let CVWorkImg = document.querySelectorAll(".CVWorkImg");
-let dotH1 = document.querySelectorAll("#H1");
-let dotH2 = document.querySelectorAll("#H2");
-let dotS1 = document.querySelectorAll("#S1");
-let dotS2 = document.querySelectorAll("#S2");
-let dotW1 = document.querySelectorAll("#W1");
-let dotW2 = document.querySelectorAll("#W2");
-let dotW3 = document.querySelectorAll("#W3");
-const changeDot = function () {
+const CVIntro = document.querySelectorAll(".CVIntro");
+const CVIntroDot = document.querySelectorAll("#CVIntro");
+const CVHome = document.querySelectorAll(".CVHome");
+const CVHomeDot = document.querySelectorAll("#CVHome");
+const CVSchool = document.querySelectorAll(".CVSchool");
+const CVSchoolDot = document.querySelectorAll("#CVSchool");
+const CVWork = document.querySelectorAll(".CVWork");
+const CVWorkDot = document.querySelectorAll("#CVWork");
+const Up = document.querySelectorAll(".Up");
+const Bottom = document.querySelectorAll(".Bottom");
+const CVHomeImg = document.querySelectorAll(".CVHomeImg");
+const CVSchoolImg = document.querySelectorAll(".CVSchoolImg");
+const CVWorkImg = document.querySelectorAll(".CVWorkImg");
+const dotH1 = document.querySelectorAll("#H1");
+const dotH2 = document.querySelectorAll("#H2");
+const dotS1 = document.querySelectorAll("#S1");
+const dotS2 = document.querySelectorAll("#S2");
+const dotW1 = document.querySelectorAll("#W1");
+const dotW2 = document.querySelectorAll("#W2");
+const dotW3 = document.querySelectorAll("#W3");
+const changeDot = () => {
 // Change category CV
     for (let up = 0; up < Up.length; up++) {
-        Up[up].addEventListener("click", function () {
+        Up[up].addEventListener("click", () => {
             if (CVHomeDot[up].className === "dotActiv") {
                 CVHome[up].classList.add("off");
                 CVHomeDot[up].classList.remove("dotActiv");
@@ -191,7 +191,7 @@ const changeDot = function () {
         });
     }
     for(let bt = 0; bt < Bottom.length; bt++) {
-        Bottom[bt].addEventListener("click", function() {
+        Bottom[bt].addEventListener("click", () => {
             if (CVIntroDot[bt].className === "dotActiv") {
                 CVIntro[bt].classList.add("off");
                 CVIntroDot[bt].classList.remove("dotActiv");
@@ -218,7 +218,7 @@ const changeDot = function () {
     }
 // change photo in CV Home
     for (let h1 = 0; h1 < dotH1.length; h1++) {
-        dotH1[h1].addEventListener("click", function () {
+        dotH1[h1].addEventListener("click", () => {
             dotH1[h1].classList.remove("MiniDot");
             dotH1[h1].classList.add("MiniDotActiv");
             dotH2[h1].classList.add("MiniDot");
@@ -228,7 +228,7 @@ const changeDot = function () {
         });
     }
     for (let h2 = 0; h2 < dotH2.length; h2++) {
-        dotH2[h2].addEventListener("click", function () {
+        dotH2[h2].addEventListener("click", () => {
             dotH1[h2].classList.add("MiniDot");
             dotH1[h2].classList.remove("MiniDotActiv");
             dotH2[h2].classList.remove("MiniDot");
@@ -239,7 +239,7 @@ const changeDot = function () {
     }
 // change photo in CV School
     for (let s1 = 0; s1 < dotS1.length; s1++) {
-        dotS1[s1].addEventListener("click", function () {
+        dotS1[s1].addEventListener("click", () => {
             dotS1[s1].classList.remove("MiniDot");
             dotS1[s1].classList.add("MiniDotActiv");
             dotS2[s1].classList.add("MiniDot");
@@ -249,7 +249,7 @@ const changeDot = function () {
         });
     }
     for (let s2 = 0; s2 < dotS2.length; s2++) {
-        dotS2[s2].addEventListener("click", function () {
+        dotS2[s2].addEventListener("click", () => {
             dotS1[s2].classList.add("MiniDot");
             dotS1[s2].classList.remove("MiniDotActiv");
             dotS2[s2].classList.remove("MiniDot");
@@ -260,7 +260,7 @@ const changeDot = function () {
     }
 // change photo in CV Work
     for (let w1 = 0; w1 < dotW1.length; w1++) {
-        dotW1[w1].addEventListener("click", function () {
+        dotW1[w1].addEventListener("click", () => {
             dotW1[w1].classList.remove("MiniDot");
             dotW1[w1].classList.add("MiniDotActiv");
             dotW2[w1].classList.add("MiniDot");
@@ -273,7 +273,7 @@ const changeDot = function () {
         });
     }
     for (let w2 = 0; w2 < dotW2.length; w2++) {
-        dotW2[w2].addEventListener("click", function () {
+        dotW2[w2].addEventListener("click", () => {
             dotW2[w2].classList.remove("MiniDot");
             dotW2[w2].classList.add("MiniDotActiv");
             dotW1[w2].classList.add("MiniDot");
@@ -286,7 +286,7 @@ const changeDot = function () {
         });
     }
     for (let w3 = 0; w3 < dotW3.length; w3++) {
-        dotW3[w3].addEventListener("click", function () {
+        dotW3[w3].addEventListener("click", () => {
             dotW3[w3].classList.remove("MiniDot");
             dotW3[w3].classList.add("MiniDotActiv");
             dotW1[w3].classList.add("MiniDot");
@@ -299,7 +299,7 @@ const changeDot = function () {
         });
     }
 // automatic change
-    setInterval(function () {
+    setInterval(() => {
         if (dotH1[0].className !== "MiniDotActiv") {
             dotH1[0].classList.remove("MiniDot");
             dotH1[0].classList.add("MiniDotActiv");
@@ -316,7 +316,7 @@ const changeDot = function () {
             CVHomeImg[0].classList.remove("CVHomeImg1");
         }
     }, 5000);
-    setInterval(function () {
+    setInterval(() => {
         if (dotS1[0].className !== "MiniDotActiv") {
             dotS1[0].classList.remove("MiniDot");
             dotS1[0].classList.add("MiniDotActiv");
@@ -333,7 +333,7 @@ const changeDot = function () {
             CVSchoolImg[0].classList.remove("CVSchoolImg1");
         }
     }, 5000);
-    setInterval(function () {
+    setInterval(() => {
         if (dotW3[0].className === "MiniDotActiv") {
             dotW1[0].classList.remove("MiniDot");
             dotW1[0].classList.add("MiniDotActiv");
@@ -369,16 +369,29 @@ const changeDot = function () {
 };
 
 /////////////////      GAME HOME       /////////////////////
+const Show = document.querySelectorAll(".Show");
+const Intro = document.querySelectorAll(".Intro");
+const Table = document.querySelectorAll(".Table");
+const Close = document.querySelectorAll(".Close");
+const Cards = document.querySelectorAll(".Cards");
+const CardsStart = document.querySelectorAll(".CardsStart");
+const CardsEnd = document.querySelectorAll(".CardsEnd");
+const Play = document.querySelectorAll(".Play");
+const TextPlay = document.querySelectorAll(".TextPlay");
 
-let Cards = document.querySelectorAll(".Cards");
-let CardsStart = document.querySelectorAll(".CardsStart");
-let CardsEnd = document.querySelectorAll(".CardsEnd");
-let Play = document.querySelectorAll(".Play");
-let TextPlay = document.querySelectorAll(".TextPlay");
+const showGame = () => {
+    for(let s = 0; s < Show.length; s++) {
+        Show[s].addEventListener("click", () => {
+            Intro[s].classList.add("off");
+            Table[s].classList.remove("off");
+            Close[s].classList.remove("off");
+        })
+    }
+}
 
-const Game = function () {
+const Game = () => {
     for (let x = 0; x < TextPlay.length; x++) {
-        TextPlay[0].addEventListener("click", function () {
+        TextPlay[0].addEventListener("click", () => {
             Play[0].classList.add("off");
             CardsStart[0].classList.remove("off");
             CardsEnd[0].classList.remove("off");
@@ -411,7 +424,7 @@ const Game = function () {
             Cards[26].classList.remove("off");
             Cards[27].classList.remove("off");
         })
-        TextPlay[1].addEventListener("click", function () {
+        TextPlay[1].addEventListener("click", () => {
             TextPlay[0].classList.remove("off");
             TextPlay[1].classList.add("off");
             Cards[0].classList.remove("grey");
@@ -475,7 +488,7 @@ const Game = function () {
         })
     }
     for (let y = 0; y < CardsStart.length; y++) {
-        CardsStart[y].addEventListener("click", function () {
+        CardsStart[y].addEventListener("click", () => {
             // remove class CardsX and color grey
             CardsStart[0].classList.remove("Cards1");
             CardsEnd[0].classList.remove("Cards3");
@@ -538,7 +551,7 @@ const Game = function () {
             Cards[27].classList.add("green");
         });
         for (let i = 0; i < Cards.length; i++) {
-            Cards[i].addEventListener("click", function () {
+            Cards[i].addEventListener("click", () => {
                 if (Cards[i] === Cards[0] && Cards[0].className === "Cards green") {
                     Cards[0].classList.remove("green");
                     Cards[0].classList.add("grey");
@@ -615,7 +628,7 @@ const Game = function () {
             })
         }
         for (let z = 0; z < CardsEnd.length; z++) {
-            CardsEnd[z].addEventListener("click", function () {
+            CardsEnd[z].addEventListener("click", () => {
                 if (Cards[23].className === "Cards grey") {
                     CardsStart[0].classList.add("off");
                     CardsEnd[0].classList.add("off");
@@ -657,7 +670,19 @@ const Game = function () {
     }
 }
 
+const closeGame = () => {
+    for (let c = 0; c < Close.length; c++) {
+        Close[c].addEventListener("click", () => {
+            Intro[c].classList.remove("off");
+            Close[c].classList.add("off");
+            Table[c].classList.add("off");
+        })
+    }
+}
+
+showGame();
 Game();
+closeGame();
 changePage();
 changeDot();
 

@@ -9,7 +9,7 @@ body
 {
     display: flex;
     flex-direction: column;
-    font-size: 1rem;
+    font-size: 0.5rem;
     color: white;
 }
 
@@ -78,24 +78,23 @@ header
     position: absolute;
     width: 0;
     height: 0;
-    border-bottom: 12em solid transparent;
-    border-left: 12em solid rgb(0, 0, 0, 0.7);
+    border-bottom: 10em solid transparent;
+    border-left: 10em solid rgb(0, 0, 0, 0.7);
 }
 
 .Nick
 {
     position: relative;
     cursor: default;
-    top: 2em;
-    left: 0.25em;
+    top: 1.5em;
     display: block;
-    font-size: 2rem;
+    font-size: 1rem;
     transform: rotate(-45deg);
 }
 
 nav
 {
-    padding: 2em 5em;
+    padding: 1em;
 }
 
 ul
@@ -126,7 +125,6 @@ main
     display: flex;
     flex-flow: row;
     justify-content: center;
-    align-items: center;
 }
 
 @keyframes SlowOpacityTable
@@ -144,10 +142,9 @@ main
 {
     display: flex;
     flex-flow: row wrap;
-    width: 25vw;
-    border: 20px solid rgb(0, 0, 0, 0.7);
+    width: 20em;
+    border: 10px solid rgb(0, 0, 0, 0.7);
     border-radius: 2em;
-    margin-right: 2em;
     animation: SlowOpacityTable 4s 0s forwards;
 }
 
@@ -155,9 +152,9 @@ main
 {
     display: flex;
     height: 18em;
-    width: 25vw;
+    width: 20em;
     background-color: rgb(0, 0, 0, 0.7);
-    border: 20px solid transparent;
+    border: 10px solid transparent;
     border-radius: 2em;
 }
 
@@ -165,7 +162,7 @@ main
 {
     cursor: pointer;
     margin: auto;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .halfTable
@@ -174,13 +171,13 @@ main
     width: 0;
     height: 0;
     border-bottom: 3em solid transparent;
-    border-left: calc(25vw * 0.2 - 10px) solid rgb(0, 0, 0, 0.7);
+    border-left: calc(20em * 0.2 - 10px) solid rgb(0, 0, 0, 0.7);
 }
 
 .Text
 {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 0.75rem;
 }
 
 .CardsStart
@@ -281,12 +278,36 @@ main
 
 .Intro
 {
-    width: 25vw;
-    margin-left: 2em;
+    width: 20em;
+    font-size: 0.65rem;
     margin-top: auto;
     margin-bottom: auto;
     text-align: justify;
     animation: SlowOpacityIntro 4s 0s forwards;
+}
+
+.Show
+{
+    font-size: 0.65rem;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.7);
+    margin-top: 1em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 2em;
+}
+
+.Close
+{
+    cursor: pointer;
+    color: white;
+    height: 0.8em;
+    line-height: 0;
+    padding: 0.8em 0.5em;
+    border: none;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+    animation: SlowOpacityTable 4s 0s forwards;
 }
 /*-------------CV----------*/
 @keyframes Opacity {
@@ -298,24 +319,23 @@ main
     }
 }
 
-.CVIntro, .CVHome, .CVSchool, .CVWork, .Contacts
+.CVIntro, .CVHome, .CVSchool, .CVWork
 {
-    animation: Opacity 2s 0s forwards;
+    width: 30em;
+    height: 20em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 75vw;
-    height: 20em;
-    padding: 2em;
+    padding: 1em;
     border-radius: 1em;
     background-color: rgb(0, 0, 0, 0.7);
+    animation: Opacity 2s 0s forwards;
 }
 
 .CVChange
 {
     animation: Opacity 2s 0s forwards;
-    width: 5vw;
-    margin-right: 1em;
+    margin: auto 1em auto 0;
 }
 
 .Up
@@ -324,11 +344,9 @@ main
     height: 0;
     width: 0;
     margin-bottom: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom: 15px solid rgb(0, 0, 0, 0.7);
-    border-left: 35px solid transparent;
-    border-right: 35px solid transparent;
+    border-bottom: 10px solid rgb(0, 0, 0, 0.7);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
 }
 
 .Up:active
@@ -341,7 +359,7 @@ main
     width: 0;
     height: 0;
     margin: 0.5em auto;
-    border: 10px solid rgb(0, 0, 0, 0.7);
+    border: 5px solid rgb(0, 0, 0, 0.7);
     border-radius: 100%;
 }
 
@@ -350,7 +368,7 @@ main
     width: 0;
     height: 0;
     margin: 0.5em auto;
-    border: 10px solid rgb(0, 0, 0);
+    border: 5px solid rgb(0, 0, 0);
     border-radius: 100%;
 }
 
@@ -362,9 +380,9 @@ main
     margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
-    border-top: 15px solid rgb(0, 0, 0, 0.7);
-    border-left: 35px solid transparent;
-    border-right: 35px solid transparent;
+    border-top: 10px solid rgb(0, 0, 0, 0.7);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
 }
 
 .Bottom:active
@@ -375,9 +393,9 @@ main
 .CVIntroImg
 {
     background: url("../img/2547.JPG") no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 15vw;
+    background-position: top center;
+    background-size: 150% 150%;
+    width: 12.5em;
 }
 
 .CVHomeImg1
@@ -427,9 +445,9 @@ main
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-position: center;
+    background-position: top center;
     background-size: cover;
-    width: 15vw;
+    width: 12.5em;
 }
 
 .MiniDot
@@ -439,7 +457,7 @@ main
     height: 0;
     margin: 0.1em;
     margin-top: auto;
-    border: 10px solid rgb(0, 0, 0, 0.7);
+    border: 5px solid rgb(0, 0, 0, 0.7);
     border-radius: 100%;
 }
 
@@ -449,7 +467,7 @@ main
     height: 0;
     margin: 0.1em;
     margin-top: auto;
-    border: 10px solid rgb(0, 0, 0);
+    border: 5px solid rgb(0, 0, 0);
     border-radius: 100%;
 }
 
@@ -457,7 +475,8 @@ main
 {
     width: 60vw;
     text-align: justify;
-    margin-left: 2em;
+    overflow: scroll;
+    margin-left: 1em;
 }
 /*-------------Projects----------*/
 .Shelf
@@ -724,15 +743,14 @@ main
     display: flex;
     flex-direction: column;
     align-self: center;
-    margin: 0 3em;
-    padding: 2em;
+    padding: 1em;
     border-radius: 2em;
     background-color: rgb(0, 0, 0, 0.2);
 }
 
 .form
 {
-    width: 20em;
+    width: 15em;
     padding-left: 1em;
     margin: .25em 0;
     color: white;
@@ -759,6 +777,7 @@ main
 .Send
 {
     width: 40%;
+    font-size: 0.5rem;
     color: white;
     border-radius: 2em;
     border: none;
@@ -790,12 +809,6 @@ a
     width: 3em;
     color: white;
     text-decoration: none;
-}
-
-h3
-{
-    margin-left: 2em;
-    cursor: default;
 }
 
 .off

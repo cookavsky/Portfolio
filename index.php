@@ -37,7 +37,7 @@
     </header>
     <main>
         <article class="Home">
-            <div class="Table">
+            <div class="Table off">
                 <div class="Play">
                     <p class="TextPlay">Play</p>
                     <p class="TextPlay off">You are the best!</p>
@@ -79,8 +79,10 @@
                     <p class="Text">End</p>
                 </div>
             </div>
+            <button class="Close off">X</button>
             <div class="Intro">
                 <h3>When will you set a goal and try to reach it. With each step you struggle with new problems and finally yours goal is here. The goal as not important as road behind you. The road shapes the final effect of the goal. If you want to know what the goal is at the end of this path, play.</h3>
+                <button class="Show">Show Minigame</button>
             </div>
         </article>
         <article class="CV off">
@@ -128,6 +130,9 @@
             </div>
         </article>
         <article class="Projects off">
+            <div>
+                <div></div>
+            </div>
             <div class="Shelf">
                 <a href="https://fifa.cookavsky.com" target="_blank">
                     <div class="book b-1">
@@ -213,7 +218,7 @@
                     <h2>Send</h2>
                 </button>
             </form>
-            <div class="Data">
+            <div class="Data off">
                 <div class="Facebook">
                     <a href="https://www.facebook.com/cookavsky" target="_blank">
                         <img src="img/facebook.png">
