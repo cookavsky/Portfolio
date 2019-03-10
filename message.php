@@ -6,12 +6,11 @@ if(isset($_POST['submit'])) {
     $mailFrom = $_POST['email'];
     $message = $_POST['message'];
 
-    $mailTo = "cookavsky@gmail.com"
+    $mailTo = "cookavsky@gmail.com";
     $headers = "From: ".$mailFrom;
     $txt = "You have received an e-mail form".$name.".\n\n".$message;
 
     mail($mailTo, $subject, $txt, $headers);
     header("Location: index.php?mailsend");
 }
-
 ?>

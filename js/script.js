@@ -1,3 +1,7 @@
+/*-----------------MediaQueries-----------------*/
+
+
+/*------------------ChangePange-------------*/
 const HomeBtn = document.querySelectorAll("#Home");
 const CVBtn = document.querySelectorAll("#CV");
 const ProjectsBtn = document.querySelectorAll("#Projects");
@@ -680,11 +684,52 @@ const closeGame = () => {
     }
 }
 
+/////////////////      Carousel Changing       /////////////////////
+
+const Previous = document.querySelectorAll(".Previous");
+const Next = document.querySelectorAll(".Next");
+const block = document.querySelectorAll(".block");
+
+let blockfinish = 8;
+let blockstart = 0;
+
+const rotateCarousel = () => {
+    for( let i = 0; i < Previous.length; i++) {
+        Previous[i].addEventListener("click", () => {
+            blockstart--;
+            let angle = blockstart / blockfinish * -360;
+            block[0].style.transform = 'rotateY(' + angle + 'deg) translateZ(18em)';
+            block[1].style.transform = 'rotateY(' + (angle + 45) + 'deg) translateZ(18em)';
+            block[2].style.transform = 'rotateY(' + (angle + 90) + 'deg) translateZ(18em)';
+            block[3].style.transform = 'rotateY(' + (angle + 135) + 'deg) translateZ(18em)';
+            block[4].style.transform = 'rotateY(' + (angle + 180) + 'deg) translateZ(18em)';
+            block[5].style.transform = 'rotateY(' + (angle + 225) + 'deg) translateZ(18em)';
+            block[6].style.transform = 'rotateY(' + (angle + 270) + 'deg) translateZ(18em)';
+            block[7].style.transform = 'rotateY(' + (angle + 315) + 'deg) translateZ(18em)';
+        })
+    }
+    for( let a = 0; a < Next.length; a++) {
+        Next[a].addEventListener("click", () => {
+            blockstart++;
+            let angle = blockstart / blockfinish * -360;
+            block[0].style.transform = 'rotateY(' + angle + 'deg) translateZ(18em)';
+            block[1].style.transform = 'rotateY(' + (angle + 45) + 'deg) translateZ(18em)';
+            block[2].style.transform = 'rotateY(' + (angle + 90) + 'deg) translateZ(18em)';
+            block[3].style.transform = 'rotateY(' + (angle + 135) + 'deg) translateZ(18em)';
+            block[4].style.transform = 'rotateY(' + (angle + 180) + 'deg) translateZ(18em)';
+            block[5].style.transform = 'rotateY(' + (angle + 225) + 'deg) translateZ(18em)';
+            block[6].style.transform = 'rotateY(' + (angle + 270) + 'deg) translateZ(18em)';
+            block[7].style.transform = 'rotateY(' + (angle + 315) + 'deg) translateZ(18em)';
+        })
+    }
+}
+
 showGame();
 Game();
 closeGame();
 changePage();
 changeDot();
+rotateCarousel();
 
                 // Road 1
 // Right -> Bottom -> Right -> Right -> Top -> Right -> Bottom -> Bottom -> Left -> Bottom -> Left -> Bottom -> Left -> Top -> Top -> Left -> Bottom -> Bottom -> Bottom -> Right -> Right -> Right -> Top -> Right -> |END|

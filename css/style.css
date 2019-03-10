@@ -88,7 +88,6 @@ header
     cursor: default;
     top: 1.5em;
     display: block;
-    font-size: 1rem;
     transform: rotate(-45deg);
 }
 
@@ -114,13 +113,24 @@ h2
     cursor: pointer;
 }
 
+.Facebook, .Github, .Linkedin
+{
+    margin: 1em;
+}
+
+img
+{
+    width: 3em;
+    height: 3em;
+}
+
 main
 {
     margin: auto;
 }
 
 /*-------------HOME----------*/
-.Home, .CV, .Projects
+.Home, .CV, .Data
 {
     display: flex;
     flex-flow: row;
@@ -162,7 +172,6 @@ main
 {
     cursor: pointer;
     margin: auto;
-    font-size: 1rem;
 }
 
 .halfTable
@@ -177,7 +186,6 @@ main
 .Text
 {
     position: relative;
-    font-size: 0.75rem;
 }
 
 .CardsStart
@@ -279,7 +287,6 @@ main
 .Intro
 {
     width: 20em;
-    font-size: 0.65rem;
     margin-top: auto;
     margin-bottom: auto;
     text-align: justify;
@@ -288,7 +295,6 @@ main
 
 .Show
 {
-    font-size: 0.65rem;
     color: white;
     background-color: rgb(0, 0, 0, 0.7);
     margin-top: 1em;
@@ -475,14 +481,97 @@ main
 {
     width: 60vw;
     text-align: justify;
-    overflow: scroll;
+    overflow-y: scroll;
     margin-left: 1em;
 }
-/*-------------Projects----------*/
+/*-------------Projects:Carousel----------*/
+.Carousel
+{
+    position: relative;
+    width: 14em;
+    height: 20em;
+    perspective: 90em;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.Carousel-options
+{
+    position: relative;
+}
+
+.block
+{
+    position: absolute;
+    width: 14em;
+    height: 15em;
+    transition: transform 1s;
+}
+
+.block:nth-child(1)
+{
+    transform: rotateY(0) translateZ(18em);
+}
+
+.block:nth-child(2)
+{
+    transform: rotateY(45deg) translateZ(18em);
+}
+
+.block:nth-child(3)
+{
+    transform: rotateY(90deg) translateZ(18em);
+}
+
+.block:nth-child(4)
+{
+    transform: rotateY(135deg) translateZ(18em);
+}
+
+.block:nth-child(5)
+{
+    transform: rotateY(180deg) translateZ(18em);
+}
+
+.block:nth-child(6)
+{
+    transform: rotateY(225deg) translateZ(18em);
+}
+
+.block:nth-child(7)
+{
+    transform: rotateY(270deg) translateZ(18em);
+}
+
+.block:nth-child(8)
+{
+    transform: rotateY(315deg) translateZ(18em);
+}
+
+.Carousel-options
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 2em;
+    padding: 1em;
+}
+
+.Previous, .Next
+{
+    color: white;
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 0.5em;
+    border: none;
+    border-radius: 2em;
+}
+/*-------------Projects:Shelf----------------*/
 .Shelf
 {
     width: 20em;
     height: 30em;
+    animation: FromUpToBottom 4s 0s forwards;
 }
 
 .book
@@ -491,166 +580,6 @@ main
     perspective-origin: 100% 100%;
     transform-style: preserve-3d;
     perspective: 30em;
-}
-
-.b-1
-{
-    transform: rotateX(-5deg);
-}
-
-.b-2
-{
-    transform: rotateX(-5deg) translateX(3.5em);
-}
-
-.b-3
-{
-    transform: rotateX(-5deg) translateX(7em);
-}
-
-.b-4
-{
-    transform: rotateX(-5deg) translateX(10.5em);
-}
-
-.b-5
-{
-    transform: rotateX(-5deg) translateX(14em);
-}
-
-.b-6
-{
-    transform: rotateX(-5deg) translateX(17.5em);
-}
-
-.b-7
-{
-    transform: rotateX(-5deg) translateX(21em);
-}
-
-.b-8
-{
-    transform: rotateX(-5deg) translateX(24.5em);
-}
-
-.b-1:hover
-{
-    animation: b-1-move 800ms forwards;
-}
-
-.b-2:hover
-{
-    animation: b-2-move 800ms forwards;
-}
-
-.b-3:hover
-{
-    animation: b-3-move 800ms forwards;
-}
-
-.b-4:hover
-{
-    animation: b-4-move 800ms forwards;
-}
-
-.b-5:hover
-{
-    animation: b-5-move 800ms forwards;
-}
-
-.b-6:hover
-{
-    animation: b-6-move 800ms forwards;
-}
-
-.b-7:hover
-{
-    animation: b-7-move 800ms forwards;
-}
-
-.b-8:hover
-{
-    animation: b-8-move 800ms forwards;
-}
-
-@keyframes b-1-move
-{
-    0% {
-        transform: rotateX(-5deg);
-    }
-    100% {
-        transform: rotateX(-30deg) translate3d(-0.5em, -0.2em, 0) scaleY(1.1);
-    }
-}
-
-@keyframes b-2-move
-{
-    0% {
-        transform: rotateX(-5deg) translateX(3.5em);
-    }
-    100% {
-        transform: rotateX(-30deg) translate3d(3em, -0.2em, 0) scaleY(1.1);
-    }
-}
-
-@keyframes b-3-move
-{
-    0% {
-        transform: rotateX(-5deg) translateX(7em);
-    }
-    100% {
-        transform: rotateX(-30deg) translate3d(6.5em, -0.2em, 0) scaleY(1.1);
-    }
-}
-
-@keyframes b-4-move
-{
-    0% {
-        transform: rotateX(-5deg) translateX(10.5em);
-    }
-    100% {
-        transform: rotateX(-30deg) translate3d(10em, -0.2em, 0) scaleY(1.1);
-    }
-}
-
-@keyframes b-5-move
-{
-    0% {
-        transform: rotateX(-5deg) translateX(14em);
-    }
-    100% {
-        transform: rotateX(-30deg) translate3d(13.5em, -0.2em, 0) scaleY(1.1);
-    }
-}
-
-@keyframes b-6-move
-{
-    0% {
-        transform: rotateX(-5deg) translateX(17.5em);
-    }
-    100% {
-        transform: rotateX(-30deg) translate3d(17em, -0.2em, 0) scaleY(1.1);
-    }
-}
-
-@keyframes b-7-move
-{
-    0% {
-        transform: rotateX(-5deg) translateX(21em);
-    }
-    100% {
-        transform: rotateX(-30deg) translate3d(20.5em, -0.2em, 0) scaleY(1.1);
-    }
-}
-
-@keyframes b-8-move
-{
-    0% {
-        transform: rotateX(-5deg) translateX(24.5em);
-    }
-    100% {
-        transform: rotateX(-30deg) translate3d(24em, -0.2em, 0) scaleY(1.1);
-    }
 }
 
 .book-pos
@@ -665,13 +594,6 @@ main
     height: 25em;
     background-color: #03031B;
     transform: translateZ(3em);
-}
-
-.Spine
-{
-    font-family: cursive;
-    margin: 2em auto;
-    writing-mode: vertical-rl;
 }
 
 .right
@@ -689,56 +611,222 @@ main
     transform: rotateX(90deg) translateZ(3em);
 }
 
-#Project1
+.Spine
+{
+    font-family: cursive;
+    margin: 2em auto;
+    writing-mode: vertical-rl;
+}
+
+.book-1:hover
+{
+    animation: book-hover-1-move 800ms forwards;
+}
+
+.book-2:hover
+{
+    animation: book-hover-2-move 800ms forwards;
+}
+
+.book-3:hover
+{
+    animation: book-hover-3-move 800ms forwards;
+}
+
+.book-4:hover
+{
+    animation: book-hover-4-move 800ms forwards;
+}
+
+.book-5:hover
+{
+    animation: book-hover-5-move 800ms forwards;
+}
+
+.book-6:hover
+{
+    animation: book-hover-6-move 800ms forwards;
+}
+
+.book-7:hover
+{
+    animation: book-hover-7-move 800ms forwards;
+}
+
+.book-8:hover
+{
+    animation: book-hover-8-move 800ms forwards;
+}
+
+.book-1
+{
+    transform: rotateX(-5deg);
+}
+
+.book-2
+{
+    transform: rotateX(-5deg) translateX(3.5em);
+}
+
+.book-3
+{
+    transform: rotateX(-5deg) translateX(7em);
+}
+
+.book-4
+{
+    transform: rotateX(-5deg) translateX(10.5em);
+}
+
+.book-5
+{
+    transform: rotateX(-5deg) translateX(14em);
+}
+
+.book-6
+{
+    transform: rotateX(-5deg) translateX(17.5em);
+}
+
+.book-7
+{
+    transform: rotateX(-5deg) translateX(21em);
+}
+
+.book-8
+{
+    transform: rotateX(-5deg) translateX(24.5em);
+}
+
+@keyframes book-hover-1-move
+{
+    0% {
+        transform: rotateX(-5deg);
+    }
+    100% {
+        transform: rotateX(-30deg) translate3d(-0.5em, -0.2em, 0) scaleY(1.1);
+    }
+}
+
+@keyframes book-hover-2-move
+{
+    0% {
+        transform: rotateX(-5deg) translateX(3.5em);
+    }
+    100% {
+        transform: rotateX(-30deg) translate3d(3em, -0.2em, 0) scaleY(1.1);
+    }
+}
+
+@keyframes book-hover-3-move
+{
+    0% {
+        transform: rotateX(-5deg) translateX(7em);
+    }
+    100% {
+        transform: rotateX(-30deg) translate3d(6.5em, -0.2em, 0) scaleY(1.1);
+    }
+}
+
+@keyframes book-hover-4-move
+{
+    0% {
+        transform: rotateX(-5deg) translateX(10.5em);
+    }
+    100% {
+        transform: rotateX(-30deg) translate3d(10em, -0.2em, 0) scaleY(1.1);
+    }
+}
+
+@keyframes book-hover-5-move
+{
+    0% {
+        transform: rotateX(-5deg) translateX(14em);
+    }
+    100% {
+        transform: rotateX(-30deg) translate3d(13.5em, -0.2em, 0) scaleY(1.1);
+    }
+}
+
+@keyframes book-hover-6-move
+{
+    0% {
+        transform: rotateX(-5deg) translateX(17.5em);
+    }
+    100% {
+        transform: rotateX(-30deg) translate3d(17em, -0.2em, 0) scaleY(1.1);
+    }
+}
+
+@keyframes book-hover-7-move
+{
+    0% {
+        transform: rotateX(-5deg) translateX(21em);
+    }
+    100% {
+        transform: rotateX(-30deg) translate3d(20.5em, -0.2em, 0) scaleY(1.1);
+    }
+}
+
+@keyframes book-hover-8-move
+{
+    0% {
+        transform: rotateX(-5deg) translateX(24.5em);
+    }
+    100% {
+        transform: rotateX(-30deg) translate3d(24em, -0.2em, 0) scaleY(1.1);
+    }
+}
+
+.Project1
 {
     background: url("../img/Site_Fifa.jpg") no-repeat;
-    background-size: 150% 150%;
+    background-size: cover;
 }
 
-#Project2
+.Project2
 {
     background: url("../img/Site_Schools.jpg") no-repeat;
-    background-size: 150% 150%;
+    background-size: cover;
 }
 
-#Project3
+.Project3
 {
     background: url("../img/Site_WeeklyOne.jpg") no-repeat;
-    background-size: 150% 150%;
+    background-size: cover;
 }
 
-#Project4
+.Project4
 {
     background: url("../img/Site_WeeklyTwo.jpg") no-repeat;
-    background-size: 150% 150%;
+    background-size: cover;
 }
 
-#Project5
+.Project5
 {
     background: url("../img/Site_WeeklyThree.jpg") no-repeat;
-    background-size: 150% 150%;
+    background-size: cover;
 }
 
-#Project6
+.Project6
 {
     background: url("../img/Site_WeeklyFour.jpg") no-repeat;
-    background-size: 150% 150%;
+    background-size: cover;
 }
 
-#Project7
+.Project7
 {
     background: url("../img/Site_WeeklyEleven.jpg") no-repeat;
-    background-size: 150% 150%;
+    background-size: cover;
 }
 
-#Project8
+.Project8
 {
     background: url("../img/Site_Angular.jpg") no-repeat;
-    background-size: 150% 150%;
+    background-size: cover;
 }
 /*-------------Contacts----------*/
-
-.Mail, .Data
+.Mail
 {
     display: flex;
     flex-direction: column;
@@ -746,6 +834,7 @@ main
     padding: 1em;
     border-radius: 2em;
     background-color: rgb(0, 0, 0, 0.2);
+    animation: Opacity 2s 0s forwards;
 }
 
 .form
@@ -766,7 +855,7 @@ main
 
 .Name, .Email, .Subject
 {
-    height: 3em;
+    height: 2em;
 }
 
 .Message
@@ -777,7 +866,6 @@ main
 .Send
 {
     width: 40%;
-    font-size: 0.5rem;
     color: white;
     border-radius: 2em;
     border: none;
@@ -787,28 +875,6 @@ main
 .Send:active
 {
     background-color: rgb(0, 0, 0, 0.4);
-}
-
-.Facebook, .Github, .Linkedin
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 1em 0;
-}
-
-img
-{
-    height: 3em;
-    width: 3em;
-}
-
-a
-{
-    height: 3em;
-    width: 3em;
-    color: white;
-    text-decoration: none;
 }
 
 .off
