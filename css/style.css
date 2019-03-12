@@ -140,7 +140,7 @@ main
 @keyframes SlowOpacityTable
 {
     from {
-        transform: translateX(-100%) translateY(-10%) rotate(-90deg);
+        transform: translateY(-20%) translateX(-10%) rotate(-90deg);
         opacity: 0;
     }
     to {
@@ -164,7 +164,6 @@ main
     height: 18em;
     width: 20em;
     background-color: rgb(0, 0, 0, 0.7);
-    border: 10px solid transparent;
     border-radius: 2em;
 }
 
@@ -276,7 +275,7 @@ main
 @keyframes SlowOpacityIntro
 {
     from {
-        transform: translateX(100%) rotate(90deg);
+        transform: translateY(20%) translateX(10%) rotate(90deg);
         opacity: 0;
     }
     to {
@@ -295,6 +294,7 @@ main
 
 .Show
 {
+    cursor: pointer;
     color: white;
     background-color: rgb(0, 0, 0, 0.7);
     margin-top: 1em;
@@ -492,12 +492,6 @@ main
     height: 20em;
     perspective: 90em;
     transform-style: preserve-3d;
-    transition: transform 1s;
-}
-
-.Carousel-options
-{
-    position: relative;
 }
 
 .block
@@ -547,25 +541,6 @@ main
 {
     transform: rotateY(315deg) translateZ(18em);
 }
-
-.Carousel-options
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgb(0, 0, 0, 0.2);
-    border-radius: 2em;
-    padding: 1em;
-}
-
-.Previous, .Next
-{
-    color: white;
-    background-color: rgb(0, 0, 0, 0.7);
-    padding: 0.5em;
-    border: none;
-    border-radius: 2em;
-}
 /*-------------Projects:Shelf----------------*/
 .Shelf
 {
@@ -613,6 +588,7 @@ main
 
 .Spine
 {
+    color: white;
     font-family: cursive;
     margin: 2em auto;
     writing-mode: vertical-rl;
@@ -824,6 +800,46 @@ main
 {
     background: url("../img/Site_Angular.jpg") no-repeat;
     background-size: cover;
+}
+
+.Project-options
+{
+    background-color: rgb(0, 0, 0, 0.6);
+    border-radius: 2em;
+}
+
+.Carousel-options, .Carousel-change, .Project-change
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.Previous, .Next
+{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 0.5em;
+    border: none;
+    border-radius: 2em;
+}
+
+.Checkpoint
+{
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    border-radius: 0.5em;
+    border: 10px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.CheckpointActiv
+{
+    background-color: rgba(182, 1, 1, 0.7);
 }
 /*-------------Contacts----------*/
 .Mail

@@ -1,6 +1,3 @@
-/*-----------------MediaQueries-----------------*/
-
-
 /*------------------ChangePange-------------*/
 const HomeBtn = document.querySelectorAll("#Home");
 const CVBtn = document.querySelectorAll("#CV");
@@ -724,12 +721,62 @@ const rotateCarousel = () => {
     }
 }
 
+//////////////////////       ProjectBtn Changing        ///////////////////////
+
+const Carousel = document.querySelectorAll(".Carousel");
+const Shelf = document.querySelectorAll(".Shelf");
+const Checkpoint = document.querySelectorAll(".Checkpoint");
+
+const changeProject = () => {
+    for(let i = 0; i < Checkpoint.length; i++) {
+        Checkpoint[i].addEventListener("click", () => {
+            switch (Checkpoint[i]) {
+                case Checkpoint[0]:
+                    Carousel[0].classList.remove("off");
+                    Shelf[0].classList.add("off");
+                    Checkpoint[0].classList.add("CheckpointActiv");
+                    Checkpoint[1].classList.remove("CheckpointActiv");
+                    break;
+                case Checkpoint[1]:
+                    Carousel[0].classList.add("off");
+                    Shelf[0].classList.remove("off");
+                    Checkpoint[0].classList.remove("CheckpointActiv");
+                    Checkpoint[1].classList.add("CheckpointActiv");
+                    break;
+                default:
+                    break;
+            }
+
+        })
+    }
+}
+
+//////////////////////       MediaQueries        ///////////////////////
+
+const CarouselActiv = document.querySelectorAll(".Carousel-change");
+const ProjectActiv = document.querySelectorAll(".Project-change");
+
+const Resize = () => {
+    if (Body[0].scrollWidth > 1024 && Body[0].scrollHeight < 1280) {
+        Table[0].classList.remove("off");
+        Show[0].classList.add("off");
+    } else if (Body[0].scrollWidth > 1024 && Body[0].scrollHeight > 1279) {
+        Table[0].classList.remove("off");
+        Show[0].classList.add("off");
+        CarouselActiv[0].classList.remove("off");
+        ProjectActiv[0].classList.remove("off");
+    }
+}
+window.onresize = Resize;
+
+Resize();
 showGame();
 Game();
 closeGame();
 changePage();
 changeDot();
 rotateCarousel();
+changeProject();
 
                 // Road 1
 // Right -> Bottom -> Right -> Right -> Top -> Right -> Bottom -> Bottom -> Left -> Bottom -> Left -> Bottom -> Left -> Top -> Top -> Left -> Bottom -> Bottom -> Bottom -> Right -> Right -> Right -> Top -> Right -> |END|
