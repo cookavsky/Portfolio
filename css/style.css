@@ -1,20 +1,18 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 /*-------------Body----------*/
-body
-{
+body {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     font-size: 0.5rem;
     color: white;
 }
 
-.HomeBG
-{
+.HomeBG {
     background: url("../img/tree.jpg") no-repeat;
     background-position: center;
     background-size: cover;
@@ -22,8 +20,7 @@ body
     transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
-.CVBG
-{
+.CVBG {
     background: url("../img/afternoon.jpg") no-repeat;
     background-position: center;
     background-size: cover;
@@ -31,8 +28,7 @@ body
     transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
-.ProjectsBG
-{
+.ProjectsBG {
     background: url("../img/lib.jpg") no-repeat;
     background-position: center;
     background-size: cover;
@@ -40,8 +36,7 @@ body
     transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
-.ContactsBG
-{
+.ContactsBG {
     background: url("../img/aircraft.jpg") no-repeat;
     background-position: center;
     background-size: cover;
@@ -49,15 +44,13 @@ body
     transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 /*-------------header----------*/
-header
-{
+header, ul, .Data {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-@keyframes Move
-{
+@keyframes Move {
     from{
         margin-top: -10%;
         margin-left: -10%;
@@ -68,13 +61,11 @@ header
     }
 }
 
-.Logo
-{
+.Logo {
     animation: Move 5s;
 }
 
-.HeadTriangle
-{
+.HeadTriangle {
     position: absolute;
     width: 0;
     height: 0;
@@ -82,65 +73,59 @@ header
     border-left: 10em solid rgb(0, 0, 0, 0.7);
 }
 
-.Nick
-{
+.Nick {
     position: relative;
+    display: block;
     cursor: default;
     top: 1.5em;
-    display: block;
+    font-size: 1rem;
     transform: rotate(-45deg);
 }
 
-nav
-{
+nav {
     padding: 1em;
 }
 
-ul
-{
-    display: flex;
-    flex-flow: row;
-}
-
-li
-{
+li {
     list-style-type: none;
     margin: 0 1em;
 }
 
-h2
-{
+h2 {
     cursor: pointer;
 }
 
-.Facebook, .Github, .Linkedin
-{
-    margin: 1em;
-}
-
-img
-{
+.Facebook, .Github, .Linkedin {
+    margin: 1em 1em 0 1em;
     width: 3em;
     height: 3em;
 }
 
-main
-{
-    margin: auto;
+img {
+    width: 3em;
+    height: 3em;
 }
 
-/*-------------HOME----------*/
-.Home, .CV, .Data
-{
+main {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-flow: row;
     justify-content: center;
 }
 
-@keyframes SlowOpacityTable
-{
+/*-------------HOME----------*/
+.Home, .CV, .Projects, .Contacts {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes SlowOpacityTable {
     from {
-        transform: translateY(-20%) translateX(-10%) rotate(-90deg);
+        transform: translateX(-100%) translateY(-10%) rotate(-90deg);
         opacity: 0;
     }
     to {
@@ -148,18 +133,22 @@ main
     }
 }
 
-.Table
-{
+.Game {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.Table {
     display: flex;
     flex-flow: row wrap;
     width: 20em;
+    height: calc(18em + 20px);
     border: 10px solid rgb(0, 0, 0, 0.7);
     border-radius: 2em;
     animation: SlowOpacityTable 4s 0s forwards;
 }
 
-.Play
-{
+.Play {
     display: flex;
     height: 18em;
     width: 20em;
@@ -167,28 +156,26 @@ main
     border-radius: 2em;
 }
 
-.TextPlay
-{
+.TextPlay {
     cursor: pointer;
     margin: auto;
+    font-size: 1rem;
 }
 
-.halfTable
-{
+.halfTable {
     position: absolute;
     width: 0;
     height: 0;
     border-bottom: 3em solid transparent;
-    border-left: calc(20em * 0.2 - 10px) solid rgb(0, 0, 0, 0.7);
+    border-left: calc(20em * 0.2 - 6px) solid rgb(0, 0, 0, 0.7);
 }
 
-.Text
-{
+.Text {
     position: relative;
+    font-size: 0.7rem;
 }
 
-.CardsStart
-{
+.CardsStart {
     cursor: pointer;
     flex-basis: 20%;
     height: 3em;
@@ -198,8 +185,7 @@ main
     line-height: 3em;
 }
 
-.CardsEnd
-{
+.CardsEnd {
     cursor: pointer;
     flex-basis: 20%;
     height: 3em;
@@ -209,8 +195,7 @@ main
     line-height: 3em;
 }
 
-.Cards
-{
+.Cards {
     cursor: pointer;
     flex-basis: 20%;
     height: 3em;
@@ -218,49 +203,41 @@ main
     border: 1px solid rgb(0, 0, 0, 0.7);
 }
 
-.green
-{
+.green {
     background-color: green;
 }
 
-.blue
-{
+.blue {
     background-color: blue;
 }
 
-.red
-{
+.red {
     background-color: red;
 }
 
-.grey
-{
+.grey {
     background-color: rgb(201, 194, 194);
 }
 
-.Cards1
-{
+.Cards1 {
     opacity: 0;
     animation: FromUpToBottom 1s 1s forwards;
     background-color: green;
 }
 
-.Cards2
-{
+.Cards2 {
     opacity: 0;
     animation: FromUpToBottom 1s 2s forwards;
     background-color: blue;
 }
 
-.Cards3
-{
+.Cards3 {
     opacity: 0;
     animation: FromUpToBottom 1s 3s forwards;
     background-color: red;
 }
 
-@keyframes FromUpToBottom
-{
+@keyframes FromUpToBottom {
     from{
         height: 0;
         opacity: 0;
@@ -272,10 +249,9 @@ main
     }
 }
 
-@keyframes SlowOpacityIntro
-{
+@keyframes SlowOpacityIntro {
     from {
-        transform: translateY(20%) translateX(10%) rotate(90deg);
+        transform: translateX(100%) translateY(10%) rotate(90deg);
         opacity: 0;
     }
     to {
@@ -283,36 +259,34 @@ main
     }
 }
 
-.Intro
-{
+.Intro {
     width: 20em;
     margin-top: auto;
     margin-bottom: auto;
+    font-size: 0.7rem;
     text-align: justify;
     animation: SlowOpacityIntro 4s 0s forwards;
 }
 
-.Show
-{
+.Show {
     cursor: pointer;
     color: white;
     background-color: rgb(0, 0, 0, 0.7);
+    font-size: 0.7rem;
     margin-top: 1em;
     padding: 0.5em;
     border: none;
     border-radius: 2em;
 }
 
-.Close
-{
+.Close {
+    height: 1.5em;
+    width: 1.5em;
     cursor: pointer;
     color: white;
-    height: 0.8em;
-    line-height: 0;
-    padding: 0.8em 0.5em;
+    background-color: rgb(0, 0, 0, 0.7);
     border: none;
     border-radius: 100%;
-    background-color: rgb(0, 0, 0, 0.7);
     animation: SlowOpacityTable 4s 0s forwards;
 }
 /*-------------CV----------*/
@@ -325,27 +299,26 @@ main
     }
 }
 
-.CVIntro, .CVHome, .CVSchool, .CVWork
-{
-    width: 30em;
-    height: 20em;
+.CVIntro, .CVHome, .CVSchool, .CVWork {
+    width: 80%;
+    height: 40%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    font-size: 0.6rem;
+    margin-top: auto;
+    margin-bottom: auto;
     padding: 1em;
     border-radius: 1em;
     background-color: rgb(0, 0, 0, 0.7);
     animation: Opacity 2s 0s forwards;
 }
 
-.CVChange
-{
+.CVChange {
     animation: Opacity 2s 0s forwards;
     margin: auto 1em auto 0;
 }
 
-.Up
-{
+.Up {
     cursor: pointer;
     height: 0;
     width: 0;
@@ -355,13 +328,11 @@ main
     border-right: 15px solid transparent;
 }
 
-.Up:active
-{
+.Up:active {
     border-bottom-color: black;
 }
 
-.dot
-{
+.dot {
     width: 0;
     height: 0;
     margin: 0.5em auto;
@@ -369,8 +340,7 @@ main
     border-radius: 100%;
 }
 
-.dotActiv
-{
+.dotActiv {
     width: 0;
     height: 0;
     margin: 0.5em auto;
@@ -378,304 +348,261 @@ main
     border-radius: 100%;
 }
 
-.Bottom
-{
+.Bottom {
     cursor: pointer;
     height: 0;
     width: 0;
-    margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 1em auto 0 auto;
     border-top: 10px solid rgb(0, 0, 0, 0.7);
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
 }
 
-.Bottom:active
-{
+.Bottom:active {
     border-top-color: black;
 }
 
-.CVIntroImg
-{
+.CVIntroImg {
     background: url("../img/2547.JPG") no-repeat;
     background-position: top center;
     background-size: 150% 150%;
-    width: 12.5em;
+    width: 30%;
 }
 
-.CVHomeImg1
-{
+.CVHomeImg1 {
     background: url("../img/murowana.jpg") no-repeat;
     transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
-.CVHomeImg2
-{
+.CVHomeImg2 {
     background: url("../img/prischool.jpg") no-repeat;
     transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
-.CVSchoolImg1
-{
+.CVSchoolImg1 {
     background: url("../img/zsl.jpg") no-repeat;
     transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
-.CVSchoolImg2
-{
+.CVSchoolImg2 {
     background: url("../img/wsl.jpg") no-repeat;
     transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
-.CVWorkImg1
-{
+.CVWorkImg1 {
     background: url("../img/tele.jpg") no-repeat;
     transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
-.CVWorkImg2
-{
+.CVWorkImg2 {
     background: url("../img/mag.jpg") no-repeat;
     transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
-.CVWorkImg3
-{
+.CVWorkImg3 {
     background: url("../img/press.jpg") no-repeat;
     transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
-.CVHomeImg, .CVSchoolImg, .CVWorkImg
-{
+.CVHomeImg, .CVSchoolImg, .CVWorkImg {
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
     justify-content: center;
     background-position: top center;
     background-size: cover;
-    width: 12.5em;
+    width: 30%;
 }
 
-.MiniDot
-{
+.MiniDot {
     cursor: pointer;
     width: 0;
     height: 0;
     margin: 0.1em;
-    margin-top: auto;
     border: 5px solid rgb(0, 0, 0, 0.7);
     border-radius: 100%;
 }
 
-.MiniDotActiv
-{
+.MiniDotActiv {
     width: 0;
     height: 0;
     margin: 0.1em;
-    margin-top: auto;
     border: 5px solid rgb(0, 0, 0);
     border-radius: 100%;
 }
 
-.CVText
-{
-    width: 60vw;
+.CVText {
+    width: 80%;
     text-align: justify;
-    overflow-y: scroll;
     margin-left: 1em;
+    overflow-y: scroll;
+}
+
+.CVText::-webkit-scrollbar {
+    width: 5%;
+}
+
+.CVText::-webkit-scrollbar-thumb {
+    background-color: teal;
+    border-radius: 1em;
 }
 /*-------------Projects:Carousel----------*/
-.Carousel
-{
+.Carousel {
     position: relative;
-    width: 14em;
     height: 20em;
     perspective: 90em;
     transform-style: preserve-3d;
 }
 
-.block
-{
+.block {
     position: absolute;
     width: 14em;
     height: 15em;
     transition: transform 1s;
 }
 
-.block:nth-child(1)
-{
+.block:nth-child(1) {
     transform: rotateY(0) translateZ(18em);
 }
 
-.block:nth-child(2)
-{
+.block:nth-child(2) {
     transform: rotateY(45deg) translateZ(18em);
 }
 
-.block:nth-child(3)
-{
+.block:nth-child(3) {
     transform: rotateY(90deg) translateZ(18em);
 }
 
-.block:nth-child(4)
-{
+.block:nth-child(4) {
     transform: rotateY(135deg) translateZ(18em);
 }
 
-.block:nth-child(5)
-{
+.block:nth-child(5) {
     transform: rotateY(180deg) translateZ(18em);
 }
 
-.block:nth-child(6)
-{
+.block:nth-child(6) {
     transform: rotateY(225deg) translateZ(18em);
 }
 
-.block:nth-child(7)
-{
+.block:nth-child(7) {
     transform: rotateY(270deg) translateZ(18em);
 }
 
-.block:nth-child(8)
-{
+.block:nth-child(8) {
     transform: rotateY(315deg) translateZ(18em);
 }
 /*-------------Projects:Shelf----------------*/
-.Shelf
-{
+.Shelf {
     width: 20em;
-    height: 30em;
+    height: 80%;
     animation: FromUpToBottom 4s 0s forwards;
 }
 
-.book
-{
+.book {
     position: relative;
     perspective-origin: 100% 100%;
     transform-style: preserve-3d;
     perspective: 30em;
 }
 
-.book-pos
-{
+.book-pos {
     display: block;
     position: absolute;
 }
 
-.front
-{
+.front {
     width: 3em;
     height: 25em;
     background-color: #03031B;
     transform: translateZ(3em);
 }
 
-.right
-{
+.right {
     width: 6em;
     height: 25em;
     transform: rotateY(90deg);
 }
 
-.top
-{
+.top {
     width: 3em;
     height: 6em;
     background-color: #F0FAC7;
     transform: rotateX(90deg) translateZ(3em);
 }
 
-.Spine
-{
+.Spine {
     color: white;
     font-family: cursive;
     margin: 2em auto;
     writing-mode: vertical-rl;
 }
 
-.book-1:hover
-{
+.book-1:hover {
     animation: book-hover-1-move 800ms forwards;
 }
 
-.book-2:hover
-{
+.book-2:hover {
     animation: book-hover-2-move 800ms forwards;
 }
 
-.book-3:hover
-{
+.book-3:hover {
     animation: book-hover-3-move 800ms forwards;
 }
 
-.book-4:hover
-{
+.book-4:hover {
     animation: book-hover-4-move 800ms forwards;
 }
 
-.book-5:hover
-{
+.book-5:hover {
     animation: book-hover-5-move 800ms forwards;
 }
 
-.book-6:hover
-{
+.book-6:hover {
     animation: book-hover-6-move 800ms forwards;
 }
 
-.book-7:hover
-{
+.book-7:hover {
     animation: book-hover-7-move 800ms forwards;
 }
 
-.book-8:hover
-{
+.book-8:hover {
     animation: book-hover-8-move 800ms forwards;
 }
 
-.book-1
-{
+.book-1 {
     transform: rotateX(-5deg);
 }
 
-.book-2
-{
+.book-2 {
     transform: rotateX(-5deg) translateX(3.5em);
 }
 
-.book-3
-{
+.book-3 {
     transform: rotateX(-5deg) translateX(7em);
 }
 
-.book-4
-{
+.book-4 {
     transform: rotateX(-5deg) translateX(10.5em);
 }
 
-.book-5
-{
+.book-5 {
     transform: rotateX(-5deg) translateX(14em);
 }
 
-.book-6
-{
+.book-6 {
     transform: rotateX(-5deg) translateX(17.5em);
 }
 
-.book-7
-{
+.book-7 {
     transform: rotateX(-5deg) translateX(21em);
 }
 
-.book-8
-{
+.book-8 {
     transform: rotateX(-5deg) translateX(24.5em);
 }
 
-@keyframes book-hover-1-move
-{
+@keyframes book-hover-1-move {
     0% {
         transform: rotateX(-5deg);
     }
@@ -684,8 +611,7 @@ main
     }
 }
 
-@keyframes book-hover-2-move
-{
+@keyframes book-hover-2-move {
     0% {
         transform: rotateX(-5deg) translateX(3.5em);
     }
@@ -694,8 +620,7 @@ main
     }
 }
 
-@keyframes book-hover-3-move
-{
+@keyframes book-hover-3-move {
     0% {
         transform: rotateX(-5deg) translateX(7em);
     }
@@ -704,8 +629,7 @@ main
     }
 }
 
-@keyframes book-hover-4-move
-{
+@keyframes book-hover-4-move {
     0% {
         transform: rotateX(-5deg) translateX(10.5em);
     }
@@ -714,8 +638,7 @@ main
     }
 }
 
-@keyframes book-hover-5-move
-{
+@keyframes book-hover-5-move {
     0% {
         transform: rotateX(-5deg) translateX(14em);
     }
@@ -724,8 +647,7 @@ main
     }
 }
 
-@keyframes book-hover-6-move
-{
+@keyframes book-hover-6-move {
     0% {
         transform: rotateX(-5deg) translateX(17.5em);
     }
@@ -734,8 +656,7 @@ main
     }
 }
 
-@keyframes book-hover-7-move
-{
+@keyframes book-hover-7-move {
     0% {
         transform: rotateX(-5deg) translateX(21em);
     }
@@ -744,8 +665,7 @@ main
     }
 }
 
-@keyframes book-hover-8-move
-{
+@keyframes book-hover-8-move {
     0% {
         transform: rotateX(-5deg) translateX(24.5em);
     }
@@ -754,62 +674,53 @@ main
     }
 }
 
-.Project1
-{
+.Project1 {
     background: url("../img/Site_Fifa.jpg") no-repeat;
     background-size: cover;
 }
 
-.Project2
-{
+.Project2 {
     background: url("../img/Site_Schools.jpg") no-repeat;
     background-size: cover;
 }
 
-.Project3
-{
+.Project3 {
     background: url("../img/Site_WeeklyOne.jpg") no-repeat;
     background-size: cover;
 }
 
-.Project4
-{
+.Project4 {
     background: url("../img/Site_WeeklyTwo.jpg") no-repeat;
     background-size: cover;
 }
 
-.Project5
-{
+.Project5 {
     background: url("../img/Site_WeeklyThree.jpg") no-repeat;
     background-size: cover;
 }
 
-.Project6
-{
+.Project6 {
     background: url("../img/Site_WeeklyFour.jpg") no-repeat;
     background-size: cover;
 }
 
-.Project7
-{
+.Project7 {
     background: url("../img/Site_WeeklyEleven.jpg") no-repeat;
     background-size: cover;
 }
 
-.Project8
-{
+.Project8 {
     background: url("../img/Site_Angular.jpg") no-repeat;
     background-size: cover;
 }
 
-.Project-options
-{
+.Project-options {
     background-color: rgb(0, 0, 0, 0.6);
+    margin-top: 20em;
     border-radius: 2em;
 }
 
-.Carousel-options, .Carousel-change, .Project-change
-{
+.Carousel-options, .Carousel-change, .Project-change {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -817,8 +728,7 @@ main
     padding: 1em;
 }
 
-.Previous, .Next
-{
+.Previous, .Next {
     cursor: pointer;
     color: white;
     background-color: rgb(0, 0, 0, 0.7);
@@ -827,8 +737,7 @@ main
     border-radius: 2em;
 }
 
-.Checkpoint
-{
+.Checkpoint {
     cursor: pointer;
     width: 2em;
     height: 2em;
@@ -837,13 +746,11 @@ main
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.CheckpointActiv
-{
+.CheckpointActiv {
     background-color: rgba(182, 1, 1, 0.7);
 }
 /*-------------Contacts----------*/
-.Mail
-{
+.Mail {
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -853,9 +760,8 @@ main
     animation: Opacity 2s 0s forwards;
 }
 
-.form
-{
-    width: 15em;
+.form {
+    width: 50%;
     padding-left: 1em;
     margin: .25em 0;
     color: white;
@@ -864,36 +770,33 @@ main
     background-color: rgb(0, 0, 0, 0.4);
 }
 
-.form:focus
-{
+.form:focus {
     outline: none;
 }
 
-.Name, .Email, .Subject
-{
+.Name, .Email, .Subject {
+    width: 100%;
     height: 2em;
 }
 
-.Message
-{
+.Message {
+    width: 100%;
     height: 6em;
 }
 
-.Send
-{
+.Send {
     width: 40%;
     color: white;
+    font-size: 0.6rem;
     border-radius: 2em;
     border: none;
     background-color: rgb(9, 128, 15);
 }
 
-.Send:active
-{
+.Send:active {
     background-color: rgb(0, 0, 0, 0.4);
 }
 
-.off
-{
+.off {
     display: none;
 }
