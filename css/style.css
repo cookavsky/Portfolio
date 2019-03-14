@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    font-size: 0.5rem;
+    font-size: 0.4rem;
     color: white;
 }
 
@@ -78,7 +78,7 @@ header, ul, .Data {
     display: block;
     cursor: default;
     top: 1.5em;
-    font-size: 1rem;
+    font-size: 0.8rem;
     transform: rotate(-45deg);
 }
 
@@ -142,8 +142,8 @@ main {
     display: flex;
     flex-flow: row wrap;
     width: 20em;
-    height: calc(18em + 20px);
-    border: 10px solid rgb(0, 0, 0, 0.7);
+    height: calc(18em + 10px);
+    border: 5px solid rgb(0, 0, 0, 0.7);
     border-radius: 2em;
     animation: SlowOpacityTable 4s 0s forwards;
 }
@@ -159,7 +159,7 @@ main {
 .TextPlay {
     cursor: pointer;
     margin: auto;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .halfTable {
@@ -263,7 +263,7 @@ main {
     width: 20em;
     margin-top: auto;
     margin-bottom: auto;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     text-align: justify;
     animation: SlowOpacityIntro 4s 0s forwards;
 }
@@ -272,7 +272,7 @@ main {
     cursor: pointer;
     color: white;
     background-color: rgb(0, 0, 0, 0.7);
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     margin-top: 1em;
     padding: 0.5em;
     border: none;
@@ -300,7 +300,7 @@ main {
 }
 
 .CVIntro, .CVHome, .CVSchool, .CVWork {
-    width: 80%;
+    width: 60%;
     height: 40%;
     display: flex;
     flex-direction: row;
@@ -323,9 +323,9 @@ main {
     height: 0;
     width: 0;
     margin-bottom: 1em;
-    border-bottom: 10px solid rgb(0, 0, 0, 0.7);
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
+    border-bottom: 5px solid rgb(0, 0, 0, 0.7);
+    border-left: 7.5px solid transparent;
+    border-right: 7.5px solid transparent;
 }
 
 .Up:active {
@@ -336,7 +336,7 @@ main {
     width: 0;
     height: 0;
     margin: 0.5em auto;
-    border: 5px solid rgb(0, 0, 0, 0.7);
+    border: 2.5px solid rgb(0, 0, 0, 0.7);
     border-radius: 100%;
 }
 
@@ -344,7 +344,7 @@ main {
     width: 0;
     height: 0;
     margin: 0.5em auto;
-    border: 5px solid rgb(0, 0, 0);
+    border: 2.5px solid rgb(0, 0, 0);
     border-radius: 100%;
 }
 
@@ -353,9 +353,9 @@ main {
     height: 0;
     width: 0;
     margin-top: 1em auto 0 auto;
-    border-top: 10px solid rgb(0, 0, 0, 0.7);
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
+    border-top: 5px solid rgb(0, 0, 0, 0.7);
+    border-left: 7.5px solid transparent;
+    border-right: 7.5px solid transparent;
 }
 
 .Bottom:active {
@@ -419,7 +419,7 @@ main {
     width: 0;
     height: 0;
     margin: 0.1em;
-    border: 5px solid rgb(0, 0, 0, 0.7);
+    border: 2.5px solid rgb(0, 0, 0, 0.7);
     border-radius: 100%;
 }
 
@@ -427,12 +427,13 @@ main {
     width: 0;
     height: 0;
     margin: 0.1em;
-    border: 5px solid rgb(0, 0, 0);
+    border: 2.5px solid rgb(0, 0, 0);
     border-radius: 100%;
 }
 
 .CVText {
     width: 80%;
+    font-size: 0.4rem;
     text-align: justify;
     margin-left: 1em;
     overflow-y: scroll;
@@ -761,7 +762,7 @@ main {
 }
 
 .form {
-    width: 50%;
+    width: 15em;
     padding-left: 1em;
     margin: .25em 0;
     color: white;
@@ -775,19 +776,20 @@ main {
 }
 
 .Name, .Email, .Subject {
-    width: 100%;
+    font-size: 0.6rem;
     height: 2em;
 }
 
 .Message {
+    font-size: 0.6rem;
     width: 100%;
-    height: 6em;
+    height: 8em;
 }
 
 .Send {
     width: 40%;
     color: white;
-    font-size: 0.6rem;
+    font-size: 0.4rem;
     border-radius: 2em;
     border: none;
     background-color: rgb(9, 128, 15);

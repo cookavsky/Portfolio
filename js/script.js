@@ -757,7 +757,7 @@ const CarouselActiv = document.querySelectorAll(".Carousel-change");
 const ProjectActiv = document.querySelectorAll(".Project-change");
 
 const Resize = () => {
-    if (Body[0].scrollWidth > 1024 && Body[0].scrollHeight < 766) {
+    if (Body[0].scrollWidth > 899 && Body[0].scrollHeight > 299) {
         Table[0].classList.remove("off");
         Show[0].classList.add("off");
     } else if (Body[0].scrollWidth > 1024 && Body[0].scrollHeight > 767) {
