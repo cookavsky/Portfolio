@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    font-size: 0.4rem;
+    font-size: 0.45rem;
     color: white;
 }
 
@@ -78,7 +78,7 @@ header, ul, .Data {
     display: block;
     cursor: default;
     top: 1.5em;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     transform: rotate(-45deg);
 }
 
@@ -141,17 +141,17 @@ main {
 .Table {
     display: flex;
     flex-flow: row wrap;
-    width: 20em;
-    height: calc(18em + 10px);
-    border: 5px solid rgb(0, 0, 0, 0.7);
+    width: 25em;
+    height: calc(24em + 20px);
+    border: 10px solid rgb(0, 0, 0, 0.7);
     border-radius: 2em;
     animation: SlowOpacityTable 4s 0s forwards;
 }
 
 .Play {
     display: flex;
-    height: 18em;
-    width: 20em;
+    height: 24em;
+    width: 25em;
     background-color: rgb(0, 0, 0, 0.7);
     border-radius: 2em;
 }
@@ -166,8 +166,8 @@ main {
     position: absolute;
     width: 0;
     height: 0;
-    border-bottom: 3em solid transparent;
-    border-left: calc(20em * 0.2 - 6px) solid rgb(0, 0, 0, 0.7);
+    border-bottom: 4em solid transparent;
+    border-left: calc(24em * 0.2 - 6px) solid rgb(0, 0, 0, 0.7);
 }
 
 .Text {
@@ -178,27 +178,27 @@ main {
 .CardsStart {
     cursor: pointer;
     flex-basis: 20%;
-    height: 3em;
+    height: 4em;
     background-color: green;
     border: 1px solid rgb(0, 0, 0, 0.7);
     text-align: center;
-    line-height: 3em;
+    line-height: 4em;
 }
 
 .CardsEnd {
     cursor: pointer;
     flex-basis: 20%;
-    height: 3em;
+    height: 4em;
     background-color: red;
     border: 1px solid rgb(0, 0, 0, 0.7);
     text-align: center;
-    line-height: 3em;
+    line-height: 4em;
 }
 
 .Cards {
     cursor: pointer;
     flex-basis: 20%;
-    height: 3em;
+    height: 4em;
     background-color: white;
     border: 1px solid rgb(0, 0, 0, 0.7);
 }
@@ -261,8 +261,7 @@ main {
 
 .Intro {
     width: 20em;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto 1em;
     font-size: 0.6rem;
     text-align: justify;
     animation: SlowOpacityIntro 4s 0s forwards;
@@ -323,9 +322,9 @@ main {
     height: 0;
     width: 0;
     margin-bottom: 1em;
-    border-bottom: 5px solid rgb(0, 0, 0, 0.7);
-    border-left: 7.5px solid transparent;
-    border-right: 7.5px solid transparent;
+    border-bottom: 10px solid rgb(0, 0, 0, 0.7);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
 }
 
 .Up:active {
@@ -336,7 +335,7 @@ main {
     width: 0;
     height: 0;
     margin: 0.5em auto;
-    border: 2.5px solid rgb(0, 0, 0, 0.7);
+    border: 5px solid rgb(0, 0, 0, 0.7);
     border-radius: 100%;
 }
 
@@ -344,7 +343,7 @@ main {
     width: 0;
     height: 0;
     margin: 0.5em auto;
-    border: 2.5px solid rgb(0, 0, 0);
+    border: 5px solid rgb(0, 0, 0);
     border-radius: 100%;
 }
 
@@ -353,9 +352,9 @@ main {
     height: 0;
     width: 0;
     margin-top: 1em auto 0 auto;
-    border-top: 5px solid rgb(0, 0, 0, 0.7);
-    border-left: 7.5px solid transparent;
-    border-right: 7.5px solid transparent;
+    border-top: 10px solid rgb(0, 0, 0, 0.7);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
 }
 
 .Bottom:active {
@@ -365,7 +364,7 @@ main {
 .CVIntroImg {
     background: url("../img/2547.JPG") no-repeat;
     background-position: top center;
-    background-size: 150% 150%;
+    background-size: 100% 100%;
     width: 30%;
 }
 
@@ -419,7 +418,7 @@ main {
     width: 0;
     height: 0;
     margin: 0.1em;
-    border: 2.5px solid rgb(0, 0, 0, 0.7);
+    border: 5px solid rgb(0, 0, 0, 0.7);
     border-radius: 100%;
 }
 
@@ -427,13 +426,12 @@ main {
     width: 0;
     height: 0;
     margin: 0.1em;
-    border: 2.5px solid rgb(0, 0, 0);
+    border: 5px solid rgb(0, 0, 0);
     border-radius: 100%;
 }
 
 .CVText {
     width: 80%;
-    font-size: 0.4rem;
     text-align: justify;
     margin-left: 1em;
     overflow-y: scroll;
@@ -717,7 +715,7 @@ main {
 
 .Project-options {
     background-color: rgb(0, 0, 0, 0.6);
-    margin-top: 20em;
+    margin-top: 27em;
     border-radius: 2em;
 }
 
@@ -801,4 +799,6 @@ main {
 
 .off {
     display: none;
+    height: 0;
+    width: 0;
 }
