@@ -465,31 +465,27 @@ main {
 }
 
 .block:nth-child(2) {
-    transform: rotateY(45deg) translateZ(18em);
+    transform: rotateY(51.42deg) translateZ(18em);
 }
 
 .block:nth-child(3) {
-    transform: rotateY(90deg) translateZ(18em);
+    transform: rotateY(102.84deg) translateZ(18em);
 }
 
 .block:nth-child(4) {
-    transform: rotateY(135deg) translateZ(18em);
+    transform: rotateY(154.26deg) translateZ(18em);
 }
 
 .block:nth-child(5) {
-    transform: rotateY(180deg) translateZ(18em);
+    transform: rotateY(205.68deg) translateZ(18em);
 }
 
 .block:nth-child(6) {
-    transform: rotateY(225deg) translateZ(18em);
+    transform: rotateY(257.1deg) translateZ(18em);
 }
 
 .block:nth-child(7) {
-    transform: rotateY(270deg) translateZ(18em);
-}
-
-.block:nth-child(8) {
-    transform: rotateY(315deg) translateZ(18em);
+    transform: rotateY(308.52deg) translateZ(18em);
 }
 /*-------------Projects:Shelf----------------*/
 .Shelf {
@@ -565,10 +561,6 @@ main {
     animation: book-hover-7-move 800ms forwards;
 }
 
-.book-8:hover {
-    animation: book-hover-8-move 800ms forwards;
-}
-
 .book-1 {
     transform: rotateX(-5deg);
 }
@@ -595,10 +587,6 @@ main {
 
 .book-7 {
     transform: rotateX(-5deg) translateX(21em);
-}
-
-.book-8 {
-    transform: rotateX(-5deg) translateX(24.5em);
 }
 
 @keyframes book-hover-1-move {
@@ -664,51 +652,37 @@ main {
     }
 }
 
-@keyframes book-hover-8-move {
-    0% {
-        transform: rotateX(-5deg) translateX(24.5em);
-    }
-    100% {
-        transform: rotateX(-30deg) translate3d(24em, -0.2em, 0) scaleY(1.1);
-    }
-}
-
 .Project1 {
     background: url("../img/Site_Fifa.jpg") no-repeat;
     background-size: cover;
 }
 
 .Project2 {
-    background: url("../img/Site_Schools.jpg") no-repeat;
-    background-size: cover;
-}
-
-.Project3 {
     background: url("../img/Site_WeeklyOne.jpg") no-repeat;
     background-size: cover;
 }
 
-.Project4 {
+.Project3 {
     background: url("../img/Site_WeeklyTwo.jpg") no-repeat;
     background-size: cover;
 }
 
-.Project5 {
+.Project4 {
     background: url("../img/Site_WeeklyThree.jpg") no-repeat;
     background-size: cover;
 }
 
-.Project6 {
+.Project5 {
     background: url("../img/Site_WeeklyFour.jpg") no-repeat;
     background-size: cover;
 }
 
-.Project7 {
+.Project6 {
     background: url("../img/Site_WeeklyEleven.jpg") no-repeat;
     background-size: cover;
 }
 
-.Project8 {
+.Project7 {
     background: url("../img/Site_Angular.jpg") no-repeat;
     background-size: cover;
 }

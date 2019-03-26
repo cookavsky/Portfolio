@@ -145,13 +145,12 @@
         <article class="Projects off">
             <div class="Carousel">
                 <a href="https://fifa.cookavsky.com" target="_blank" class="Project1 block"></a>
-                <a href="https://schools.cookavsky.com" target="_blank" class="Project2 block"></a>
-                <a href="https://weeklyone.cookavsky.com" target="_blank" class="Project3 block"></a>
-                <a href="https://weeklytwo.cookavsky.com" target="_blank" class="Project4 block"></a>
-                <a href="https://weeklythree.cookavsky.com" target="_blank" class="Project5 block"></a>
-                <a href="https://weeklyfour.cookavsky.com" target="_blank" class="Project6 block"></a>
-                <a href="https://weeklyeleven.cookavsky.com" target="_blank" class="Project7 block"></a>
-                <a href="https://angulartable.cookavsky.com" target="_blank" class="Project8 block"></a>
+                <a href="https://weeklyone.cookavsky.com" target="_blank" class="Project2 block"></a>
+                <a href="https://weeklytwo.cookavsky.com" target="_blank" class="Project3 block"></a>
+                <a href="https://weeklythree.cookavsky.com" target="_blank" class="Project4 block"></a>
+                <a href="https://weeklyfour.cookavsky.com" target="_blank" class="Project5 block"></a>
+                <a href="https://weeklyeleven.cookavsky.com" target="_blank" class="Project6 block"></a>
+                <a href="https://angulartable.cookavsky.com" target="_blank" class="Project7 block"></a>
             </div>
             <div class="Shelf off">
                 <a href="https://fifa.cookavsky.com" target="_blank">
@@ -163,66 +162,57 @@
                         <div class="book-pos top"></div>
                     </div>
                 </a>
-                <a href="https://schools.cookavsky.com" target="_blank">
+                <a href="https://weeklyone.cookavsky.com" target="_blank">
                     <div class="book book-2">
                         <div class="book-pos front">
-                            <h3 class="Spine">cookavsky Schools History</h3>
+                            <h3 class="Spine">Weekly WebDev Challenge #1</h3>
                         </div>
                         <div class="Project2 book-pos right"></div>
                         <div class="book-pos top"></div>
                     </div>
                 </a>
-                <a href="https://weeklyone.cookavsky.com" target="_blank">
+                <a href="https://weeklytwo.cookavsky.com" target="_blank">
                     <div class="book book-3">
                         <div class="book-pos front">
-                            <h3 class="Spine">Weekly WebDev Challenge #1</h3>
+                            <h3 class="Spine">Weekly WebDev Challenge #2</h3>
                         </div>
                         <div class="Project3 book-pos right"></div>
                         <div class="book-pos top"></div>
                     </div>
                 </a>
-                <a href="https://weeklytwo.cookavsky.com" target="_blank">
+                <a href="https://weeklythree.cookavsky.com" target="_blank">
                     <div class="book book-4">
                         <div class="book-pos front">
-                            <h3 class="Spine">Weekly WebDev Challenge #2</h3>
+                            <h3 class="Spine">Weekly WebDev Challenge #3</h3>
                         </div>
                         <div class="Project4 book-pos right"></div>
                         <div class="book-pos top"></div>
                     </div>
                 </a>
-                <a href="https://weeklythree.cookavsky.com" target="_blank">
+                <a href="https://weeklyfour.cookavsky.com" target="_blank">
                     <div class="book book-5">
                         <div class="book-pos front">
-                            <h3 class="Spine">Weekly WebDev Challenge #3</h3>
+                            <h3 class="Spine">Weekly WebDev Challenge #4</h3>
                         </div>
                         <div class="Project5 book-pos right"></div>
                         <div class="book-pos top"></div>
                     </div>
                 </a>
-                <a href="https://weeklyfour.cookavsky.com" target="_blank">
+                <a href="https://weeklyeleven.cookavsky.com" target="_blank">
                     <div class="book book-6">
                         <div class="book-pos front">
-                            <h3 class="Spine">Weekly WebDev Challenge #4</h3>
+                            <h3 class="Spine">Weekly WebDev Challenge #11</h3>
                         </div>
                         <div class="Project6 book-pos right"></div>
                         <div class="book-pos top"></div>
                     </div>
                 </a>
-                <a href="https://weeklyeleven.cookavsky.com" target="_blank">
-                    <div class="book book-7">
-                        <div class="book-pos front">
-                            <h3 class="Spine">Weekly WebDev Challenge #11</h3>
-                        </div>
-                        <div class="Project7 book-pos right"></div>
-                        <div class="book-pos top"></div>
-                    </div>
-                </a>
                 <a href="https://angulartable.cookavsky.com" target="_blank">
-                    <div class="book book-8">
+                    <div class="book book-7">
                         <div class="book-pos front">
                             <h3 class="Spine">Create League in Angular</h3>
                         </div>
-                        <div class="Project8 book-pos right"></div>
+                        <div class="Project7 book-pos right"></div>
                         <div class="book-pos top"></div>
                     </div>
                 </a>

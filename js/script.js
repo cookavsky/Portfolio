@@ -687,7 +687,7 @@ const Previous = document.querySelectorAll(".Previous");
 const Next = document.querySelectorAll(".Next");
 const block = document.querySelectorAll(".block");
 
-let blockfinish = 8;
+let blockfinish = 7;
 let blockstart = 0;
 
 const rotateCarousel = () => {
@@ -696,13 +696,12 @@ const rotateCarousel = () => {
             blockstart--;
             let angle = blockstart / blockfinish * -360;
             block[0].style.transform = 'rotateY(' + angle + 'deg) translateZ(18em)';
-            block[1].style.transform = 'rotateY(' + (angle + 45) + 'deg) translateZ(18em)';
-            block[2].style.transform = 'rotateY(' + (angle + 90) + 'deg) translateZ(18em)';
-            block[3].style.transform = 'rotateY(' + (angle + 135) + 'deg) translateZ(18em)';
-            block[4].style.transform = 'rotateY(' + (angle + 180) + 'deg) translateZ(18em)';
-            block[5].style.transform = 'rotateY(' + (angle + 225) + 'deg) translateZ(18em)';
-            block[6].style.transform = 'rotateY(' + (angle + 270) + 'deg) translateZ(18em)';
-            block[7].style.transform = 'rotateY(' + (angle + 315) + 'deg) translateZ(18em)';
+            block[1].style.transform = 'rotateY(' + (angle + 51.42) + 'deg) translateZ(18em)';
+            block[2].style.transform = 'rotateY(' + (angle + 102.84) + 'deg) translateZ(18em)';
+            block[3].style.transform = 'rotateY(' + (angle + 154.26) + 'deg) translateZ(18em)';
+            block[4].style.transform = 'rotateY(' + (angle + 205.68) + 'deg) translateZ(18em)';
+            block[5].style.transform = 'rotateY(' + (angle + 257.1) + 'deg) translateZ(18em)';
+            block[6].style.transform = 'rotateY(' + (angle + 308.52) + 'deg) translateZ(18em)';
         })
     }
     for( let a = 0; a < Next.length; a++) {
@@ -710,13 +709,12 @@ const rotateCarousel = () => {
             blockstart++;
             let angle = blockstart / blockfinish * -360;
             block[0].style.transform = 'rotateY(' + angle + 'deg) translateZ(18em)';
-            block[1].style.transform = 'rotateY(' + (angle + 45) + 'deg) translateZ(18em)';
-            block[2].style.transform = 'rotateY(' + (angle + 90) + 'deg) translateZ(18em)';
-            block[3].style.transform = 'rotateY(' + (angle + 135) + 'deg) translateZ(18em)';
-            block[4].style.transform = 'rotateY(' + (angle + 180) + 'deg) translateZ(18em)';
-            block[5].style.transform = 'rotateY(' + (angle + 225) + 'deg) translateZ(18em)';
-            block[6].style.transform = 'rotateY(' + (angle + 270) + 'deg) translateZ(18em)';
-            block[7].style.transform = 'rotateY(' + (angle + 315) + 'deg) translateZ(18em)';
+            block[1].style.transform = 'rotateY(' + (angle + 51.42) + 'deg) translateZ(18em)';
+            block[2].style.transform = 'rotateY(' + (angle + 102.84) + 'deg) translateZ(18em)';
+            block[3].style.transform = 'rotateY(' + (angle + 154.26) + 'deg) translateZ(18em)';
+            block[4].style.transform = 'rotateY(' + (angle + 205.68) + 'deg) translateZ(18em)';
+            block[5].style.transform = 'rotateY(' + (angle + 257.1) + 'deg) translateZ(18em)';
+            block[6].style.transform = 'rotateY(' + (angle + 308.52) + 'deg) translateZ(18em)';
         })
     }
 }
