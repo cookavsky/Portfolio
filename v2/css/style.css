@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*-------------Body----------*/
+body {
+    font-size: 0.6rem;
+    color: black;position: relative;
+}
+/*-------------header----------*/
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+ul, .Data {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+nav {
+    padding: 1em;
+}
+
+li {
+    list-style-type: none;
+    margin: 0 1em;
+}
+
+h1 {
+    cursor: pointer;
+}
+
+.Facebook, .Github, .Linkedin {
+    margin: 1em;
+    width: 3em;
+    height: 3em;
+}
+
+img {
+    width: 3em;
+    height: 3em;
+}
+
+main {
+    margin: 0 2em;
+}
+/*-------------HOME----------*/
+.Home {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes SlowOpacityIntro {
+    from {
+        transform: translateX(100%) translateY(10%) rotate(90deg);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes SlowOpacityTable {
+    from {
+        transform: translateX(-100%) translateY(-10%) rotate(-90deg);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.Intro {
+    width: 20em;
+    margin: 1em;
+    text-align: justify;
+    animation: SlowOpacityIntro 4s 0s forwards;
+}
+
+.Game {
+    margin: 1em;
+}
+
+.Table {
+    display: flex;
+    flex-flow: row wrap;
+    width: 25em;
+    height: calc(24em + 29px);
+    border: 15px solid rgb(0, 0, 0, 0.7);
+    border-radius: 2em;
+    animation: SlowOpacityTable 4s 0s forwards;
+}
+
+.Play {
+    display: flex;
+    height: calc(24em - 1px);
+    width: 25em;
+    background-color: rgb(0, 0, 0, 0.7);
+    border-radius: 2em;
+}
+
+.TextPlay {
+    cursor: pointer;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.CardsStart {
+    cursor: pointer;
+    flex-basis: 20%;
+    height: 4em;
+    background: url("../img/Start.jpg") no-repeat;
+    background-size: 100% 100%;
+    border: 1px solid rgb(0, 0, 0, 0.7);
+}
+
+.CardsEnd {
+    cursor: pointer;
+    flex-basis: 20%;
+    height: 4em;
+    background: url("../img/End.jpg") no-repeat;
+    background-size: 100% 100%;
+    border: 1px solid rgb(0, 0, 0, 0.7);
+}
+
+.Cards {
+    cursor: pointer;
+    flex-basis: 20%;
+    height: 4em;
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0, 0.7);
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.grey {
+    background-color: rgb(201, 194, 194);
+}
+
+.Cards1 {
+    opacity: 0;
+    animation: FromUpToBottom 1s 1s forwards;
+    background-color: green;
+}
+
+.Cards2 {
+    opacity: 0;
+    animation: FromUpToBottom 1s 2s forwards;
+    background-color: blue;
+}
+
+.Cards3 {
+    opacity: 0;
+    animation: FromUpToBottom 1s 3s forwards;
+    background-color: red;
+}
+
+@keyframes FromUpToBottom {
+    from{
+        height: 0;
+        opacity: 0;
+    }
+
+    to{
+        height: -100%;
+        opacity: 1;
+    }
+}
+/*-------------CV----------*/
+@keyframes Opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+.off {
+    display: none;
+}
