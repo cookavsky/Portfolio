@@ -5,9 +5,10 @@ let index = 0;
 let counter = 0;
 let position = 0;
 let Text = document.getElementById("Text");
-const consoleText = document.querySelectorAll(".console-text");
-const headerContainer = document.querySelectorAll(".header-container");
-const headerSocial = document.querySelectorAll(".header-social");
+const Console = document.getElementById("Console");
+const HeaderContainer = document.getElementById("Header-Container");
+const HeaderSocial = document.getElementById("Header-Social");
+const MainContainer = document.getElementById("Main-Container");
 
 const Terminal = () => {
     if (position === 0) {
@@ -26,10 +27,11 @@ const Terminal = () => {
             index++;
             if (index === 4) {
                 index = 0;
-                headerContainer[0].classList.add("mini");
-                consoleText[0].classList.add("off");
-                headerSocial[0].classList.remove("off");
+                HeaderContainer.classList.add("mini");
+                Console.classList.add("off");
+                HeaderSocial.classList.remove("off");
                 SkipBtn.classList.add("off");
+                MainContainer.classList.remove("off");
             }
         }
     }
@@ -39,14 +41,73 @@ const SkipBtn = document.getElementById("Skip");
 
 const Skip = () => {
     SkipBtn.addEventListener("click", () => {
-        headerContainer[0].classList.add("mini");
-        consoleText[0].classList.add("off");
-        headerSocial[0].classList.remove("off");
+        HeaderContainer.classList.add("mini");
+        Console.classList.add("off");
+        HeaderSocial.classList.remove("off");
         SkipBtn.classList.add("off");
+        MainContainer.classList.remove("off");
     });
 };
-/////////////////      GAME HOME       /////////////////////
-const Intro = document.querySelectorAll(".Intro");
+/*--------------MENU--------------*/
+const Top = document.getElementById("Top");
+const Bottom = document.getElementById("Bottom");
+//////Home//////
+const Home = document.getElementById("Home");
+const HomeNav = document.getElementById("HomeNav");
+const HomeContent = document.getElementById("Home-Content");
+////////CV///////
+const CV = document.getElementById("CV");
+const CVNav = document.getElementById("CVNav");
+const CVContent = document.getElementById("CV-Content");
+///Project////
+const Projects = document.getElementById("Projects");
+const ProjectsNav = document.getElementById("ProjectsNav");
+const ProjectsContent = document.getElementById("Projects-Content");
+/////Contacts////
+const Contacts = document.getElementById("Contacts");
+const ContactsNav = document.getElementById("ContactsNav");
+const ContactsContent = document.getElementById("Contacts-Content");
+const ArtMain = document.getElementById("ArtMain");
+
+const Menu = () => {
+    Top.addEventListener("click", () => {
+        if (Contacts.className !== "Contacts small off" && ContactsNav.className !== "Menu-list off") {
+            Contacts.classList.add("off");
+            ContactsNav.classList.add("off");
+            Projects.classList.remove("off");
+            ProjectsNav.classList.remove("off");
+        } else if (Projects.className !== "Projects small off" && ProjectsNav.className !== "Menu-list off") {
+            Projects.classList.add("off");
+            ProjectsNav.classList.add("off");
+            CV.classList.remove("off");
+            CVNav.classList.remove("off");
+        } else if (CV.className !== "CV small off" && CVNav.className !== "Menu-list off") {
+            CV.classList.add("off");
+            CVNav.classList.add("off");
+            Home.classList.remove("off");
+            HomeNav.classList.remove("off");
+        }
+    });
+    Bottom.addEventListener("click", () => {
+        if (Home.className !== "Home small off" && HomeNav.className !== "Menu-list off") {
+            Home.classList.add("off");
+            HomeNav.classList.add("off");
+            CV.classList.remove("off");
+            CVNav.classList.remove("off");
+        } else if (CV.className !== "CV small off" && CVNav.className !== "Menu-list off") {
+            CV.classList.add("off");
+            CVNav.classList.add("off");
+            Projects.classList.remove("off");
+            ProjectsNav.classList.remove("off");
+        } else if (Projects.className !== "Projects small off" && ProjectsNav.className !== "Menu-list off") {
+            Projects.classList.add("off");
+            ProjectsNav.classList.add("off");
+            Contacts.classList.remove("off");
+            ContactsNav.classList.remove("off");
+        }
+    });
+};
+/*--------------GAME HOME----------*/
 const Table = document.querySelectorAll(".Table");
 const Cards = document.querySelectorAll(".Cards");
 const CardsStart = document.querySelectorAll(".CardsStart");
@@ -333,7 +394,7 @@ const Game = () => {
         }
     }
 };
-/////////////////      Carousel Changing       /////////////////////
+/*------------Carousel Changing------------*/
 const Previous = document.querySelectorAll(".Previous");
 const Next = document.querySelectorAll(".Next");
 const block = document.querySelectorAll(".block");
@@ -369,7 +430,7 @@ const rotateCarousel = () => {
         })
     }
 };
-//////////////////////       ProjectBtn Changing        ///////////////////////
+/*------------ProjectBtn Changing------*/
 
 const Carousel = document.querySelectorAll(".Carousel");
 const Shelf = document.querySelectorAll(".Shelf");
@@ -401,6 +462,7 @@ const changeProject = () => {
 
 let loop = setInterval(Terminal, 100);
 Skip();
+Menu();
 Game();
 rotateCarousel();
 changeProject();
