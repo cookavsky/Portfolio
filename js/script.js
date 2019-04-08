@@ -597,3 +597,8 @@ Photo();
 
                 // Road 5
 // Right -> Bottom -> Bottom -> Left -> Bottom -> Bottom -> Right -> Bottom -> Right -> Right -> Top -> Right -> |END|
+
+
+const globe = document.getElementById("globe");
+const clouds1 = document.getElementById("clouds1");
+const clouds2 = document.getElementById("clouds2");

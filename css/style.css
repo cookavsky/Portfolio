@@ -125,7 +125,6 @@
     height: 100vh;
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
     align-items: center;
     color: white;
 	text-shadow: 1px 1px 1px black, 2px 2px 2px black;
@@ -704,8 +703,9 @@
 }
 
 .Home-small {
+    border-radius: 100%;
     background: url("../img/Home-container-Small.png") no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 50em;
     min-height: 30em;
     max-height: 30em;
@@ -735,10 +735,6 @@
     max-height: 30em;
 }
 
-.off {
-    display: none;
-}
-
 @keyframes Opacity {
     from {
         opacity: 0;
@@ -759,4 +755,34 @@
     } 100% {
         transform: translateY(0em);
     }
+}
+
+.globe {
+    height: 40em;
+    width: 40em;
+    box-shadow: inset -20px -10px 200px rgba(0,0,0,1), inset -5px -5px 50px rgba(0,0,0,.75), 0 0 50px rgba(12,111,180,.75);
+    border:solid rgba(10,100,150,.85) 1px;
+    border-radius:50%;
+    background:url("../img/map.jpg") repeat-x left top;
+}
+
+.clouds {
+    height: 40em;
+    width: 40em;
+	position: absolute;
+    border-radius:50%;
+    background:url(http://creativeocean.com/dev/img/cloud.png);
+}
+
+.clouds1 {
+    transform:rotate(-2deg);
+}
+
+.clouds2 {
+    box-shadow: inset -90px -10px 100px rgba(0,0,0,.7);
+    transform:rotate(2deg);
+}
+
+.off {
+    display: none;
 }
