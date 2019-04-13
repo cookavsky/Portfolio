@@ -52,124 +52,104 @@ const Skip = () => {
 const Top = document.getElementById("Top");
 const Bottom = document.getElementById("Bottom");
 const BackBtn = document.getElementById("Back");
-const ArtMain = document.getElementById("ArtMain");
-//////Home//////
+const globe = document.getElementById("globe");
+///////Home///////
 const Home = document.getElementById("Home");
 const HomeNav = document.getElementById("HomeNav");
-const HomeContent = document.getElementById("Home-Content");
-////////CV///////
-const CV = document.getElementById("CV");
+const HomeTextNav = document.getElementById("HomeTextNav");
+///////CV///////
 const CVNav = document.getElementById("CVNav");
-const CVContent = document.getElementById("CV-Content");
-///Project////
-const Projects = document.getElementById("Projects");
+const CVTextNav = document.getElementById("CVTextNav");
+///////Projects///////
 const ProjectsNav = document.getElementById("ProjectsNav");
-const ProjectsContent = document.getElementById("Projects-Content");
-/////Contacts////
-const Contacts = document.getElementById("Contacts");
+const ProjectsTextNav = document.getElementById("ProjectsTextNav");
+///////Contacts///////
 const ContactsNav = document.getElementById("ContactsNav");
-const ContactsContent = document.getElementById("Contacts-Content");
+const ContactsTextNav = document.getElementById("ContactsTextNav");
 
 const Menu = () => {
     Top.addEventListener("click", () => {
-        if (Contacts.className !== "Contacts Contacts-small off" && ContactsNav.className !== "Menu-list off") {
-            Contacts.classList.add("off");
-            ContactsNav.classList.add("off");
-            Projects.classList.remove("off");
-            ProjectsNav.classList.remove("off");
-            Bottom.classList.add("Steping");
-        } else if (Projects.className !== "Projects Projects-small off" && ProjectsNav.className !== "Menu-list off") {
-            Projects.classList.add("off");
-            ProjectsNav.classList.add("off");
-            CV.classList.remove("off");
-            CVNav.classList.remove("off");
-        } else if (CV.className !== "CV CV-small off" && CVNav.className !== "Menu-list off") {
-            CV.classList.add("off");
+        if (HomeNav.className === "Menu-list-activ") {
+            HomeNav.classList.add("off");
+            HomeNav.classList.replace("Menu-list-activ", "Menu-list");
+            HomeTextNav.classList.replace("Menu-list-Text-activ", "Menu-list-Text");
+            setTimeout(function () {
+                ProjectsNav.classList.remove("off");
+            }, 350);
+            CVNav.classList.add("MenuTrans");
+            CVNav.classList.replace("Menu-list", "Menu-list-activ");
+            CVTextNav.classList.replace("Menu-list-Text", "Menu-list-Text-activ");
+            globe.style.backgroundPositionX = "20em";
+            Bottom.classList.add("Stepping");
+        } else if (CVNav.className === "Menu-list-activ MenuTrans" || CVNav.className === "Menu-list-activ") {
             CVNav.classList.add("off");
-            Home.classList.remove("off");
-            HomeNav.classList.remove("off");
-            Top.classList.remove("Steping");
+            CVNav.classList.replace("Menu-list-activ", "Menu-list");
+            CVTextNav.classList.replace("Menu-list-Text-activ", "Menu-list-Text");
+            setTimeout(function () {
+                ContactsNav.classList.remove("off");
+            }, 350);
+            ProjectsNav.classList.add("MenuTrans");
+            ProjectsNav.classList.replace("Menu-list", "Menu-list-activ");
+            ProjectsTextNav.classList.replace("Menu-list-Text", "Menu-list-Text-activ");
+            globe.style.backgroundPositionX = "40em";
+        } else if (ProjectsNav.className === "Menu-list-activ MenuTrans" || ProjectsNav.className === "Menu-list-activ") {
+            ProjectsNav.classList.add("off");
+            ProjectsNav.classList.replace("Menu-list-activ", "Menu-list");
+            ProjectsTextNav.classList.replace("Menu-list-Text-activ", "Menu-list-Text");
+            ContactsNav.classList.add("MenuTrans");
+            ContactsNav.classList.replace("Menu-list", "Menu-list-activ");
+            ContactsTextNav.classList.replace("Menu-list-Text", "Menu-list-Text-activ");
+            globe.style.backgroundPositionX = "60em";
+            Top.classList.remove("Stepping");
         }
     });
     Bottom.addEventListener("click", () => {
-        if (Home.className !== "Home Home-small off" && HomeNav.className !== "Menu-list off") {
-            Home.classList.add("off");
-            HomeNav.classList.add("off");
-            CV.classList.remove("off");
-            CVNav.classList.remove("off");
-            Top.classList.add("Steping");
-        } else if (CV.className !== "CV CV-small off" && CVNav.className !== "Menu-list off") {
-            CV.classList.add("off");
-            CVNav.classList.add("off");
-            Projects.classList.remove("off");
-            ProjectsNav.classList.remove("off");
-        } else if (Projects.className !== "Projects Projects-small off" && ProjectsNav.className !== "Menu-list off") {
-            Projects.classList.add("off");
+        if (ContactsNav.className === "Menu-list-activ MenuTrans") {
+            globe.style.backgroundPositionX = "40em";
+            Top.classList.add("Stepping");
+            ContactsNav.classList.remove("MenuTrans");
+            ProjectsNav.classList.remove("MenuTrans", "off");
+            ContactsNav.classList.replace("Menu-list-activ", "Menu-list");
+            ContactsTextNav.classList.replace("Menu-list-Text-activ", "Menu-list-Text");
+            ProjectsNav.classList.replace("Menu-list", "Menu-list-activ");
+            ProjectsTextNav.classList.replace("Menu-list-Text", "Menu-list-Text-activ");
+        } else if (ProjectsNav.className === "Menu-list-activ MenuTrans" || ProjectsNav.className === "Menu-list-activ") {
+            globe.style.backgroundPositionX = "20em";
+            ContactsNav.classList.add("off");
+            ProjectsNav.classList.remove("MenuTrans");
+            CVNav.classList.remove("MenuTrans", "off");
+            ProjectsNav.classList.replace("Menu-list-activ", "Menu-list");
+            ProjectsTextNav.classList.replace("Menu-list-Text-activ", "Menu-list-Text");
+            CVNav.classList.replace("Menu-list", "Menu-list-activ");
+            CVTextNav.classList.replace("Menu-list-Text", "Menu-list-Text-activ");
+        } else if (CVNav.className === "Menu-list-activ MenuTrans" || CVNav.className === "Menu-list-activ") {
+            globe.style.backgroundPositionX = "0em";
             ProjectsNav.classList.add("off");
-            Contacts.classList.remove("off");
-            ContactsNav.classList.remove("off");
-            Bottom.classList.remove("Steping");
-        }
-    });
-    BackBtn.addEventListener("click", () => {
-        Top.classList.remove("off");
-        Bottom.classList.remove("off");
-        BackBtn.classList.add("off");
-        ArtMain.classList.add("ArtMain");
-        if (Home.className === "Home") {
-        HomeNav.classList.remove("off");
-        Home.classList.add("Home-small");
-        HomeContent.classList.add("off");
-        } else if (CV.className === "CV") {
-        CVNav.classList.remove("off");
-        CV.classList.add("CV-small");
-        CVContent.classList.add("off");
-        } else if (Projects.className === "Projects") {
-        ProjectsNav.classList.remove("off");
-        Projects.classList.add("Projects-small");
-        ProjectsContent.classList.add("off");
-        } else if (Contacts.className === "Contacts") {
-        ContactsNav.classList.remove("off");
-        Contacts.classList.add("Contacts-small");
-        ContactsContent.classList.add("off");
+            CVNav.classList.remove("MenuTrans");
+            HomeNav.classList.remove("off");
+            CVNav.classList.replace("Menu-list-activ", "Menu-list");
+            CVTextNav.classList.replace("Menu-list-Text-activ", "Menu-list-Text");
+            HomeNav.classList.replace("Menu-list", "Menu-list-activ");
+            HomeTextNav.classList.replace("Menu-list-Text", "Menu-list-Text-activ");
+            Bottom.classList.remove("Stepping");
         }
     });
     HomeNav.addEventListener("click", () => {
-        Top.classList.add("off");
-        Bottom.classList.add("off");
-        BackBtn.classList.remove("off");
-        HomeNav.classList.add("off");
-        ArtMain.classList.remove("ArtMain");
-        Home.classList.remove("Home-small");
-        HomeContent.classList.remove("off");
-    });
+        if (HomeNav.className === "Menu-list-activ") {
+            Top.classList.add("off");
+            Bottom.classList.add("off");
+            globe.classList.add("off");
+            BackBtn.classList.remove("off");
+        }
+    });/*
     CVNav.addEventListener("click", () => {
-        Top.classList.add("off");
-        Bottom.classList.add("off");
-        BackBtn.classList.remove("off");
-        CVNav.classList.add("off");
-        ArtMain.classList.remove("ArtMain");
-        CV.classList.remove("CV-small");
-        CVContent.classList.remove("off");
     });
     ProjectsNav.addEventListener("click", () => {
-        Top.classList.add("off");
-        Bottom.classList.add("off");
-        BackBtn.classList.remove("off");
-        ProjectsNav.classList.add("off");
-        ArtMain.classList.remove("ArtMain");
-        Projects.classList.remove("Projects-small");
-        ProjectsContent.classList.remove("off");
     });
     ContactsNav.addEventListener("click", () => {
-        Top.classList.add("off");
-        Bottom.classList.add("off");
-        BackBtn.classList.remove("off");
-        ContactsNav.classList.add("off");
-        ArtMain.classList.remove("ArtMain");
-        Contacts.classList.remove("Contacts-small");
-        ContactsContent.classList.remove("off");
     });
+    BackBtn.addEventListener("click", () => {
+    });*/
 };
 /*--------------GAME HOME----------*/
 const Table = document.querySelectorAll(".Table");
@@ -598,7 +578,3 @@ Photo();
                 // Road 5
 // Right -> Bottom -> Bottom -> Left -> Bottom -> Bottom -> Right -> Bottom -> Right -> Right -> Top -> Right -> |END|
 
-
-const globe = document.getElementById("globe");
-const clouds1 = document.getElementById("clouds1");
-const clouds2 = document.getElementById("clouds2");
