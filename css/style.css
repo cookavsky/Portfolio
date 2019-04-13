@@ -5,7 +5,7 @@
 }
 
 .body-container {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 /*-------------HEADER----------*/
 .header-container {
@@ -82,6 +82,62 @@
     border-bottom-right-radius: 1em;
     border-bottom-left-radius: 1em;
 }
+/*---------Main-----------*/
+.main-container {
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+	text-shadow: 1px 1px 1px black, 2px 2px 2px black;
+    background-color: #212020;
+}
+
+.Home-Content {
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/Home-container.jpg") no-repeat;
+}
+
+.CV-Content {
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: url("../img/CV-container.jpg") no-repeat;
+}
+
+.Projects-Content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/Projects-container.jpg") no-repeat;
+}
+
+.Contacts-Content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/Contacts-container.jpg") no-repeat;
+}
+
+.Home, .CV, .Projects, .Contacts {
+    min-height: 100vh;
+    width: 100vw;
+    color: white;
+	text-shadow: 1px 1px 1px black, 2px 2px 2px black;
+    padding: 10em 2em;
+    background-position: center;
+    background-size: cover;
+    animation: Opacity 1s cubic-bezier(.455, .03, .515, .955);
+}
 /*---------Menu---------*/
 .Menu {
     height: 100%;
@@ -114,6 +170,7 @@
     display: inline;
     cursor: pointer;
     font-size: 3rem;
+    animation: Opacity 1s forwards;
     transition: 1s ease-in-out;
 }
 
@@ -156,8 +213,8 @@
     height: 25em;
     width: 25em;
 	position: absolute;
-    border-radius:50%;
-    background:url(http://creativeocean.com/dev/img/cloud.png);
+    border-radius: 50%;
+    background: url(http://creativeocean.com/dev/img/cloud.png);
 }
 
 .clouds1 {
@@ -168,50 +225,7 @@
     box-shadow: inset -90px -10px 100px rgba(0,0,0,.7);
     transform: rotate(2deg);
 }
-/*---------Main-----------*/
-.main-container {
-    overflow-x: hidden;
-    height: 100vh;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-	text-shadow: 1px 1px 1px black, 2px 2px 2px black;
-    background-color: #212020;
-}
 /*-------------HOME----------*/
-.Home {
-    min-height: 100vh;
-    width: 100vw;
-    color: white;
-	text-shadow: 1px 1px 1px black, 2px 2px 2px black;
-    padding: 10em 2em;
-    background: url("../img/Home-container.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
-    transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
-    animation: flip-left 1s cubic-bezier(.455, .03, .515, .955);
-}
-
-@keyframes flip-left {
-    from {
-        opacity: 0;
-        transform: translate3d(0, 5em, 0);
-    } to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-.Home-Content {
-    overflow-x: hidden;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
-
 .Home-Intro {
     width: 20em;
     margin: 1em;
@@ -316,35 +330,19 @@
     }
 }
 /*-------------CV----------*/
-.CV {
-    min-height: 100vh;
-    width: 100vw;
-    color: white;
-	text-shadow: 1px 1px 1px black, 2px 2px 2px black;
-    padding: 10em 2em;
-    background: url("../img/CV-container.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
-    transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
-    animation: flip-left 1s cubic-bezier(.455, .03, .515, .955);
-}
-
-.CV-Content {
-    overflow-x: hidden;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
 .CV-Intro, .CV-Home, .CV-School, .CV-Work {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     text-align: justify;
+    margin: 4em 0;
 }
 
 .CV-Photo {
     position: relative;
     width: calc(18em + 4px);
     height: calc(20em + 4px);
-    margin: auto;
+    margin: 2em;
 }
 
 .CV-Photo-item {
@@ -360,7 +358,8 @@
 }
 
 .CV-Text {
-    margin: 2em 0;
+    width: calc(18em + 4px);
+    margin: 2em;
 }
 
 .CV-Work1 {
@@ -379,27 +378,6 @@
     transform: rotate(-15deg);
 }
 /*-------------Projects:Carousel----------*/
-.Projects {
-    overflow-x: hidden;
-    min-height: 100vh;
-    width: 100vw;
-    color: white;
-	text-shadow: 1px 1px 1px black, 2px 2px 2px black;
-    padding: 15em 2em;
-    background: url("../img/Projects-container.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
-    transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
-    animation: flip-left 1s cubic-bezier(.455, .03, .515, .955);
-}
-
-.Projects-Content {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .Carousel {
     height: 15em;
     perspective: 90em;
@@ -681,25 +659,8 @@
     background-color: rgba(241, 11, 11);
 }
 /*-------------Contacts----------*/
-.Contacts {
-    overflow-x: hidden;
-    min-height: 100vh;
-    width: 100vw;
-    color: white;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-	text-shadow: 1px 1px 1px black, 2px 2px 2px black;
-    background: url("../img/Contacts-container.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
-    transition: all 0.7s cubic-bezier(0.6, 0.05, 0.4, 1);
-    animation: flip-left 1s cubic-bezier(.455, .03, .515, .955);
-}
-
 .Mail {
-    width: 25em;
+    width: 20em;
     display: flex;
     flex-direction: column;
     margin: auto;

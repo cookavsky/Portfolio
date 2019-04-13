@@ -58,12 +58,15 @@ const Home = document.getElementById("Home");
 const HomeNav = document.getElementById("HomeNav");
 const HomeTextNav = document.getElementById("HomeTextNav");
 ///////CV///////
+const CV = document.getElementById("CV");
 const CVNav = document.getElementById("CVNav");
 const CVTextNav = document.getElementById("CVTextNav");
 ///////Projects///////
+const Projects = document.getElementById("Projects");
 const ProjectsNav = document.getElementById("ProjectsNav");
 const ProjectsTextNav = document.getElementById("ProjectsTextNav");
 ///////Contacts///////
+const Contacts = document.getElementById("Contacts");
 const ContactsNav = document.getElementById("ContactsNav");
 const ContactsTextNav = document.getElementById("ContactsTextNav");
 
@@ -140,16 +143,40 @@ const Menu = () => {
             Bottom.classList.add("off");
             globe.classList.add("off");
             BackBtn.classList.remove("off");
+            Home.classList.remove("off");
         }
-    });/*
+    });
     CVNav.addEventListener("click", () => {
+            Top.classList.add("off");
+            Bottom.classList.add("off");
+            globe.classList.add("off");
+            BackBtn.classList.remove("off");
+            CV.classList.remove("off");
     });
     ProjectsNav.addEventListener("click", () => {
+            Top.classList.add("off");
+            Bottom.classList.add("off");
+            globe.classList.add("off");
+            BackBtn.classList.remove("off");
+            Projects.classList.remove("off");
     });
     ContactsNav.addEventListener("click", () => {
+            Top.classList.add("off");
+            Bottom.classList.add("off");
+            globe.classList.add("off");
+            BackBtn.classList.remove("off");
+            Contacts.classList.remove("off");
     });
     BackBtn.addEventListener("click", () => {
-    });*/
+        Top.classList.remove("off");
+        Bottom.classList.remove("off");
+        globe.classList.remove("off");
+        BackBtn.classList.add("off");
+        Home.classList.add("off");
+        CV.classList.add("off");
+        Projects.classList.add("off");
+        Contacts.classList.add("off");
+    });
 };
 /*--------------GAME HOME----------*/
 const Table = document.querySelectorAll(".Table");
