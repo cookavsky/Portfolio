@@ -214,7 +214,7 @@
     width: 25em;
 	position: absolute;
     border-radius: 50%;
-    background: url(http://creativeocean.com/dev/img/cloud.png);
+    background: url("../img/cloud.png");
 }
 
 .clouds1 {

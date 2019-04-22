@@ -37,8 +37,50 @@
     .Message {
         height: 9em;
     }
-} @media (max-width: 300px) {
+} @media (min-height: 350px) and (max-height: 550px) {
     .body-container {
         font-size: 0.7rem;
+    }
+    .Menu-list-Text {
+        font-size: 1.5rem;
+    }
+    .Menu-list-Text-activ {
+    font-size: 2.5rem;
+    }
+    .globe, .clouds {
+        width: 20em;
+        height: 20em;
+    } .Menu-list-activ {
+        transform: translateY(7em);
+    } @keyframes MenuTrans {
+        from {
+            transform: translateY(3.5em) translateX(-9em);
+        }
+        to {
+            transform: translateY(7em) translateX(0em);
+        }
+    }
+} @media (max-height: 350px) {
+    .body-container {
+        font-size: 0.6rem;
+    }
+    .Menu-list-Text {
+        font-size: 1rem;
+    }
+    .Menu-list-Text-activ {
+    font-size: 2rem;
+    }
+    .globe, .clouds {
+        width: 20em;
+        height: 20em;
+    } .Menu-list-activ {
+        transform: translateY(7em);
+    } @keyframes MenuTrans {
+        from {
+            transform: translateY(3.5em) translateX(-9em);
+        }
+        to {
+            transform: translateY(7em) translateX(0em);
+        }
     }
 }
