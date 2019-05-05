@@ -59,7 +59,8 @@ Button click switch rotateY(' + angle + 'deg) and translateZ(x) all elements. bl
 
 let blockfinish = 7;
 let blockstart = 0;
-`   for (let i = 0; i < Previous.length; i++) {
+
+`for (let i = 0; i < Previous.length; i++) {
         Previous[i].addEventListener("click", () => {
             blockstart--;
             let angle = blockstart / blockfinish * -360;
