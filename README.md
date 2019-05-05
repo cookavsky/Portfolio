@@ -1,7 +1,7 @@
-#Portfolio - cookavsky
+# Portfolio - cookavsky
 Presentation of myself and my knowledge. Currently builded with simple HTML, CSS, JS.
 
-##Getting Started
+## Getting Started
 It does not have any requirements. The principle of "copy, paste". With the time of acquiring new knowledge to the portfolio, I trying to add something new. Still in progress. The best element of the portfolio is the first page and the presentation of projects. I want achieve a satisfactory effect of the so-called "Beautiful".
 
 ## Screenshots
