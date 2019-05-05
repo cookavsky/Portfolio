@@ -15,7 +15,7 @@ It does not have any requirements. The principle of "copy, paste". With the time
 * PHP
 
 ## Acknowledgments
-#### Console text
+### Console text
 #### Inspiration : https://codepen.io/LeandroPeres/pen/bEaWaZ
 
 Simple code:
