@@ -19,14 +19,12 @@ It does not have any requirements. The principle of "copy, paste". With the time
 #### Inspiration : https://codepen.io/LeandroPeres/pen/bEaWaZ
 
 Simple code:
-######Two position
+###### Two position
 *One = Generate Text: counter add number and Text inner in HTML slice(0, x). When counter = innerHTML, change position to 1;
 *Two = counter subtract number, Text is remove this same fuction slice(0, x). When counter have 0, changing position and index. When index is 4,
 the function switches off.
 
-Two = DeleteText
-
-headerText = Array;
+headerText = Array
 `if (position === 0) {
         window.setTimeout(() => {
             counter++;
