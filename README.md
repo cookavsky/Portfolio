@@ -52,7 +52,7 @@ headerText = Array
             if (index === 4) {
                 index = 0;`
 
-#### Carousel + Shelf
+### Carousel + Shelf
 #### Inspiration : https://3dtransforms.desandro.com/
 
 Shelf: in brief (
