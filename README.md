@@ -1,5 +1,5 @@
 # Portfolio - cookavsky
-Presentation of myself and my knowledge. Currently builded with simple HTML, CSS, JS.
+* * Presentation of myself and my knowledge. Currently builded with simple HTML, CSS, JS.
 
 ## Table of contents
 * [Getting Started](#getting-started)
