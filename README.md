@@ -5,6 +5,7 @@
 * [Getting Started](#getting-started)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
+* [To do](#to-do)
 * [Acknowledgments](#acknowledgments)
 * [Status](#status)
 * [Author](#author)
@@ -21,6 +22,10 @@ It does not have any requirements. The principle of "copy, paste". With the time
 * CSS
 * JS
 * PHP
+
+## To do
+* The Appearance
+* Use of new knowledge to improve the site
 
 ## Acknowledgments
 ### Console text
