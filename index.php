@@ -216,17 +216,17 @@
             </section>
             <section id="Projects" class="Projects Projects-Content off">
                 <div class="Carousel">
-                    <a href="https://fifa.cookavsky.com" target="_blank" class="Project1 block"></a>
-                    <a href="https://weeklyone.cookavsky.com" target="_blank" class="Project2 block"></a>
-                    <a href="https://weeklytwo.cookavsky.com" target="_blank" class="Project3 block"></a>
-                    <a href="https://weeklythree.cookavsky.com" target="_blank" class="Project4 block"></a>
-                    <a href="https://weeklyfour.cookavsky.com" target="_blank" class="Project5 block"></a>
-                    <a href="https://weeklyeleven.cookavsky.com" target="_blank" class="Project6 block"></a>
-                    <a href="https://angulartable.cookavsky.com" target="_blank" class="Project7 block"></a>
+                    <a href="https://cookavsky.com/project/FIFA_Soccer_Games" target="_blank" class="Project1 block"></a>
+                    <a href="https://cookavsky.com/project/weeklyone" target="_blank" class="Project2 block"></a>
+                    <a href="https://cookavsky.com/project/weeklytwo" target="_blank" class="Project3 block"></a>
+                    <a href="https://cookavsky.com/project/weeklythree" target="_blank" class="Project4 block"></a>
+                    <a href="https://cookavsky.com/project/weeklyfour" target="_blank" class="Project5 block"></a>
+                    <a href="https://cookavsky.com/project/weeklyeleven" target="_blank" class="Project6 block"></a>
+                    <a href="https://cookavsky.com/project/FIFA_Virtual_Table" target="_blank" class="Project7 block"></a>
                 </div>
                 <div class="Shelf off">
                     <div class="book book-1">
-                        <a href="https://fifa.cookavsky.com" target="_blank">
+                        <a href="https://cookavsky.com/project/FIFA_Soccer_Games" target="_blank">
                             <div class="book-pos front">
                                 <h3 class="Spine">Ea Sports It's In The Game</h3>
                             </div>
@@ -235,7 +235,7 @@
                         </a>
                     </div>
                     <div class="book book-2">
-                        <a href="https://weeklyone.cookavsky.com" target="_blank">
+                        <a href="https://cookavsky.com/project/weeklyone" target="_blank">
                             <div class="book-pos front">
                                 <h3 class="Spine">Weekly WebDev Challenge #1</h3>
                             </div>
@@ -244,7 +244,7 @@
                         </a>
                     </div>
                     <div class="book book-3">
-                        <a href="https://weeklytwo.cookavsky.com" target="_blank">
+                        <a href="https://cookavsky.com/project/weeklytwo" target="_blank">
                             <div class="book-pos front">
                                 <h3 class="Spine">Weekly WebDev Challenge #2</h3>
                             </div>
@@ -253,7 +253,7 @@
                         </a>
                     </div>
                     <div class="book book-4">
-                        <a href="https://weeklythree.cookavsky.com" target="_blank">
+                        <a href="https://cookavsky.com/project/weeklythree" target="_blank">
                             <div class="book-pos front">
                                 <h3 class="Spine">Weekly WebDev Challenge #3</h3>
                             </div>
@@ -262,7 +262,7 @@
                         </a>
                     </div>
                     <div class="book book-5">
-                        <a href="https://weeklyfour.cookavsky.com" target="_blank">
+                        <a href="https://cookavsky.com/project/weeklyfour" target="_blank">
                             <div class="book-pos front">
                                 <h3 class="Spine">Weekly WebDev Challenge #4</h3>
                             </div>
@@ -271,7 +271,7 @@
                         </a>
                     </div>
                     <div class="book book-6">
-                        <a href="https://weeklyeleven.cookavsky.com" target="_blank">
+                        <a href="https://cookavsky.com/project/weeklyeleven" target="_blank">
                             <div class="book-pos front">
                                 <h3 class="Spine">Weekly WebDev Challenge #11</h3>
                             </div>
@@ -280,7 +280,7 @@
                         </a>
                     </div>
                     <div class="book book-7">
-                        <a href="https://angulartable.cookavsky.com" target="_blank">
+                        <a href="https://cookavsky.com/project/FIFA_Virtual_Table" target="_blank">
                             <div class="book-pos front">
                                 <h3 class="Spine">Create League in Angular</h3>
                             </div>
