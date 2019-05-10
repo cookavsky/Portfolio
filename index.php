@@ -61,13 +61,13 @@
             <span class="console-underscore">|</span>
         </h1>
         <div id="Header-Social" class="header-social off">
-            <a class="Facebook" href="https://www.facebook.com/cookavsky" target="_blank">
+            <a class="Facebook" href="https://www.facebook.com/cookavsky" rel="noreferrer" target="_blank">
                 <img class="Facebook-img" src="img/facebook.png">
             </a>
-            <a class="Github" href="https://github.com/cookavsky" target="_blank">
+            <a class="Github" href="https://github.com/cookavsky" rel="noreferrer" target="_blank">
                 <img class="Github-img" src="img/github.png">
             </a>
-            <a class="Linkedin" href="https://www.linkedin.com/in/cookavsky" target="_blank">
+            <a class="Linkedin" href="https://www.linkedin.com/in/cookavsky" rel="noreferrer" target="_blank">
                 <img class="Linkedin-img" src="img/linkedin.png">
             </a>
         </div>
@@ -156,7 +156,7 @@
                         </div>
                     </div>
                     <div class="CV-Text">
-                        <h3>Hello Everyone, I`m Marcin Kukawski. From little boy I like spend my time in front of a computer. I like too fishing and football. A year ago also fan of every edition of FIFA. I`m young, ambition, i like learn and can connection work with learning. For year I thought about change work and decided choose Front-end. I changed my losing time for something useful. From 19 July 2018 started my adventure with "the Front-end World". There is much materials to learning, thanks community. So we can learn everything. Learning gives me pleasure, but finding a solution by searching, combining gives me the greatest satisfaction. I decided to my Portfolio add short CV about my the most important stages my life.</h3>
+                        <h2>Hello Everyone, I`m Marcin Kukawski. From little boy I like spend my time in front of a computer. I like too fishing and football. A year ago also fan of every edition of FIFA. I`m young, ambition, i like learn and can connection work with learning. For year I thought about change work and decided choose Front-end. I changed my losing time for something useful. From 19 July 2018 started my adventure with "the Front-end World". There is much materials to learning, thanks community. So we can learn everything. Learning gives me pleasure, but finding a solution by searching, combining gives me the greatest satisfaction. I decided to my Portfolio add short CV about my the most important stages my life.</h2>
                     </div>
                 </div>
                 <div class="CV-Home">
@@ -172,7 +172,7 @@
                         </div>
                     </div>
                     <div class="CV-Text">
-                        <h3>I grew up in Murowana Goślina. There I went to primary school. Town is small, quiet, with good public transport, but has expensive apartments. Murowana Goślina is a small town located about 20 km from Poznań. Town has a surface 7,15 km2 also population 10 000 people. Murowana Goślina has its charm and potential industrial. It is close Poznań with good comunication, so companies decided here building factory. It has been planned so that they do not disturb residents. Factory are build on your own street called Przemysłowa. History about rise a town is a simple. Foreign knight Gostl received the land, which called Górka and later Goślina. Because of the town's appearance residents divided Murowana Goślina into two districts: Zielone Wzgórza and Stara Murowana.</h3>
+                        <h2>I grew up in Murowana Goślina. There I went to primary school. Town is small, quiet, with good public transport, but has expensive apartments. Murowana Goślina is a small town located about 20 km from Poznań. Town has a surface 7,15 km2 also population 10 000 people. Murowana Goślina has its charm and potential industrial. It is close Poznań with good comunication, so companies decided here building factory. It has been planned so that they do not disturb residents. Factory are build on your own street called Przemysłowa. History about rise a town is a simple. Foreign knight Gostl received the land, which called Górka and later Goślina. Because of the town's appearance residents divided Murowana Goślina into two districts: Zielone Wzgórza and Stara Murowana.</h2>
                     </div>
                 </div>
                 <div class="CV-School">
@@ -188,7 +188,7 @@
                         </div>
                     </div>
                     <div class="CV-Text">
-                        <h3>I finish technical school and university. Both are in Poznań. Zespół Szkół Łączności im. Mikołaja Kopernika na ul. Przełajowa 4. School consists with primary, high and technical. They very good prepared me for final exams, but less to technical exams. I was studying telecommunications technology, but I did not associate myself with this future. Next school was Wyższa Szkoła Logistyczna ul. Estkowskiego 6. It is the first in Poland non-public university logistic create by the Institute of Logistics and Warehousing also Center Education Logistic in Poznań. During my studies, I understood how important it is to respect my time and others, because work form Monday to Friday and school in Saturday also Sunday, can tire a man. I remember, when after the night shift from Friday to Saturday, I had must go to school. I have good memories with my studies. School very good teach a different approach to life</h3>
+                        <h2>I finish technical school and university. Both are in Poznań. Zespół Szkół Łączności im. Mikołaja Kopernika na ul. Przełajowa 4. School consists with primary, high and technical. They very good prepared me for final exams, but less to technical exams. I was studying telecommunications technology, but I did not associate myself with this future. Next school was Wyższa Szkoła Logistyczna ul. Estkowskiego 6. It is the first in Poland non-public university logistic create by the Institute of Logistics and Warehousing also Center Education Logistic in Poznań. During my studies, I understood how important it is to respect my time and others, because work form Monday to Friday and school in Saturday also Sunday, can tire a man. I remember, when after the night shift from Friday to Saturday, I had must go to school. I have good memories with my studies. School very good teach a different approach to life</h2>
                     </div>
                 </div>
                 <div class="CV-Work">
@@ -210,23 +210,23 @@
                         </div>
                     </div>
                     <div class="CV-Text">
-                        <h3>My first job that I was able to get was a telemarketer. It is work for the hard-bitten, because telling other people often not needed products is not easy. When i called to people, often heard negative opinions about me. I was involved in calling individuals and offering them products. Second job was warehouseman, my task was a order picking. That's when I decided to study logistics. Work is dynamic, but also peaceful. During the picking you had to carry goods that weighed from 1 kg to 30 kg. Last job was machine operator. It was be a new for me. I studied about year, to be able to handle machine yourself. Work with an emphasis on production. The machine could never stand without a serious reason. My task was to operate machines and its maintenance. I used to work an overhead crane and a forklift. The employee had to be focused all the time.</h3>
+                        <h2>My first job that I was able to get was a telemarketer. It is work for the hard-bitten, because telling other people often not needed products is not easy. When i called to people, often heard negative opinions about me. I was involved in calling individuals and offering them products. Second job was warehouseman, my task was a order picking. That's when I decided to study logistics. Work is dynamic, but also peaceful. During the picking you had to carry goods that weighed from 1 kg to 30 kg. Last job was machine operator. It was be a new for me. I studied about year, to be able to handle machine yourself. Work with an emphasis on production. The machine could never stand without a serious reason. My task was to operate machines and its maintenance. I used to work an overhead crane and a forklift. The employee had to be focused all the time.</h2>
                     </div>
                 </div>
             </section>
             <section id="Projects" class="Projects Projects-Content off">
                 <div class="Carousel">
-                    <a href="https://cookavsky.com/project/FIFA_Soccer_Games" target="_blank" class="Project1 block"></a>
-                    <a href="https://cookavsky.com/project/weeklyone" target="_blank" class="Project2 block"></a>
-                    <a href="https://cookavsky.com/project/weeklytwo" target="_blank" class="Project3 block"></a>
-                    <a href="https://cookavsky.com/project/weeklythree" target="_blank" class="Project4 block"></a>
-                    <a href="https://cookavsky.com/project/weeklyfour" target="_blank" class="Project5 block"></a>
-                    <a href="https://cookavsky.com/project/weeklyeleven" target="_blank" class="Project6 block"></a>
-                    <a href="https://cookavsky.com/project/FIFA_Virtual_Table" target="_blank" class="Project7 block"></a>
+                    <a href="https://cookavsky.com/project/FIFA_Soccer_Games" rel="noreferrer" target="_blank" class="Project1 block"></a>
+                    <a href="https://cookavsky.com/project/weeklyone" rel="noreferrer" target="_blank" class="Project2 block"></a>
+                    <a href="https://cookavsky.com/project/weeklytwo" rel="noreferrer" target="_blank" class="Project3 block"></a>
+                    <a href="https://cookavsky.com/project/weeklythree" rel="noreferrer" target="_blank" class="Project4 block"></a>
+                    <a href="https://cookavsky.com/project/weeklyfour" rel="noreferrer" target="_blank" class="Project5 block"></a>
+                    <a href="https://cookavsky.com/project/weeklyeleven" rel="noreferrer" target="_blank" class="Project6 block"></a>
+                    <a href="https://cookavsky.com/project/FIFA_Virtual_Table" rel="noreferrer" target="_blank" class="Project7 block"></a>
                 </div>
                 <div class="Shelf off">
                     <div class="book book-1">
-                        <a href="https://cookavsky.com/project/FIFA_Soccer_Games" target="_blank">
+                        <a href="https://cookavsky.com/project/FIFA_Soccer_Games" rel="noreferrer" target="_blank">
                             <div class="book-pos front">
                                 <h3 class="Spine">Ea Sports It's In The Game</h3>
                             </div>
@@ -235,7 +235,7 @@
                         </a>
                     </div>
                     <div class="book book-2">
-                        <a href="https://cookavsky.com/project/weeklyone" target="_blank">
+                        <a href="https://cookavsky.com/project/weeklyone" rel="noreferrer" target="_blank">
                             <div class="book-pos front">
                                 <h3 class="Spine">Weekly WebDev Challenge #1</h3>
                             </div>
@@ -244,7 +244,7 @@
                         </a>
                     </div>
                     <div class="book book-3">
-                        <a href="https://cookavsky.com/project/weeklytwo" target="_blank">
+                        <a href="https://cookavsky.com/project/weeklytwo" rel="noreferrer" target="_blank">
                             <div class="book-pos front">
                                 <h3 class="Spine">Weekly WebDev Challenge #2</h3>
                             </div>
@@ -253,7 +253,7 @@
                         </a>
                     </div>
                     <div class="book book-4">
-                        <a href="https://cookavsky.com/project/weeklythree" target="_blank">
+                        <a href="https://cookavsky.com/project/weeklythree" rel="noreferrer" target="_blank">
                             <div class="book-pos front">
                                 <h3 class="Spine">Weekly WebDev Challenge #3</h3>
                             </div>
@@ -262,7 +262,7 @@
                         </a>
                     </div>
                     <div class="book book-5">
-                        <a href="https://cookavsky.com/project/weeklyfour" target="_blank">
+                        <a href="https://cookavsky.com/project/weeklyfour" rel="noreferrer" target="_blank">
                             <div class="book-pos front">
                                 <h3 class="Spine">Weekly WebDev Challenge #4</h3>
                             </div>
@@ -271,7 +271,7 @@
                         </a>
                     </div>
                     <div class="book book-6">
-                        <a href="https://cookavsky.com/project/weeklyeleven" target="_blank">
+                        <a href="https://cookavsky.com/project/weeklyeleven" rel="noreferrer" target="_blank">
                             <div class="book-pos front">
                                 <h3 class="Spine">Weekly WebDev Challenge #11</h3>
                             </div>
@@ -280,7 +280,7 @@
                         </a>
                     </div>
                     <div class="book book-7">
-                        <a href="https://cookavsky.com/project/FIFA_Virtual_Table" target="_blank">
+                        <a href="https://cookavsky.com/project/FIFA_Virtual_Table" rel="noreferrer" target="_blank">
                             <div class="book-pos front">
                                 <h3 class="Spine">Create League in Angular</h3>
                             </div>
@@ -296,11 +296,11 @@
                     </div>
                     <div class="Carousel-change">
                         <div class="Checkpoint CheckpointActiv"></div>
-                        <h3>Carousel</h3>
+                        <h2>Carousel</h2>
                         </div>
                     <div class="Project-change">
                         <div class="Checkpoint"></div>
-                        <h3>Shelf</h3>
+                        <h2>Shelf</h2>
                     </div>
                 </div>
             </section>
