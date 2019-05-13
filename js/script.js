@@ -26,7 +26,7 @@ const Terminal = () => {
             position = 0;
             index++;
             if (index === 4) {
-                index = 0;
+                position = 2;
                 HeaderContainer.classList.add("mini");
                 Console.classList.add("off");
                 HeaderSocial.classList.remove("off");

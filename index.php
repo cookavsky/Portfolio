@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Portfolio - cookavsky</title>
     <meta name="description" content="Portfolio create by Marcin Kukawski">
     <meta name="keywords" content="cookavsky, Polska Panda">
@@ -14,9 +13,7 @@
 
 <body class="body-container">
     <header id="Header-Container" class="header-container">
-        <button id="Skip" class="Skip-Back">
-            <p>Skip</p>
-        </button>
+        <button id="Skip" class="Skip-Back">Skip</button>
         <svg version="1.1" class="header-logo" id="Panda" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" viewBox="0 0 278 279" style="enable-background:new 0 0 278 279;" xml:space="preserve">
             <style type="text/css">
@@ -56,26 +53,26 @@
             <path class="st3" d="M137,187.2c0,8.2,0,16.4,0,24.6c1,0.7,7.9,5.7,17,3.6c10-2.3,14-11,14.4-12" />
             <path class="st3" d="M105.5,204.5c0.6,1.1,4.5,8.6,13.6,10.9c9.9,2.4,17.5-3.6,18.3-4.2" />
         </svg>
-        <h1 id="Console" class="console-text">
+        <h2 id="Console" class="console-text">
             <span id="Text"></span>
             <span class="console-underscore">|</span>
-        </h1>
+        </h2>
         <div id="Header-Social" class="header-social off">
             <a class="Facebook" href="https://www.facebook.com/cookavsky" rel="noreferrer" target="_blank">
-                <img class="Facebook-img" src="img/facebook.png">
+                <img class="Facebook-img" src="img/facebook.png" alt="logo facebook">
             </a>
             <a class="Github" href="https://github.com/cookavsky" rel="noreferrer" target="_blank">
-                <img class="Github-img" src="img/github.png">
+                <img class="Github-img" src="img/github.png" alt="logo github">
             </a>
             <a class="Linkedin" href="https://www.linkedin.com/in/cookavsky" rel="noreferrer" target="_blank">
-                <img class="Linkedin-img" src="img/linkedin.png">
+                <img class="Linkedin-img" src="img/linkedin.png" alt="logo linkedin">
             </a>
         </div>
     </header>
     <main id="Main-Container" class="main-container off">
         <article class="Menu">
             <div id="Top" class="Top Stepping">
-                <img class="Top-img" src="./img/Top.svg">
+                <img class="Top-img" src="./img/Top.svg" alt="Top cursor">
             </div>
             <section id="globe" class="globe">
                 <div id="clouds1" class="clouds clouds1"></div>
@@ -83,28 +80,26 @@
                 <nav>
                     <ul>
                         <li id="HomeNav" class="Menu-list-activ">
-                            <h1 id="HomeTextNav" class="Menu-list-Text-activ">Home</h1>
+                            <h2 id="HomeTextNav" class="Menu-list-Text-activ">Home</h2>
                         </li>
                         <li id="CVNav" class="Menu-list">
-                            <h1 id="CVTextNav" class="Menu-list-Text">CV</h1>
+                            <h2 id="CVTextNav" class="Menu-list-Text">CV</h2>
                         </li>
                         <li id="ProjectsNav" class="Menu-list off">
-                            <h1 id="ProjectsTextNav" class="Menu-list-Text">Projects</h1>
+                            <h2 id="ProjectsTextNav" class="Menu-list-Text">Projects</h2>
                         </li>
                         <li id="ContactsNav" class="Menu-list off">
-                            <h1 id="ContactsTextNav" class="Menu-list-Text">Contacts</h1>
+                            <h2 id="ContactsTextNav" class="Menu-list-Text">Contacts</h2>
                         </li>
                     </ul>
                 </nav>
             </section>
             <div id="Bottom" class="Bottom">
-                <img class="Bottom-img" src="./img/Bottom.svg">
+                <img class="Bottom-img" src="./img/Bottom.svg" alt="Bottom cursor">
             </div>
         </article>
         <article class="Main-Content">
-            <button id="Back" class="Skip-Back off">
-                <p>Back to menu</p>
-            </button>
+            <button id="Back" class="Skip-Back off">Back to menu</button>
             <section id="Home" class="Home Home-Content off">
                 <div id="Home-Intro" class="Home-Intro">
                     <h2>When will you set a goal and try to reach it. With each step you struggle with new problems and finally yours goal is here. The goal as not important as road behind you. The road shapes the final effect of the goal. If you want to know what the goal is at the end of this path, play.</h2>
@@ -140,7 +135,7 @@
                         <div class="Cards Cards3 off"></div>
                         <div class="Cards Cards3 off"></div>
                         <div class="Cards Cards3 off"></div>
-                        <div class="Cards   Cards2 off"></div>
+                        <div class="Cards Cards2 off"></div>
                         <div class="Cards Cards3 off"></div>
                         <div class="Cards Cards3 off"></div>
                         <div class="Cards Cards3 off"></div>
@@ -152,7 +147,7 @@
                 <div class="CV-Intro">
                     <div class="CV-Photo">
                         <div class="CV-Photo-item">
-                            <img class="CV-Photo-img" src="./img/CV-Intro.JPG">
+                            <img class="CV-Photo-img" src="./img/CV-Intro.jpg" alt="Photo Marcin Kukawski">
                         </div>
                     </div>
                     <div class="CV-Text">
@@ -162,13 +157,13 @@
                 <div class="CV-Home">
                     <div class="CV-Photo">
                         <div id="CV-Home2A" class="CV-Photo-item CV-Home2 off">
-                            <img class="CV-Photo-img" src="./img/CV-Home2.jpg">
+                            <img class="CV-Photo-img" src="./img/CV-Home2.jpg" alt="Ratusz Murowana Goślina">
                         </div>
                         <div id="CV-Home1" class="CV-Photo-item CV-Home1">
-                            <img class="CV-Photo-img" src="./img/CV-Home1.jpg">
+                            <img class="CV-Photo-img" src="./img/CV-Home1.jpg" alt="Szkoła podstawowa">
                         </div>
                         <div id="CV-Home2" class="CV-Photo-item CV-Home2">
-                            <img class="CV-Photo-img" src="./img/CV-Home2.jpg">
+                            <img class="CV-Photo-img" src="./img/CV-Home2.jpg" alt="Ratusz Murowana Goślina">
                         </div>
                     </div>
                     <div class="CV-Text">
@@ -178,13 +173,13 @@
                 <div class="CV-School">
                     <div class="CV-Photo">
                         <div id="CV-School2A" class="CV-Photo-item CV-School2">
-                            <img class="CV-Photo-img" src="./img/CV-School2.jpg">
+                            <img class="CV-Photo-img" src="./img/CV-School2.jpg" alt="WSL">
                         </div>
                         <div id="CV-School1" class="CV-Photo-item CV-School1">
-                            <img class="CV-Photo-img" src="./img/CV-School1.jpg">
+                            <img class="CV-Photo-img" src="./img/CV-School1.jpg" alt="ZSŁ">
                         </div>
                         <div id="CV-School2" class="CV-Photo-item CV-School2">
-                            <img class="CV-Photo-img" src="./img/CV-School2.jpg">
+                            <img class="CV-Photo-img" src="./img/CV-School2.jpg" alt="WSL">
                         </div>
                     </div>
                     <div class="CV-Text">
@@ -194,19 +189,19 @@
                 <div class="CV-Work">
                     <div class="CV-Photo">
                         <div id="CV-Work2A" class="CV-Photo-item">
-                            <img class="CV-Photo-img" src="./img/CV-Work2.jpg">
+                            <img class="CV-Photo-img" src="./img/CV-Work2.jpg" alt="Warehouse">
                         </div>
                         <div id="CV-Work3A" class="CV-Photo-item CV-Work3">
-                            <img class="CV-Photo-img" src="./img/CV-Work3.jpg">
+                            <img class="CV-Photo-img" src="./img/CV-Work3.jpg" alt="Machine">
                         </div>
                         <div id="CV-Work1" class="CV-Photo-item CV-Work1">
-                            <img class="CV-Photo-img" src="./img/CV-Work1.jpg">
+                            <img class="CV-Photo-img" src="./img/CV-Work1.jpg" alt="Telephone">
                         </div>
                         <div id="CV-Work2" class="CV-Photo-item">
-                            <img class="CV-Photo-img" src="./img/CV-Work2.jpg">
+                            <img class="CV-Photo-img" src="./img/CV-Work2.jpg" alt="Warehouse">
                         </div>
                         <div id="CV-Work3" class="CV-Photo-item CV-Work3">
-                            <img class="CV-Photo-img" src="./img/CV-Work3.jpg">
+                            <img class="CV-Photo-img" src="./img/CV-Work3.jpg" alt="Machine">
                         </div>
                     </div>
                     <div class="CV-Text">
@@ -310,9 +305,7 @@
                     <input class="form Email" type='text' name='email' placeholder="Your email">
                     <input class="form Subject" type="text" name='subject' placeholder="Your subject">
                     <textarea class="form Message" name="message" placeholder="Type your message ..."></textarea>
-                    <button class="Send" type="submit" name="submit" value="Send email">
-                        <h4>Send</h4>
-                    </button>
+                    <button class="Send" type="submit" name="submit" value="Send email">Send</button>
                 </form>
             </section>
         </article>
