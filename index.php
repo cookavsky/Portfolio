@@ -311,6 +311,7 @@
         </article>
     </main>
     <script src="js/script.js"></script>
+    <script src="sw.js"></script>
 </body>
 
 </html>
