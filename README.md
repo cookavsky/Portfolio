@@ -8,6 +8,7 @@
 * [To do](#to-do)
 * [Acknowledgments](#acknowledgments)
 * [Status](#status)
+* [Audits](#audits)
 * [Author](#author)
 
 ## Getting Started
@@ -102,6 +103,11 @@ let blockstart = 0;
 
 ## Status
 In progress.
+
+## Audits
+Site checked by Lighthouse and got 100% result.
+[Deskop](./audits/cookavsky.com-100%-Deskop)
+[Mobile](./audits/cookavsky.com-100%-Mobile)
 
 ## Author
 Created by [cookavsky](https://www.cookavsky.com/) - for friends Polska Panda.
